@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <BuildProductsInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Environments>
-    <Environment Name="локальная" Version="44">
+    <Environment Name="локальная" Version="46">
       <Products>
         <Product Domain="Domain" Runtime="Domain.ARM.AlphaServer">
           <Info>

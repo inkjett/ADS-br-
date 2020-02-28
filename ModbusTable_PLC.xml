@@ -96,12 +96,6 @@
     <protocoltype>TS</protocoltype>
   </item>
   <item Binding="Introduced">
-    <node-path>ASUTP.PLC.Valves.1.State</node-path>
-    <table>Holding Registers</table>
-    <address>190</address>
-    <protocoltype>TM2</protocoltype>
-  </item>
-  <item Binding="Introduced">
     <node-path>ASUTP.PLC.Valves.1.State1.MPO</node-path>
     <table>Holding Registers</table>
     <address>115</address>
@@ -136,6 +130,24 @@
     <table>Holding Registers</table>
     <address>120</address>
     <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.State1.Error</node-path>
+    <table>Holding Registers</table>
+    <address>199</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.State1.Crash</node-path>
+    <table>Holding Registers</table>
+    <address>200</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.State1.State</node-path>
+    <table>Holding Registers</table>
+    <address>190</address>
+    <protocoltype>TM2</protocoltype>
   </item>
   <item Binding="Introduced">
     <node-path>ASUTP.PLC.Valves.1.Timers.T01.writeValue</node-path>
@@ -696,9 +708,9 @@
     <protocoltype>TM2</protocoltype>
   </item>
   <item Binding="Introduced">
-    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min3_param</node-path>
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min1_param</node-path>
     <table>Holding Registers</table>
-    <address>13</address>
+    <address>7</address>
     <protocoltype>TM2</protocoltype>
   </item>
   <item Binding="Introduced">
@@ -708,9 +720,9 @@
     <protocoltype>TM2</protocoltype>
   </item>
   <item Binding="Introduced">
-    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min1_param</node-path>
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min3_param</node-path>
     <table>Holding Registers</table>
-    <address>7</address>
+    <address>13</address>
     <protocoltype>TM2</protocoltype>
   </item>
   <item Binding="Introduced">

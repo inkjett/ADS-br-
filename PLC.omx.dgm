@@ -446,7 +446,7 @@
     <socket Id="Objects.PLC.cls_Valve.ccv_Valve_SU.ClassSocket1" Left="24" Top="26" Width="225.97333333333336" Height="40.59" />
   </type>
   <ClassSocket Id="f0192105-786e-4729-bfcc-b3696b41451c" OffsetX="0" OffsetY="0" Scale="1" />
-  <socket-type Id="134bd93f-39a1-423a-90b6-1c991c742b6e" OffsetX="0" OffsetY="0" Scale="0.8160554241">
+  <socket-type Id="134bd93f-39a1-423a-90b6-1c991c742b6e" OffsetX="0" OffsetY="156.787144869613" Scale="0.8160554241">
     <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.State" Left="24" Top="2" Width="74.50333333333333" Height="24" />
     <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Value_TechIn" Left="24" Top="31" Width="115.34333333333333" Height="24" />
     <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Value_TechOut" Left="24" Top="60" Width="125.26333333333334" Height="24" />
@@ -756,7 +756,7 @@
     <Parameter Id="Objects.PLC.cls_AI.SQL.UstAsJSONString" Left="1016.7633333333333" Top="26" Width="138.23666666666668" Height="22" />
   </Type>
   <Socket Id="d7b4bf81-d4ff-4923-9009-19fcd495089d" OffsetX="0" OffsetY="0" Scale="0.837227455624351" />
-  <socket-type Id="4b2c76bc-5234-4caa-bdf6-d780829a7c41" OffsetX="0" OffsetY="0" Scale="0.862309759191418">
+  <socket-type Id="4b2c76bc-5234-4caa-bdf6-d780829a7c41" OffsetX="0" OffsetY="273.316324637277" Scale="0.862309759191418">
     <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.WorkCycle_Write" Left="24" Top="2" Width="137.95333333333332" Height="24" />
     <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer1_Write" Left="24" Top="31" Width="118.06333333333333" Height="24" />
     <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer2_Write" Left="24" Top="60" Width="118.06333333333333" Height="24" />

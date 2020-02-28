@@ -91,6 +91,15 @@
         <socket-parameter name="MVZ" uuid="8ba93efe-c894-40a3-bccd-7a40527bd380" type="bool">
           <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="State1.MVZ" />
         </socket-parameter>
+        <socket-parameter name="Error" uuid="a9174173-27c0-4d5e-a0de-dcf0a9d87e96" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="State1.Error" />
+        </socket-parameter>
+        <socket-parameter name="Crash" uuid="329fc4c8-47e3-44fb-9279-4fef584ba7f9" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="State1.Crash" />
+        </socket-parameter>
+        <socket-parameter name="State" uuid="a9dfd303-51e5-427f-ab7b-833851d1812b" type="uint16">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="State1.State" />
+        </socket-parameter>
       </socket-type>
       <type name="ccv_Valve_SU" uuid="7bdfbe5c-8ff7-4f7b-8d71-d7c78484b19b" aspect="Aspects.asp_SU" access-level="private" original="Objects.PLC.cls_Valve">
         <socket name="ClassSocket" uuid="714a2db6-6542-47ec-9e1b-daa1c87f4572" direction="out" type="Objects.PLC.cls_Valve.st_Outputs" access-level="private" access-scope="local" />
@@ -101,15 +110,6 @@
         <bind source="ClassSocket1" target="_ccv_Valve_SU.ClassSocket1" action="set_all" />
         <parameter name="Imit" uuid="e369e984-4aa8-4bea-9d45-77079defcfd6" type="bool" direction="out" access-level="private" access-scope="local">
           <attribute type="AlphaServer.Attributes.NodeRelativePath" value="State1.Imit" />
-        </parameter>
-        <parameter name="State" uuid="2641d113-49af-475d-84ee-d62d127a2ffb" type="uint8" direction="out" access-level="private" access-scope="local">
-          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="State1.State" />
-        </parameter>
-        <parameter name="Crash" uuid="52b7d3ba-c75e-4a63-b881-1744f3a39c8f" type="bool" direction="out" access-level="private" access-scope="local">
-          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="State1.Crash" />
-        </parameter>
-        <parameter name="Error" uuid="a8998048-00f1-476b-9b40-2ff7f17d3406" type="bool" direction="out" access-level="private" access-scope="local">
-          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="State1.Error" />
         </parameter>
         <parameter name="MV" uuid="7431a180-d874-46fb-8f64-dbdc14873aab" type="bool" direction="out" access-level="private" access-scope="local">
           <attribute type="AlphaServer.Attributes.NodeRelativePath" value="State1.MV" />
@@ -155,11 +155,6 @@ Message.Messages.Selected.Message=Str.Replace(Message.Messages.Selected.Message,
           <trigger on="Message" cause="update" />
         </handler>
         <formula target="Imit" source-code="Math.TestBit(cs_OutputsPLC.State1, 6)" />
-        <formula target="State">
-          <property name="source-code">TypeConvert.ToInt1(Math.TestBit(cs_OutputsPLC.State1, 0)) + 2 * TypeConvert.ToInt1(Math.TestBit(cs_OutputsPLC.State1, 1)) + 4 * TypeConvert.ToInt1(Math.TestBit(cs_OutputsPLC.State1, 2))</property>
-        </formula>
-        <formula target="Crash" source-code="Math.TestBit(cs_OutputsPLC.State1, 3)" />
-        <formula target="Error" source-code="Math.TestBit(cs_OutputsPLC.State1, 4)" />
         <formula target="MV" source-code="Math.TestBit(cs_OutputsPLC.State1, 10)" />
         <formula target="FlowControl" source-code="Math.TestBit(cs_OutputsPLC.State2, 0)" />
         <formula target="Flow" source-code="Math.TestBit(cs_OutputsPLC.State2, 1)" />
@@ -328,9 +323,6 @@ Message.Messages.Selected.Message=Str.Replace(Message.Messages.Selected.Message,
         </socket-parameter>
         <socket-parameter name="bUseRS" uuid="348e91c3-5163-4e0d-bc25-c74540358cdb" type="bool">
           <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="bR.bUseRS" />
-        </socket-parameter>
-        <socket-parameter name="vErr" uuid="d173c862-5c12-4cd7-99c5-3f5e13658efb" type="bool">
-          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="bR.vErr" />
         </socket-parameter>
         <socket-parameter name="iwModNPS" uuid="0de5efd9-094b-4639-85de-eee3f5c19b04" type="bool">
           <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="bR.iwModNPS" />
