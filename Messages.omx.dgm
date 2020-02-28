@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Diagrams>
+  <type Id="d412adc4-2c87-40d2-92ad-988eee120612" OffsetX="0" OffsetY="0" Scale="0.744620777619893">
+    <ref Id="Objects.Messages.DataBuffer.IOS_View._PLC_View" Left="545.5866666666667" Top="26" Width="342.72" Height="580.63">
+      <Socket Name="CMD" IsExpanded="true" />
+      <Socket Name="Params" IsExpanded="true" />
+    </ref>
+    <socket Id="Objects.Messages.DataBuffer.IOS_View._CMD" Left="24" Top="69.63" Width="329.73666666666668" Height="72.59" IsExpanded="true" />
+    <socket Id="Objects.Messages.DataBuffer.IOS_View.Values" Left="991.11666666666679" Top="26" Width="361.69666666666666" Height="290.59000000000003" IsExpanded="true" />
+    <socket Id="Objects.Messages.DataBuffer.IOS_View.Params" Left="930.30666666666684" Top="365.59000000000003" Width="309.50666666666666" Height="530.59" IsExpanded="true" />
+    <handler Id="Objects.Messages.DataBuffer.IOS_View.on_Last" Left="395.73666666666668" Top="26" Width="117.71666666666667" Height="24" />
+  </type>
+  <type Id="2425e750-42a0-4b5f-b797-b0c8a2c12d44" OffsetX="0" OffsetY="237.992" Scale="1">
+    <socket-type Id="Objects.Messages.DataBuffer.Params" Left="66" Top="26" Width="117.19666666666667" Height="476" />
+    <socket-type Id="Objects.Messages.DataBuffer.DataBuffer_Values" Left="204.19666666666666" Top="26" Width="147.05333333333334" Height="256" />
+    <socket-type Id="Objects.Messages.DataBuffer.Commands" Left="372.25" Top="26" Width="113.64333333333335" Height="58" />
+    <type Id="Objects.Messages.DataBuffer.PLC_View" Left="268.85" Top="302" Width="254.60000000000002" Height="98.63" />
+    <type Id="Objects.Messages.DataBuffer.IOS_View" Left="268.85" Top="416.63" Width="254.60000000000002" Height="98.63" />
+    <socket-type Id="Objects.Messages.DataBuffer.Temp" Left="506.89333333333332" Top="26" Width="111.26666666666668" Height="80" />
+  </type>
+  <type Id="7bfbf2e3-c381-4b1d-97a6-da1b8e73994d" OffsetX="214.96" OffsetY="0" Scale="1">
+    <socket Id="Objects.Messages.DataBuffer.PLC_View.CMD" Left="24" Top="37.59" Width="329.73666666666668" Height="74.59" IsExpanded="true" />
+    <socket Id="Objects.Messages.DataBuffer.PLC_View.Values" Left="566.30333333333328" Top="26" Width="361.69666666666666" Height="40.59" />
+    <socket Id="Objects.Messages.DataBuffer.PLC_View.Params" Left="618.49333333333334" Top="71.59" Width="309.50666666666666" Height="40.59" />
+  </type>
+  <namespace Id="c3a89df7-7cac-404f-aba4-56c3c139efcc" OffsetX="0" OffsetY="0" Scale="1">
+    <type Id="Objects.Messages.DataBuffer" Left="195.31333333333339" Top="41" Width="139.05333333333334" Height="162" />
+    <type Id="Objects.Messages.SQL_Messages" Left="40" Top="40" Width="123.83333333333337" Height="118" />
+    <type Id="Objects.Messages.VU_Message" Left="451" Top="102.03999999999999" Width="166.63" Height="85" />
+    <type Id="Objects.Messages.UserParams" Left="666.83333333333337" Top="66" Width="133.51" Height="121" />
+    <type Id="Objects.Messages.Params" Left="47.99666666666667" Top="190" Width="90.536666666666662" Height="98" />
+    <type Id="Objects.Messages.SQL_Gen_PLC" Left="185" Top="251" Width="291.83333333333337" Height="175.99999999999989" />
+  </namespace>
+  <type Id="b9e42b10-1425-4691-b942-1df4a431483d" OffsetX="0" OffsetY="0" Scale="1">
+    <type Id="Objects.Messages.SQL_Messages.IOS_View" Left="68.000000000000028" Top="26" Width="257.59000000000003" Height="96.63" />
+    <socket-type Id="Objects.Messages.SQL_Messages.Events" Left="346.59000000000003" Top="26" Width="146.72" Height="300" />
+    <type Id="Objects.Messages.SQL_Messages.PLC_View" Left="66.000000000000028" Top="137.63" Width="257.59000000000003" Height="96.63" />
+  </type>
+  <Type Id="ac5fb36b-3ee4-4d16-8a0c-54b91462a5cc" OffsetX="215.228538228226" OffsetY="0" Scale="1">
+    <Socket Id="Objects.Messages.SQL_Messages.IOS_View.Messages" Left="1070.4285382282258" Top="167.40999999999997" Width="183.84" Height="338.59000000000003" IsExpanded="true" />
+    <Reference Id="Objects.Messages.SQL_Messages.IOS_View._SnapShot" Left="387.981871561559" Top="26" Width="355.20000000000005" Height="72.63" />
+    <Handler Id="Objects.Messages.SQL_Messages.IOS_View.On_Messages_LastID" Left="823.18187156155909" Top="37" Width="166.10333333333335" Height="44" />
+    <Reference Id="Objects.Messages.SQL_Messages.IOS_View._PLC_View" Left="222.82666666666665" Top="138.55471352356875" Width="438.29536994006" Height="128.63" />
+    <Parameter Id="Objects.Messages.SQL_Messages.IOS_View.NewMessage" Left="1089.6518715615591" Top="64" Width="120.61666666666667" Height="22" />
+    <Reference Id="Objects.Messages.SQL_Messages.IOS_View._SQLConnector" Left="624.981871561559" Top="597.26" Width="377.26" Height="1762.63">
+      <Socket Name="Query" IsExpanded="true" />
+      <Socket Name="QueryOut" IsExpanded="true" />
+    </Reference>
+    <Handler Id="Objects.Messages.SQL_Messages.IOS_View.On_NewMessage" Left="260.181871561559" Top="297" Width="211.98000000000002" Height="84" />
+    <Handler Id="Objects.Messages.SQL_Messages.IOS_View.On_Messages_vqt_value" Left="845.16187156155911" Top="105" Width="183.26666666666668" Height="44" />
+    <Parameter Id="Objects.Messages.SQL_Messages.IOS_View.LastIDForQuery" Left="43" Top="440.89" Width="131.68" Height="22" />
+    <Handler Id="Objects.Messages.SQL_Messages.IOS_View.On_Messages_TempTimeStamp" Left="593.241871561559" Top="237" Width="221.72" Height="44" />
+    <Handler Id="Objects.Messages.SQL_Messages.IOS_View.Handler" Left="841.96187156155884" Top="181" Width="167.09" Height="138" />
+    <Reference Id="Objects.Messages.SQL_Messages.IOS_View.UserParams" Left="576.54187156155888" Top="334.17931328393752" Width="239.19666666666666" Height="118.63">
+      <Socket Name="Params" IsExpanded="true" />
+    </Reference>
+    <Parameter Id="Objects.Messages.SQL_Messages.IOS_View.CountId" Left="1078.2685382282259" Top="558.04" Width="137.82666666666665" Height="22" />
+    <Parameter Id="Objects.Messages.SQL_Messages.IOS_View.CountIdIn" Left="24" Top="590.81000000000006" Width="137.82666666666665" Height="22" />
+    <Parameter Id="Objects.Messages.SQL_Messages.IOS_View.ReadInProgress" Left="1089.2685382282259" Top="608.81000000000006" Width="133.80164702097574" Height="22" />
+    <Handler Id="Objects.Messages.SQL_Messages.IOS_View.On_CountId" Left="265.54187156155888" Top="407.99999999999994" Width="141.18333333333334" Height="24" />
+    <Parameter Id="Objects.Messages.SQL_Messages.IOS_View.Query1Limit" Left="43" Top="644.04" Width="137.82666666666665" Height="22" />
+    <Handler Id="Objects.Messages.SQL_Messages.IOS_View.On_LastIDForQuery" Left="233.82666666666665" Top="492" Width="180.49666666666667" Height="24" />
+    <Parameter Id="Objects.Messages.SQL_Messages.IOS_View.FirstQuery" Left="1119.6018715615592" Top="662.18333333333339" Width="133.80164702097574" Height="22" />
+  </Type>
+  <SocketType Id="45e5f79c-4886-4857-833e-87497c96b081" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.Messages.SQL_Messages.Events.Msg" Left="24" Top="2" Width="70.936666666666667" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Messages.Events.vqt_changemask" Left="24" Top="31" Width="135.93333333333334" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Messages.Events.vqt_quality" Left="24" Top="60" Width="105.51" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Messages.Events.vqt_timestamp64" Left="24" Top="89" Width="139.04333333333335" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Messages.Events.vqt_value" Left="24" Top="118" Width="97.686666666666667" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Messages.Events.LastID" Left="24" Top="147" Width="80.523333333333341" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Messages.Events.TempTimeStamp" Left="24" Top="176" Width="136.14" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Messages.Events.TempValue" Left="24" Top="205" Width="105.43666666666667" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Messages.Events.Login" Left="24" Top="234" Width="77.443333333333328" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Messages.Events.TempSeverity" Left="24" Top="263" Width="118.41000000000001" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Messages.Events.TempAckRequired" Left="28" Top="295" Width="118.41000000000001" Height="24" />
+  </SocketType>
+  <socket-type Id="0d0aca88-29ca-4e36-84bd-4c8ae2c954ee" OffsetX="0" OffsetY="0" Scale="1">
+    <socket-parameter Id="Objects.Messages.DataBuffer.DataBuffer_Values.Value1" Left="24" Top="2" Width="83.123333333333335" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.DataBuffer_Values.Value2" Left="24" Top="31" Width="83.123333333333335" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.DataBuffer_Values.Value3" Left="24" Top="60" Width="83.123333333333335" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.DataBuffer_Values.Value4" Left="24" Top="89" Width="83.123333333333335" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.DataBuffer_Values.Value5" Left="24" Top="118" Width="83.123333333333335" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.DataBuffer_Values.Value6" Left="24" Top="147" Width="83.123333333333335" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.DataBuffer_Values.Value7" Left="24" Top="176" Width="83.123333333333335" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.DataBuffer_Values.Value8" Left="24" Top="205" Width="83.123333333333335" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.DataBuffer_Values.Value9" Left="24" Top="234" Width="83.123333333333335" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.DataBuffer_Values.Value10" Left="24" Top="263" Width="89.593333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.DataBuffer_Values.Value11" Left="26" Top="293" Width="101.47333333333333" Height="24" />
+  </socket-type>
+  <socket-type Id="049a4993-5fa3-4d88-b127-623179e83121" OffsetX="0" OffsetY="322.51" Scale="1">
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_2_1" Left="24" Top="2" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_2_2" Left="24" Top="31" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_3_1" Left="24" Top="60" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_3_2" Left="24" Top="89" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_4_2" Left="24" Top="118" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_4_1" Left="24" Top="147" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_5_2" Left="24" Top="176" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_5_1" Left="24" Top="205" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_6_2" Left="24" Top="234" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_6_1" Left="24" Top="263" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_7_2" Left="24" Top="292" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_7_1" Left="24" Top="321" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_8_2" Left="24" Top="350" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_8_1" Left="24" Top="379" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_9_2" Left="24" Top="408" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_9_1" Left="24" Top="437" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_10_2" Left="24" Top="466" Width="110.40333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_10_1" Left="24" Top="495" Width="110.40333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_1_1" Left="24" Top="524" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_1_2" Left="24" Top="553" Width="103.93333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_11_1" Left="189" Top="459" Width="110.40333333333334" Height="24" />
+    <socket-parameter Id="Objects.Messages.DataBuffer.Params.Param_11_2" Left="189" Top="488" Width="110.40333333333334" Height="24" />
+  </socket-type>
+  <SocketType Id="c2c9ead6-998e-4de5-8948-a90500d40611" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.Messages.DataBuffer.Temp.Param_1_2" Left="24" Top="2" Width="103.93333333333334" Height="24" />
+    <SocketParameter Id="Objects.Messages.DataBuffer.Temp.Param_1_1" Left="24" Top="31" Width="103.93333333333334" Height="24" />
+  </SocketType>
+  <Type Id="dd6dbc2d-7981-4302-917a-cf092768f0f4" OffsetX="0" OffsetY="0" Scale="1">
+    <Parameter Id="Objects.Messages.SQL_Messages.PLC_View.NewMessage" Left="24" Top="26" Width="120.61666666666667" Height="22" />
+    <Socket Id="Objects.Messages.SQL_Messages.PLC_View.Events" Left="1050.2" Top="33.41" Width="183.84" Height="40.59" />
+    <Parameter Id="Objects.Messages.SQL_Messages.PLC_View.LastIDForQuery" Left="24" Top="52" Width="131.68" Height="22" />
+    <Parameter Id="Objects.Messages.SQL_Messages.PLC_View.CountIdIn" Left="53" Top="118.81000000000006" Width="137.82666666666665" Height="22" />
+    <Parameter Id="Objects.Messages.SQL_Messages.PLC_View.Query1Limit" Left="53" Top="153.03999999999996" Width="137.82666666666665" Height="22" />
+    <Parameter Id="Objects.Messages.SQL_Messages.PLC_View.CountId" Left="1078.5933333333335" Top="131.03999999999996" Width="137.82666666666665" Height="22" />
+  </Type>
+  <type Id="ec9efabc-09fa-4d8b-89e6-e653bd875cc8" OffsetX="0" OffsetY="0" Scale="1">
+    <type Id="Objects.Messages.VU_Message.cv_VU_Message" Left="480" Top="26" Width="230.94" Height="152.63" />
+  </type>
+  <type Id="c0e29931-f4c7-4e1f-8c2c-ad800e4bd9a4" OffsetX="0" OffsetY="0" Scale="1">
+    <socket Id="Objects.Messages.VU_Message.cv_VU_Message.cs_Messages" Left="830.15666666666664" Top="26" Width="138.88333333333333" Height="72.59" IsExpanded="true" />
+  </type>
+  <SocketType Id="b21a685b-87a3-4d5c-9885-9b5bcdb0b703" OffsetX="0" OffsetY="0" Scale="1" />
+  <ClassSocket Id="7980435e-77a1-43c9-bb2c-66054cfce755" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.Messages.VU_Message.cv_VU_Message.ClassSocket.Message" Left="24" Top="292" Width="136.62666666666667" Height="24" />
+  </ClassSocket>
+  <Type Id="1519f552-873b-4815-8949-427be8fd1863" OffsetX="0" OffsetY="0" Scale="1">
+    <Type Id="Objects.Messages.UserParams.IOS_View" Left="111.3585" Top="26" Width="252.67000000000002" Height="69.276666666666671" />
+    <SocketType Id="Objects.Messages.UserParams.Parms" Left="385.0285" Top="26" Width="111.43" Height="74" />
+  </Type>
+  <Type Id="d696753b-a3bb-4e1b-97cf-2e8e6e64d2c7" OffsetX="0" OffsetY="0" Scale="1">
+    <Socket Id="Objects.Messages.UserParams.IOS_View.Params" Left="379.55" Top="26" Width="262.17333333333335" Height="88.553333333333342" IsExpanded="true" />
+  </Type>
+  <type Id="81b82aea-6cd5-4b7f-ae51-e07d724ef161" OffsetX="0" OffsetY="0" Scale="1">
+    <socket-type Id="Objects.Messages.Params.Params" Left="66" Top="26" Width="113.48666666666668" Height="76" />
+    <type Id="Objects.Messages.Params.IOS_View" Left="220.80599999999998" Top="26" Width="355.28666666666669" Height="72.63" />
+    <socket-type Id="Objects.Messages.Params.CMD" Left="597.09266666666667" Top="26" Width="115.31333333333333" Height="56" />
+  </type>
+  <socket-type Id="91215a04-10b9-47b2-87af-91273da90cd0" OffsetX="0" OffsetY="0" Scale="1">
+    <socket-parameter Id="Objects.Messages.Params.Params.CurrentUser" Left="24" Top="2" Width="111.48666666666668" Height="24" />
+    <socket-parameter Id="Objects.Messages.Params.Params.ARM" Left="24" Top="31" Width="73.693333333333328" Height="24" />
+  </socket-type>
+  <type Id="fbf8ff0b-f5c0-422e-9602-01e2ec31e431" OffsetX="0" OffsetY="0" Scale="1">
+    <socket Id="Objects.Messages.Params.IOS_View.Params" Left="599.60666666666657" Top="26" Width="369.43333333333334" Height="94.59" IsExpanded="true" />
+    <socket Id="Objects.Messages.Params.IOS_View.CMD" Left="24" Top="26" Width="358.89333333333337" Height="72.59" IsExpanded="true" />
+  </type>
+  <Type Id="0e1403d3-b967-4164-aec4-7c071c68fff5" OffsetX="0" OffsetY="0" Scale="1">
+    <Type Id="Objects.Messages.SQL_Gen_PLC.PLC_View" Left="249.45" Top="26" Width="302.29666666666668" Height="94.63" />
+    <SocketType Id="Objects.Messages.SQL_Gen_PLC.Events" Left="66" Top="26" Width="146.93333333333334" Height="256" />
+    <Type Id="Objects.Messages.SQL_Gen_PLC.SQL_View" Left="255.45" Top="143.63" Width="314.29666666666668" Height="316.63">
+      <Socket Name="Events" IsExpanded="true" />
+    </Type>
+  </Type>
+  <SocketType Id="b8f7f795-c94a-4985-94e6-401608b94ba7" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.Messages.SQL_Gen_PLC.Events.DateTimeLong" Left="26" Top="47.000000000000014" Width="167.69666666666666" Height="25" />
+    <SocketParameter Id="Objects.Messages.SQL_Gen_PLC.Events.MsgText" Left="26" Top="11" Width="166.93666666666667" Height="31" />
+    <SocketParameter Id="Objects.Messages.SQL_Gen_PLC.Events.ObjType" Left="27" Top="79" Width="119.58" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Gen_PLC.Events.ObjNum" Left="28" Top="107" Width="119.58" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Gen_PLC.Events.MsgNum" Left="27" Top="136" Width="119.58" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Gen_PLC.Events.MsgTime" Left="29" Top="253" Width="107.48666666666668" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Gen_PLC.Events.MsgArg1" Left="28" Top="280" Width="119.58" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Gen_PLC.Events.MsgArg2" Left="30" Top="310" Width="119.58" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Gen_PLC.Events.MsgProp_1" Left="27" Top="193" Width="119.58" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Gen_PLC.Events.MsgProp_2" Left="30" Top="223" Width="119.58" Height="24" />
+    <SocketParameter Id="Objects.Messages.SQL_Gen_PLC.Events.MsgProp" Left="26" Top="164" Width="119.58" Height="24" />
+  </SocketType>
+  <Type Id="2ad92ccc-540f-4850-8a0c-e8e352942122" OffsetX="0" OffsetY="0" Scale="1">
+    <Socket Id="Objects.Messages.SQL_Gen_PLC.SQL_View.Events" Left="24" Top="26" Width="180.82666666666668" Height="40.59" />
+  </Type>
+  <Type Id="4cec5dcb-f57d-43e6-af2f-b7e77dec2bc8" OffsetX="0" OffsetY="0" Scale="1">
+    <Reference Id="Objects.Messages.SQL_Gen_PLC.PLC_View._SQL_View" Left="371.82666666666671" Top="26" Width="283.97" Height="316.63">
+      <Socket Name="Events" IsExpanded="true" />
+    </Reference>
+    <Socket Id="Objects.Messages.SQL_Gen_PLC.PLC_View.Events" Left="24" Top="26.039999999999964" Width="180.82666666666668" Height="292.59000000000003" IsExpanded="true" />
+  </Type>
+  <Socket Id="7981a3d6-86f5-4580-8e41-84ffa1aff367" OffsetX="0" OffsetY="0" Scale="1" />
+  <socket-type Id="271d8095-ee77-4d9c-bc42-2fc7bd86c586" OffsetX="0" OffsetY="0" Scale="1">
+    <socket-parameter Id="Objects.Messages.Params.CMD.AlarmSound" Left="24" Top="2" Width="113.31333333333333" Height="24" />
+  </socket-type>
+  <socket-type Id="e74cf622-96c0-43fd-8658-c0cccf1738b6" OffsetX="0" OffsetY="0" Scale="1">
+    <socket-parameter Id="Objects.Messages.DataBuffer.Commands.CMD" Left="24" Top="2" Width="106.52666666666667" Height="24" />
+  </socket-type>
+</Diagrams>

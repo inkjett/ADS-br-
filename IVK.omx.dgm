@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Diagrams>
+  <ClassView Id="955a64dd-dd47-4a86-9d6a-4242bd92f004" OffsetX="48.76" OffsetY="38.451455125531" Scale="1">
+    <ThisReference Id="Objects.IVK.cls_IVK_AI.cv_AI_VU._cv_AI_SU" Left="458.04666666666662" Top="26" Width="233.08" Height="68.63" />
+    <ClassSocket Id="Objects.IVK.cls_IVK_AI.cv_AI_VU.cs_Outputs" Left="775.90666666666664" Top="26" Width="238.85333333333335" Height="530.59" IsExpanded="true" />
+    <ClassSocket Id="Objects.IVK.cls_IVK_AI.cv_AI_VU.cs_Inputs" Left="24" Top="71.59" Width="229.76000000000002" Height="330.59000000000003" IsExpanded="true" />
+    <ClassSocket Id="Objects.IVK.cls_IVK_AI.cv_AI_VU.cs_Attributes" Left="772.36333333333334" Top="636.58999999999992" Width="247.39666666666668" Height="40.59" />
+    <ClassParameter Id="Objects.IVK.cls_IVK_AI.cv_AI_VU.Ust_Disable" Left="846.76" Top="588.30429197495755" Width="130.86666666666667" Height="22" />
+    <Handler Id="Objects.IVK.cls_IVK_AI.cv_AI_VU.UMn3_blk_onChange" Left="533.52333333333331" Top="533.47599999999989" Width="179.84" Height="61.000000000000057" />
+    <Handler Id="Objects.IVK.cls_IVK_AI.cv_AI_VU.UMn2_blk_onChange" Left="540.52333333333331" Top="449.47599999999989" Width="179.84" Height="61.000000000000057" />
+    <Handler Id="Objects.IVK.cls_IVK_AI.cv_AI_VU.UMn1_blk_onChange" Left="546.52333333333331" Top="355.47599999999989" Width="179.84" Height="61.000000000000057" />
+    <Handler Id="Objects.IVK.cls_IVK_AI.cv_AI_VU.UMx1_blk_onChange" Left="537.52333333333331" Top="280.47599999999989" Width="179.84" Height="61.000000000000057" />
+    <Handler Id="Objects.IVK.cls_IVK_AI.cv_AI_VU.UMx2_blk_onChange" Left="549.52333333333331" Top="201.47599999999991" Width="179.84" Height="61.000000000000057" />
+    <Handler Id="Objects.IVK.cls_IVK_AI.cv_AI_VU.UMx3_blk_onChange" Left="550.52333333333331" Top="122.47599999999994" Width="179.84" Height="61.000000000000057" />
+    <ClassParameter Id="Objects.IVK.cls_IVK_AI.cv_AI_VU.Ust_Disable_write" Left="64" Top="581.09999999999991" Width="153.86666666666667" Height="26" />
+    <Handler Id="Objects.IVK.cls_IVK_AI.cv_AI_VU.Ust_Disable_write_onChange" Left="295.76" Top="650.09999999999991" Width="253.84" Height="66" />
+  </ClassView>
+  <SocketType Id="e1db5b57-66ac-4042-a98c-402565767508" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.ElMax" Left="24" Top="2" Width="79.366666666666674" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.ElMin" Left="24" Top="31" Width="77.45" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.HistElMax" Left="24" Top="60" Width="99.953333333333333" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.HistElMin" Left="24" Top="89" Width="98.036666666666662" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.ElValue" Left="24" Top="118" Width="86.51" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.TechValue" Left="24" Top="147" Width="102.43" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.Zone" Left="24" Top="176" Width="74.94" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.NDV" Left="24" Top="205" Width="72.843333333333334" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.TechMax" Left="24" Top="234" Width="95.286666666666662" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.TechMin" Left="24" Top="263" Width="93.37" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.UstMax3" Left="24" Top="292" Width="94.263333333333335" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.UstMax3_blk" Left="24" Top="321" Width="115.16666666666667" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.UstMax2" Left="24" Top="350" Width="94.263333333333335" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.UstMax2_blk" Left="24" Top="379" Width="115.16666666666667" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.UstMax1" Left="24" Top="408" Width="94.263333333333335" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.UstMax1_blk" Left="24" Top="437" Width="115.16666666666667" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.UstMin1" Left="24" Top="466" Width="92.346666666666664" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.UstMin1_blk" Left="24" Top="495" Width="113.25" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.UstMin2" Left="24" Top="524" Width="92.346666666666664" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.UstMin2_blk" Left="24" Top="553" Width="113.25" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.UstMin3" Left="24" Top="582" Width="92.346666666666664" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.UstMin3_blk" Left="24" Top="611" Width="113.25" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.udiOperatingTimeCount" Left="24" Top="640" Width="176.16333333333336" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Outputs.HistUst" Left="24" Top="669" Width="85.990000000000009" Height="24" />
+  </SocketType>
+  <Class Id="e94e75f1-5340-4ddd-8201-e7321bd56641" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.IVK.cls_IVK_AI.st_Outputs" Left="66" Top="26" Width="169.48333333333335" Height="468" />
+    <ClassView Id="Objects.IVK.cls_IVK_AI.cv_AI_SU" Left="154.8" Top="515" Width="210.20000000000002" Height="68.63" />
+    <ClassView Id="Objects.IVK.cls_IVK_AI.cv_AI_VU" Left="154.8" Top="604.63" Width="218.74333333333334" Height="90.63" />
+    <SocketType Id="Objects.IVK.cls_IVK_AI.st_Inputs" Left="256.48333333333335" Top="26" Width="200.29000000000002" Height="288" />
+    <SocketType Id="Objects.IVK.cls_IVK_AI.st_Attributes" Left="477.77333333333337" Top="26" Width="145.37333333333333" Height="241.00000000000006" />
+  </Class>
+  <ClassView Id="96bf3c5a-d87b-45fb-b387-b926931838d8" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.IVK.cls_ModulAI_Signal_AI.ccv_IVK_Modul_AI_Signal_AI_VU.ClassSocket1" Left="772.99333333333334" Top="26" Width="307.00666666666666" Height="40.59" />
+  </ClassView>
+  <ClassSocket Id="f2f5b9f0-3697-4fad-85b6-40027674caa1" OffsetX="0" OffsetY="76.51" Scale="1" />
+  <Namespace Id="846683f7-6448-4afe-8df1-f592c951a674" OffsetX="0" OffsetY="20.44" Scale="1">
+    <Class Id="Objects.IVK.cls_ModulAI_Signal_AI" Left="40" Top="40" Width="212.60333333333335" Height="74" />
+    <Class Id="Objects.IVK.cls_Modul_AI" Left="293.60333333333335" Top="40" Width="131.43" Height="96" />
+    <Class Id="Objects.IVK.cls_Modul_DA" Left="466.03333333333336" Top="40" Width="136.35666666666668" Height="96" />
+    <Class Id="Objects.IVK.cls_Modul_AO" Left="643.3900000000001" Top="40" Width="137.05" Height="96" />
+    <Class Id="Objects.IVK.cls_ModulDA_Signal_FI" Left="821.44" Top="40" Width="172.11666666666667" Height="74" />
+    <Class Id="Objects.IVK.cls_ModulDA_Signal_DI" Left="40" Top="160" Width="176.09333333333333" Height="74" />
+    <Class Id="Objects.IVK.cls_ModulAO_Signal_AO" Left="821.44" Top="160" Width="223.84333333333333" Height="74" />
+    <Class Id="Objects.IVK.cls_IVK_AI" Left="257.09333333333336" Top="180" Width="110.37333333333333" Height="140" />
+    <Class Id="Objects.IVK.cls_LineState" Left="421" Top="189.04000000000002" Width="135.63" Height="39" />
+    <Class Id="Objects.IVK.cls_Line" Left="625" Top="280.03999999999996" Width="152.63" Height="43.999999999999943" />
+    <Class Id="Objects.IVK.cls_PUDetectors" Left="416" Top="270.03999999999996" Width="142.63" Height="31" />
+    <Class Id="Objects.IVK.cls_SIKN_Summary" Left="820" Top="275.03999999999996" Width="145.63" Height="49" />
+    <Class Id="Objects.IVK.cls_GH" Left="336" Top="414.03999999999996" Width="101.63" Height="43" />
+    <Class Id="Objects.IVK.cls_BIK_Summary" Left="652" Top="375.03999999999996" Width="139.63" Height="35" />
+  </Namespace>
+  <Class Id="728d61f4-8028-4298-b573-8db2907d685a" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.IVK.cls_LineState.st_Outputs" Left="619" Top="26" Width="112.01666666666668" Height="36" />
+    <SocketType Id="Objects.IVK.cls_LineState.st_Inputs" Left="418" Top="30.039999999999992" Width="112.01666666666668" Height="36" />
+    <ClassView Id="Objects.IVK.cls_LineState.cv_LineState_SU" Left="272" Top="125.03999999999999" Width="125.94" Height="44.63" />
+    <ClassView Id="Objects.IVK.cls_LineState.cv_LineState_VU" Left="694" Top="144.04" Width="236.94" Height="47.629999999999995" />
+  </Class>
+  <SocketType Id="e3538b69-6f3b-4853-ab33-c50f8c9e8ba3" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.IVK.cls_LineState.st_Outputs.InAccounting" Left="766" Top="157.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_LineState.st_Outputs.IsFlow" Left="768" Top="188.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_LineState.st_Outputs.OutOfAttestRange" Left="769" Top="217.04" Width="153.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_LineState.st_Outputs.Mode" Left="772" Top="250.03999999999996" Width="137.08" Height="24" />
+  </SocketType>
+  <ClassView Id="db0ac793-3da6-4a73-b290-4fb996bdcf3b" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.IVK.cls_LineState.cv_LineState_SU.cs_Outputs" Left="993.11666666666656" Top="26" Width="119.88333333333334" Height="40.59" />
+    <ClassSocket Id="Objects.IVK.cls_LineState.cv_LineState_SU.cs_Inputs" Left="24" Top="26" Width="177.88333333333333" Height="40.59" />
+  </ClassView>
+  <ClassSocket Id="5643ecea-2e47-4508-910c-6c9086e18975" OffsetX="0" OffsetY="0" Scale="1" />
+  <ClassView Id="03ef76cc-74bc-401e-9908-f545f70ae10f" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.IVK.cls_IVK_AI.cv_AI_SU.cs_Outputs" Left="874.14666666666665" Top="26" Width="238.85333333333335" Height="40.59" />
+    <ClassSocket Id="Objects.IVK.cls_IVK_AI.cv_AI_SU.cs_Inputs" Left="24" Top="26" Width="229.76000000000002" Height="40.59" />
+  </ClassView>
+  <SocketType Id="ce5b71f4-cdc0-4e35-a54d-1935dedebe9a" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.IVK.cls_LineState.st_Inputs.Mode" Left="711" Top="99.039999999999992" Width="137.08" Height="24" />
+  </SocketType>
+  <ClassView Id="c0e00003-7f57-4555-84c3-bcf75108c885" OffsetX="0" OffsetY="0" Scale="1">
+    <ThisReference Id="Objects.IVK.cls_LineState.cv_LineState_VU._cv_LineState_SU" Left="425.14333333333332" Top="26" Width="280.55333333333334" Height="170.63">
+      <Socket Name="cs_Inputs" IsExpanded="true" />
+      <Socket Name="cs_Outputs" IsExpanded="true" />
+    </ThisReference>
+    <ClassSocket Id="Objects.IVK.cls_LineState.cv_LineState_VU.cs_Outputs" Left="860.76333333333332" Top="52" Width="252.23666666666668" Height="146.59" IsExpanded="true" />
+    <ClassSocket Id="Objects.IVK.cls_LineState.cv_LineState_VU.cs_Inputs" Left="24" Top="58.039999999999992" Width="243.14333333333335" Height="74.59" IsExpanded="true" />
+  </ClassView>
+  <SocketType Id="d27a60f2-b2e0-4abd-bb98-66898d7029cb" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Attributes.Name" Left="24" Top="2" Width="79.696666666666673" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Attributes.Unit" Left="24" Top="31" Width="70.006666666666661" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Attributes.Title" Left="24" Top="60" Width="70.443333333333328" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_IVK_AI.st_Attributes.Unit2" Left="24" Top="90" Width="70.006666666666661" Height="24" />
+  </SocketType>
+  <Class Id="3c7edaa1-3b87-40de-816c-8939412028c3" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassView Id="Objects.IVK.cls_ModulAO_Signal_AO.ccv_IVK_Modul_AO_Signal_AO_VU" Left="233.1" Top="26" Width="330.66" Height="170.63">
+      <Socket Name="ClassSocket1" IsExpanded="true" />
+    </ClassView>
+    <SocketType Id="Objects.IVK.cls_ModulAO_Signal_AO.st_Attributes" Left="66" Top="26" Width="118.37333333333333" Height="124" />
+  </Class>
+  <ClassView Id="a0c21470-f322-4f97-8a85-7128fcd871f5" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.IVK.cls_ModulAO_Signal_AO.ccv_IVK_Modul_AO_Signal_AO_VU.ClassSocket1" Left="762.69333333333338" Top="26" Width="317.30666666666667" Height="146.59" IsExpanded="true" />
+  </ClassView>
+  <SocketType Id="8ad4034a-ee91-4ccc-b388-e5344db68508" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.IVK.cls_ModulAO_Signal_AO.st_Attributes.Name" Left="24" Top="2" Width="79.696666666666673" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_ModulAO_Signal_AO.st_Attributes.Connector" Left="24" Top="31" Width="103.13" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_ModulAO_Signal_AO.st_Attributes.Unit" Left="24" Top="60" Width="70.006666666666661" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_ModulAO_Signal_AO.st_Attributes.Title" Left="24" Top="89" Width="70.443333333333328" Height="24" />
+  </SocketType>
+  <Class Id="b1620692-4492-4faf-850a-e22e854af5d6" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassView Id="Objects.IVK.cls_ModulAI_Signal_AI.ccv_IVK_Modul_AI_Signal_AI_VU" Left="233.1" Top="26" Width="319.42" Height="72.63" />
+    <SocketType Id="Objects.IVK.cls_ModulAI_Signal_AI.st_Attributes" Left="66" Top="26" Width="118.37333333333333" Height="124" />
+  </Class>
+  <Class Id="b3766b25-cfd6-4dfc-b551-a6e828987a46" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassView Id="Objects.IVK.cls_Line.cv_Line_VU" Left="245.17666666666673" Top="26" Width="243.94" Height="108.63" />
+  </Class>
+  <ClassView Id="e68d6003-9322-4dbd-9571-89b7d245d5c0" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.IVK.cls_Line.cv_Line_VU.ClassSocket" Left="108" Top="26" Width="336.88333333333321" Height="100.59" IsExpanded="true" />
+  </ClassView>
+  <SocketType Id="66d4e002-a120-42b1-a4b5-c03852a7d7a0" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.IVK.cls_ModulDA_Signal_FI.st_Attributes.Name" Left="24" Top="2" Width="79.696666666666673" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_ModulDA_Signal_FI.st_Attributes.Connector" Left="24" Top="31" Width="103.13" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_ModulDA_Signal_FI.st_Attributes.Unit" Left="24" Top="60" Width="70.006666666666661" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_ModulDA_Signal_FI.st_Attributes.Title" Left="24" Top="89" Width="70.443333333333328" Height="24" />
+  </SocketType>
+  <Class Id="96972ae3-548b-4007-baf5-ba8686425e13" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.IVK.cls_PUDetectors.st_Outputs" Left="684" Top="26" Width="112.01666666666668" Height="36" />
+    <ClassView Id="Objects.IVK.cls_PUDetectors.cv_SU" Left="409" Top="50.039999999999992" Width="218.94" Height="130.63" />
+    <ClassView Id="Objects.IVK.cls_PUDetectors.cs_VU" Left="174" Top="79.039999999999992" Width="125.94" Height="44.63" />
+  </Class>
+  <SocketType Id="d345cca9-70c1-49d3-bf1c-0c55aab0efbf" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.IVK.cls_PUDetectors.st_Outputs.D1" Left="578" Top="68.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_PUDetectors.st_Outputs.D2" Left="578" Top="92.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_PUDetectors.st_Outputs.D3" Left="578" Top="116.03999999999999" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_PUDetectors.st_Outputs.D4" Left="578" Top="140.04" Width="137.08" Height="24" />
+  </SocketType>
+  <ClassView Id="d43a4ac0-0d45-4157-8484-3e49d4da1f68" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.IVK.cls_PUDetectors.cv_SU.cs_Outputs" Left="625.11666666666667" Top="26" Width="292.88333333333333" Height="146.59" IsExpanded="true" />
+  </ClassView>
+  <ClassView Id="f997d31c-c4ba-4fce-a032-6dbe2985b08c" OffsetX="0" OffsetY="0" Scale="1">
+    <ThisReference Id="Objects.IVK.cls_PUDetectors.cs_VU._cv_SU" Left="152.79999999999998" Top="26" Width="248.16666666666669" Height="72.63" />
+    <ClassSocket Id="Objects.IVK.cls_PUDetectors.cs_VU.cs_Outputs" Left="649.47" Top="52" Width="268.53" Height="40.59" />
+  </ClassView>
+  <Class Id="8c04e014-2a8b-4489-9f6c-d0858544588d" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.IVK.cls_SIKN_Summary.st_Outputs" Left="638.9" Top="31.960000000000008" Width="112.01666666666668" Height="36" />
+    <ClassView Id="Objects.IVK.cls_SIKN_Summary.cv_SU" Left="301.9" Top="26" Width="173.94" Height="427.62999999999988">
+      <Socket Name="ClassSocket" IsExpanded="true" />
+    </ClassView>
+    <ClassView Id="Objects.IVK.cls_SIKN_Summary.cv_VU" Left="66" Top="31.960000000000008" Width="209.57000000000002" Height="44.63" />
+  </Class>
+  <SocketType Id="f8e5a3bb-bdd1-4ffd-a0b8-0f9a727b06f4" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.Dens_Value" Left="24" Top="2" Width="108.20666666666668" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.Dens_Legal" Left="24" Top="31" Width="107.56" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.MassFlow_Value" Left="24" Top="60" Width="133.17333333333335" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.MassFlow_Legal" Left="24" Top="89" Width="132.52666666666667" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.VolFlow_Value" Left="24" Top="118" Width="122.73" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.VolFlow_Legal" Left="24" Top="147" Width="122.08333333333334" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.Mass_2h_Value" Left="25" Top="180.04" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.Vol_2h_Value" Left="26" Top="211.04" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.Mass_Day_Value" Left="25" Top="244.03999999999996" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.Vol_Day_Value" Left="26" Top="275.03999999999996" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.Mass_2h_Legal" Left="225" Top="183" Width="154.08333333333334" Height="22.999999999999943" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.Vol_2h_Legal" Left="225" Top="214" Width="154.08333333333334" Height="22.999999999999943" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.Mass_Day_Legal" Left="227" Top="245.99999999999997" Width="154.08333333333334" Height="22.999999999999943" />
+    <SocketParameter Id="Objects.IVK.cls_SIKN_Summary.st_Outputs.Vol_Day_Legal" Left="230" Top="278" Width="154.08333333333334" Height="22.999999999999943" />
+  </SocketType>
+  <ClassView Id="f592a3c0-1472-4b71-9df6-fdee2dd03783" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.IVK.cls_SIKN_Summary.cv_SU.ClassSocket" Left="108" Top="26" Width="178.88333333333333" Height="423.59000000000003" IsExpanded="true" />
+  </ClassView>
+  <ClassView Id="6aa0a644-a603-4050-afb9-ca4269ade8f2" OffsetX="0" OffsetY="0" Scale="1">
+    <ThisReference Id="Objects.IVK.cls_SIKN_Summary.cv_VU._cv_SU" Left="168.1" Top="26" Width="261.4666666666667" Height="410.63">
+      <Socket Name="ClassSocket" IsExpanded="true" />
+    </ThisReference>
+    <ClassSocket Id="Objects.IVK.cls_SIKN_Summary.cv_VU.ClassSocket" Left="680.17" Top="26" Width="281.83000000000004" Height="194.59" IsExpanded="true" />
+  </ClassView>
+  <Class Id="48ac7558-20e4-4378-a3fd-27ea9ea97818" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.IVK.cls_GH.st_Outputs" Left="672" Top="26" Width="112.01666666666668" Height="36" />
+    <ClassView Id="Objects.IVK.cls_GH.cv_SU" Left="237" Top="100.03999999999999" Width="125.94" Height="44.63" />
+    <ClassView Id="Objects.IVK.cls_GH.cv_AlphaServer" Left="483" Top="116.03999999999999" Width="125.94" Height="44.63" />
+  </Class>
+  <ClassView Id="b6e054ea-0d1f-4e4c-a9a4-55ff41c8cdc9" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.IVK.cls_GH.cv_SU.cs_Outputs" Left="816.11666666666667" Top="26" Width="145.88333333333333" Height="842.59" IsExpanded="true" />
+  </ClassView>
+  <SocketType Id="cfc0b9cb-4ff6-447b-8117-dffa4f5f6d98" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Factor_1" Left="44" Top="39.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Frequency_1" Left="186" Top="39.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Flow_1" Left="330" Top="39.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Factor_2" Left="45" Top="70.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Frequency_2" Left="187" Top="70.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Flow_2" Left="331" Top="70.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Factor_3" Left="45" Top="98.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Frequency_3" Left="187" Top="98.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Flow_3" Left="331" Top="98.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Factor_4" Left="46" Top="129.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Frequency_4" Left="188" Top="129.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Flow_4" Left="332" Top="129.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Factor_5" Left="45" Top="159.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Frequency_5" Left="187" Top="159.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Flow_5" Left="331" Top="159.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Factor_6" Left="46" Top="190.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Frequency_6" Left="188" Top="190.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Flow_6" Left="332" Top="190.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Factor_7" Left="46" Top="218.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Frequency_7" Left="188" Top="218.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Flow_7" Left="332" Top="218.04" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Factor_8" Left="45" Top="244.04000000000002" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Frequency_8" Left="187" Top="244.04000000000002" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Flow_8" Left="331" Top="244.04000000000002" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Factor_9" Left="46" Top="273.03999999999996" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Frequency_9" Left="188" Top="273.03999999999996" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Flow_9" Left="332" Top="273.03999999999996" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Factor_10" Left="45" Top="299.03999999999996" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Frequency_10" Left="187" Top="299.03999999999996" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Flow_10" Left="331" Top="299.03999999999996" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.EndZoneType" Left="102" Top="357.03999999999996" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.GHType" Left="102" Top="388.03999999999996" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_GH.st_Outputs.Count" Left="103" Top="420.03999999999996" Width="137.08" Height="24" />
+  </SocketType>
+  <ClassView Id="93d82a8f-9b4e-4152-967f-f926750a0160" OffsetX="0" OffsetY="0" Scale="1">
+    <ThisReference Id="Objects.IVK.cls_GH.cv_AlphaServer._cv_SU" Left="66.000000000000028" Top="26" Width="203.11666666666667" Height="72.63" />
+    <ClassSocket Id="Objects.IVK.cls_GH.cv_AlphaServer.cs_Outputs" Left="311.11666666666667" Top="52" Width="223.48000000000002" Height="40.59" />
+  </ClassView>
+  <SocketType Id="a105d7ca-f30a-4346-87b3-7301dbc629a5" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.IVK.cls_ModulDA_Signal_DI.st_Attributes.Name" Left="24" Top="2" Width="79.696666666666673" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_ModulDA_Signal_DI.st_Attributes.Connector" Left="24" Top="31" Width="103.13" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_ModulDA_Signal_DI.st_Attributes.Unit" Left="24" Top="60" Width="70.006666666666661" Height="24" />
+    <SocketParameter Id="Objects.IVK.cls_ModulDA_Signal_DI.st_Attributes.Title" Left="24" Top="89" Width="70.443333333333328" Height="24" />
+  </SocketType>
+  <Class Id="de01f779-a038-4abc-9cae-8dd7db7c8eac" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.IVK.cls_BIK_Summary.st_Outputs" Left="773" Top="34.960000000000008" Width="149.01666666666668" Height="361.00000000000006" />
+    <ClassView Id="Objects.IVK.cls_BIK_Summary.cv_SU" Left="66" Top="26" Width="225.94" Height="362.63">
+      <Socket Name="cs_Outputs" IsExpanded="true" />
+    </ClassView>
+    <ClassView Id="Objects.IVK.cls_BIK_Summary.cv_Server" Left="333" Top="27.039999999999992" Width="251.94" Height="355.63000000000005" />
+  </Class>
+  <SocketType Id="def6ccc5-daa4-4016-a1df-0b13e8501f96" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.IVK.cls_BIK_Summary.st_Outputs.Dens" Left="48" Top="27.039999999999992" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_BIK_Summary.st_Outputs.Dens15" Left="48" Top="56.403636363636352" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_BIK_Summary.st_Outputs.Dens20" Left="48" Top="85.767272727272712" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_BIK_Summary.st_Outputs.DensTemp" Left="48" Top="115.13090909090907" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_BIK_Summary.st_Outputs.ViscDynamic" Left="48" Top="144.49454545454546" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_BIK_Summary.st_Outputs.ViscKinematic" Left="48" Top="173.85818181818183" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_BIK_Summary.st_Outputs.Flow" Left="48" Top="203.22181818181821" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_BIK_Summary.st_Outputs.WaterMass" Left="48" Top="232.58545454545458" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_BIK_Summary.st_Outputs.WaterVolume" Left="48" Top="261.94909090909096" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_BIK_Summary.st_Outputs.Press" Left="48" Top="291.31272727272733" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_BIK_Summary.st_Outputs.Sulphur" Left="48" Top="320.6763636363637" Width="186.08" Height="25" />
+    <SocketParameter Id="Objects.IVK.cls_BIK_Summary.st_Outputs.ViscTemp" Left="48" Top="350.04000000000008" Width="186.08" Height="25" />
+  </SocketType>
+  <ClassView Id="89896628-239c-4b83-a6c7-722b59a02e0d" OffsetX="0" OffsetY="0" Scale="1">
+    <ThisReference Id="Objects.IVK.cls_BIK_Summary.cv_Server._cv_SU" Left="66.000000000000028" Top="26" Width="253.70000000000002" Height="362.63">
+      <Socket Name="cs_Outputs" IsExpanded="true" />
+    </ThisReference>
+    <ClassSocket Id="Objects.IVK.cls_BIK_Summary.cv_Server.cs_Outputs" Left="361.70000000000005" Top="50.039999999999964" Width="274.06333333333339" Height="338.59000000000003" IsExpanded="true" />
+  </ClassView>
+  <ClassView Id="4d796f3d-fd62-4d0d-9ca0-780a21431596" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.IVK.cls_BIK_Summary.cv_SU.cs_Outputs" Left="108" Top="26" Width="176.88333333333333" Height="338.59000000000003" IsExpanded="true" />
+  </ClassView>
+  <Type Id="ea0d2a12-8a2a-4ef1-9c84-9e6f8854d6f1" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.IVK.cls_Modul_AI.st_Outputs" Left="66" Top="26" Width="138.04666666666668" Height="290.00000000000006" />
+    <Type Id="Objects.IVK.cls_Modul_AI.cv_Modul_AI_SU" Left="249.45" Top="26" Width="236.0866666666667" Height="72.63" />
+    <Type Id="Objects.IVK.cls_Modul_AI.cv_Modul_AI_VU" Left="249.45" Top="119.63" Width="286.16666666666669" Height="72.63" />
+  </Type>
+</Diagrams>

@@ -1,0 +1,458 @@
+<root>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max3.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_3_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max2.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_2_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max1.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_1_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min1.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_1_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min2.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_2_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min3.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_3_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ValueImit.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ImitInput</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Gist.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_3_Level</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max4.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_4_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max5.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_5_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max6.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_6_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min4.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_4_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min5.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_5_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min6.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_6_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max3_param.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_3_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max2_param.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_2_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max1_param.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_1_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min1_param.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_1_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min2_param.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_2_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min3_param.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_3_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max4_param.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_4_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max5_param.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_5_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max6_param.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_6_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min4_param.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_4_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min5_param.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_5_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min6_param.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_6_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ElAllowedRange_Bottom.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ElAllowedRange_Bottom</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ElAllowedRange_Top.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ElAllowedRange_Top</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ElRange_Bottom.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ElRange_Bottom</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ElRange_Top.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ElRange_Top</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ValRange_Bottom.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ValRange_Bottom</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ValRange_Top.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ValRange_Top</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.CmdIn.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.CmdIn</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.EnableFiltering.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.EnableFiltering</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.K.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.K</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.NeedNormMsg.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.NeedNormMsg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ImitIn.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ImitIn</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ValueTechIn.writeValue</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ElInput</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ValueTechIn</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ElInput</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ValueImit</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ImitInput</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max3</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_3_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max2</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_2_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max1</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_1_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min1</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_1_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min2</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_2_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min3</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_3_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Gist</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_3_Level</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max4</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_4_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max5</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_5_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max6</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_6_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min4</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_4_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min5</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_5_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min6</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_6_Ust</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ElAllowedRange_Bottom</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ElAllowedRange_Bottom</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ElAllowedRange_Top</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ElAllowedRange_Top</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ElRange_Bottom</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ElRange_Bottom</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ElRange_Top</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ElRange_Top</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ValRange_Bottom</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ValRange_Bottom</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ValRange_Top</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ValRange_Top</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.CmdIn</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.CmdIn</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.EnableFiltering</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.EnableFiltering</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.K</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.K</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.NeedNormMsg</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.NeedNormMsg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.ImitIn</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.ImitIn</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max3_param</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_3_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max2_param</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_2_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max1_param</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_1_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min1_param</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_1_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min2_param</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_2_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min3_param</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_3_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max4_param</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_4_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max5_param</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_5_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Max6_param</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Maxs_6_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min4_param</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_4_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min5_param</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_5_Params</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.2.TechValue.Ust.Min6_param</node-path>
+    <namespace>http://br-automation.com/OpcUa/PLC/PV/</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>::IsOIP:OIP_Electric_01.Mins_6_Params</nodeId>
+  </item>
+</root>

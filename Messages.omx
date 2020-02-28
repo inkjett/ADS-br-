@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<omx migration="17">
+  <namespace name="Objects.Messages" uuid="c3a89df7-7cac-404f-aba4-56c3c139efcc">
+    <type name="DataBuffer" uuid="2425e750-42a0-4b5f-b797-b0c8a2c12d44" access-level="private">
+      <socket-type name="Params" uuid="049a4993-5fa3-4d88-b127-623179e83121" access-level="private">
+        <socket-parameter name="Param_2_1" uuid="97d43a42-bf8d-4ad6-9f16-305af5737f19" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value2.Param1" />
+        </socket-parameter>
+        <socket-parameter name="Param_2_2" uuid="e14a1aba-e19c-49ea-9c42-4bc2dc844cf3" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value2.Param2" />
+        </socket-parameter>
+        <socket-parameter name="Param_3_1" uuid="9ed1c9aa-1749-4599-87e0-858f41ce5115" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value3.Param1" />
+        </socket-parameter>
+        <socket-parameter name="Param_3_2" uuid="f93a6a51-1689-4709-aa74-603356630d71" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value3.Param2" />
+        </socket-parameter>
+        <socket-parameter name="Param_4_2" uuid="a8d3320f-a2a2-430d-89ba-5d3f7728ba19" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value4.Param2" />
+        </socket-parameter>
+        <socket-parameter name="Param_4_1" uuid="baf29c74-911c-46f2-af75-a01accef1abd" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value4.Param1" />
+        </socket-parameter>
+        <socket-parameter name="Param_5_2" uuid="1d45d848-0ec1-4000-9b5d-f6a7ac8dbbdc" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value5.Param2" />
+        </socket-parameter>
+        <socket-parameter name="Param_5_1" uuid="4a0f34b3-e9eb-4b43-9303-2c9e73e6782c" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value5.Param1" />
+        </socket-parameter>
+        <socket-parameter name="Param_6_2" uuid="315bd36d-4eac-4766-ba0f-13b597055976" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value6.Param2" />
+        </socket-parameter>
+        <socket-parameter name="Param_6_1" uuid="d502f047-5c5a-4519-8240-09d348e2f5ce" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value6.Param1" />
+        </socket-parameter>
+        <socket-parameter name="Param_7_2" uuid="7dbd6a9d-09f1-4973-944d-e6b3e26a32b0" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value7.Param2" />
+        </socket-parameter>
+        <socket-parameter name="Param_7_1" uuid="283951d9-8936-4f42-a519-fa138f3c674c" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value7.Param1" />
+        </socket-parameter>
+        <socket-parameter name="Param_8_2" uuid="2e1130c5-aad5-40c9-8702-8c0a6b34205f" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value8.Param2" />
+        </socket-parameter>
+        <socket-parameter name="Param_8_1" uuid="bf0ce032-2bca-44d4-acbe-4f884a8c177c" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value8.Param1" />
+        </socket-parameter>
+        <socket-parameter name="Param_9_2" uuid="47c9176b-2f28-425c-88f4-353dbe6243a5" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value9.Param2" />
+        </socket-parameter>
+        <socket-parameter name="Param_9_1" uuid="4cb10b73-ff11-49aa-aa78-a408898edb89" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value9.Param1" />
+        </socket-parameter>
+        <socket-parameter name="Param_10_2" uuid="83b6c7c7-2905-4947-8c4b-0434b0d2dcdd" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value10.Param2" />
+        </socket-parameter>
+        <socket-parameter name="Param_10_1" uuid="d4bbebd8-e248-4d13-b5ac-cc61a5a70470" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value10.Param1" />
+        </socket-parameter>
+        <socket-parameter name="Param_1_1" uuid="f2e9034c-234f-41a3-8e31-72f2a716af7f" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value1.Param1" />
+        </socket-parameter>
+        <socket-parameter name="Param_1_2" uuid="3cd3c911-e12c-4ecc-812c-26b6e55b9358" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value1.Param2" />
+        </socket-parameter>
+        <socket-parameter name="Param_11_1" uuid="018ead22-0db6-42c8-8f47-f5daf0b182d6" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value11.Param1" />
+        </socket-parameter>
+        <socket-parameter name="Param_11_2" uuid="4eb21f9b-60c8-4ffb-85c9-1dc07dac1add" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value11.Param2" />
+        </socket-parameter>
+      </socket-type>
+      <socket-type name="DataBuffer_Values" uuid="0d0aca88-29ca-4e36-84bd-4c8ae2c954ee" access-level="private">
+        <socket-parameter name="Value1" uuid="edcc2bef-ad4a-4cc5-b482-86ab83582c4a" type="uint32" />
+        <socket-parameter name="Value2" uuid="41459beb-214f-4ff1-a827-e1ab3212b353" type="uint32" />
+        <socket-parameter name="Value3" uuid="27580010-12bc-4119-958c-691d6c730b64" type="uint32" />
+        <socket-parameter name="Value4" uuid="f2618f9f-dc79-4198-a21c-c9408cc15c0a" type="uint32" />
+        <socket-parameter name="Value5" uuid="5458265f-e59f-426b-b18b-7ca8eca6a014" type="uint32" />
+        <socket-parameter name="Value6" uuid="a46facd1-5f27-4ee6-bcc2-97034e528483" type="uint32" />
+        <socket-parameter name="Value7" uuid="92aba14d-12b9-4c75-aafa-0dbf58ede30d" type="uint32" />
+        <socket-parameter name="Value8" uuid="1f0fb607-5664-4e44-8646-cac7503694bc" type="uint32" />
+        <socket-parameter name="Value9" uuid="1d02b1dc-851a-4b73-8d38-4256bbb47da2" type="uint32" />
+        <socket-parameter name="Value10" uuid="fd7db483-9843-4591-b1b6-ae1be843a0c3" type="uint32" />
+        <socket-parameter name="Value11" uuid="531c7df5-8757-45ce-bdd9-5b5c875cc957" type="uint32" />
+      </socket-type>
+      <socket-type name="Commands" uuid="e74cf622-96c0-43fd-8658-c0cccf1738b6" access-level="private">
+        <socket-parameter name="CMD" uuid="feb7dae6-7f51-4aa1-a1b8-3a031b7e248b" type="uint16" />
+      </socket-type>
+      <type name="PLC_View" uuid="7bfbf2e3-c381-4b1d-97a6-da1b8e73994d" aspect="Aspects.asp_SU" access-level="private" original="DataBuffer">
+        <socket name="CMD" uuid="17ee74f5-e406-4eda-9390-c74369f385f5" direction="in" type="DataBuffer.Commands" access-level="private" access-scope="local">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="cmd" />
+        </socket>
+        <socket name="Values" uuid="225c7843-b252-4fbe-af6b-8cdb10dda842" direction="out" type="DataBuffer.DataBuffer_Values" access-level="private" access-scope="local" />
+        <socket name="Params" uuid="572179d8-d438-4c39-9a41-6a48274c0592" direction="out" type="DataBuffer.Params" access-level="private" access-scope="local" />
+      </type>
+      <type name="IOS_View" uuid="d412adc4-2c87-40d2-92ad-988eee120612" aspect="Aspects.asp_AlphaServer" access-level="private" original="DataBuffer">
+        <bind source="_CMD" target="_PLC_View.CMD" action="set_all" />
+        <bind source="_PLC_View.Values" target="Values" action="set_all" />
+        <bind source="_PLC_View.Params" target="Params" action="set_all" />
+        <ref name="_PLC_View" uuid="915b40da-635d-4390-8d9d-3494ee333bfc" const-access="False" access-level="private" access-scope="local" type="DataBuffer.PLC_View" aspected="true" />
+        <socket name="_CMD" uuid="5e4a0309-ba88-4c89-8c9d-04aebd805c9d" direction="in" type="DataBuffer.Commands" access-level="public" access-scope="local" />
+        <socket name="Values" uuid="c846a876-b167-4dc9-ada2-6b3de7543960" direction="out" type="DataBuffer.DataBuffer_Values" access-level="public" access-scope="local" />
+        <socket name="Params" uuid="b34c5005-b63e-4aa8-a759-ee6df54d63e2" direction="out" type="DataBuffer.Params" access-level="public" access-scope="local" />
+        <handler name="on_Last" uuid="7652f092-c3fd-40fa-81fb-d59b35f2bbfd" source-code="_CMD.CMD = 2;">
+          <trigger on="Values.Value10" cause="update" />
+        </handler>
+      </type>
+      <socket-type name="Temp" uuid="c2c9ead6-998e-4de5-8948-a90500d40611" access-level="private">
+        <socket-parameter name="Param_1_2" uuid="b9640439-348f-41f1-a79f-32f9594b7990" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value1.Param2" />
+        </socket-parameter>
+        <socket-parameter name="Param_1_1" uuid="452916d9-23e0-4fef-8131-6ad917dfeffa" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="value1.Param1" />
+        </socket-parameter>
+      </socket-type>
+    </type>
+    <type name="SQL_Messages" uuid="b9e42b10-1425-4691-b942-1df4a431483d" access-level="private">
+      <type name="IOS_View" uuid="ac5fb36b-3ee4-4d16-8a0c-54b91462a5cc" aspect="Aspects.asp_AlphaServer" access-level="private" original="SQL_Messages">
+        <socket name="Messages" uuid="d241cb40-6eb8-4736-9e23-e6c13437fac8" direction="out" type="SQL_Messages.Events" access-level="public" access-scope="local" />
+        <ref name="_SnapShot" uuid="e64dcba4-63f0-469e-b092-105c610a4ac2" type="Objects.Services_objects.SnapshotModule.IOS_SnapShot" const-access="False" aspected="false" access-level="private" access-scope="local" />
+        <handler name="On_Messages_LastID" uuid="a10a06a7-de37-4ff3-861e-7f48f85e50ab" source-code="_SnapShot.Control.Generate=true;">
+          <trigger on="Messages.LastID" cause="update" />
+        </handler>
+        <ref name="_PLC_View" uuid="1a68324a-7f86-47b0-a943-82fca3184720" type="SQL_Messages.PLC_View" const-access="False" aspected="true" access-level="private" access-scope="local" />
+        <parameter name="NewMessage" uuid="1d82b5bc-0f24-465a-9bef-0e969e80e856" type="uint16" direction="out" access-level="public" access-scope="local" />
+        <ref name="_SQLConnector" uuid="badc18a0-2fd2-4a4b-ab17-9dcfccd013d9" type="Objects.Services_objects.SQL Connector Module.IOS_View" const-access="False" aspected="false" access-level="private" access-scope="local" />
+        <handler name="On_NewMessage" uuid="df919f34-a1d8-4d75-811d-42c5c5aacacc">
+          <property name="source-code">/*if (LastIDForQuery.Q&lt;192) 
+{
+LastIDForQuery.Q=192;
+_SQLConnector.Query.MakeQuery_Command1=true;
+Messages.vqt_quality=216;
+}
+else 
+{
+_SQLConnector.Query.MakeQuery_Command1=true;
+Messages.vqt_quality=216;
+}*/
+
+if (!ReadInProgress)
+{
+	CountIdIn=LastIDForQuery;
+	commit _SQLConnector.Query.MakeQuery_Command78=VQ(true,192);
+	ReadInProgress=true;
+}</property>
+          <trigger on="NewMessage" cause="update" />
+        </handler>
+        <handler name="On_Messages_vqt_value" uuid="f4c39f81-9e47-4a17-b9b8-00cbc6d6df28">
+          <property name="source-code">commit Messages.vqt_changemask=7;
+commit Messages.vqt_changemask=0;</property>
+          <trigger on="Messages.vqt_value" cause="change" />
+        </handler>
+        <parameter name="LastIDForQuery" uuid="abb2ce35-7ed6-4e66-9ba6-3e75521ce5ff" type="uint32" direction="in" access-level="public" access-scope="local">
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </parameter>
+        <handler name="On_Messages_TempTimeStamp" uuid="4a329c27-570a-498d-ba11-fea9d42c8015">
+          <property name="source-code">x:uint8 = Messages.TempTimeStamp%1000;
+Messages.vqt_timestamp64 = (Messages.TempTimeStamp/1000+11644473600)*10000000+x*10000;</property>
+          <trigger on="Messages.TempTimeStamp" cause="update" />
+        </handler>
+        <handler name="Handler" uuid="8a8aafea-21df-4fc8-b4a6-ff80d4ec69f3">
+          <property name="source-code">/*tempString :string = Str.Concat("\\", Messages.TempValue);
+tempString = Str.Concat(UserParams.Params.CurrentUser,tempString);
+tempString = Str.Concat("\\",tempString);
+tempString = Str.Concat(UserParams.Params.ARM,tempString);
+Messages.vqt_value = Str.Concat(Str.Concat(Str.Insert("&lt;Subcondition Type='Dynamic' Message=''  Sound", 38, tempString), Str.Insert("='snd' Severity='' Enabled='1' SoundEnabled='1' ", 17, Str.ToString(Messages.TempSeverity))),(Str.Insert("AckRequired='' /&gt;",13,Str.ToString(Messages.TempAckRequired))));
+*/
+Messages.vqt_value = "&lt;Subcondition Type='Dynamic' Message='"+ UserParams.Params.CurrentUser + ". " + UserParams.Params.ARM + ". " + Messages.TempValue +"' Sound='snd' Severity='" + Str.ToString(Messages.TempSeverity) + "' Enabled='1' SoundEnabled='1' AckRequired='" + Str.ToString(Messages.TempAckRequired) +"' /&gt;";</property>
+          <trigger on="Messages.TempAckRequired" cause="update" />
+        </handler>
+        <ref name="UserParams" uuid="dde00913-cebe-487e-9be3-08ebcab26727" type="Objects.Messages.Params.IOS_View" const-access="false" aspected="false" access-level="public" access-scope="local" />
+        <parameter name="CountId" uuid="0b428cf3-8463-438e-b038-83d1d66bc3d2" type="int64" direction="out" access-level="public" access-scope="local" />
+        <parameter name="CountIdIn" uuid="ce9c67d9-f04e-461f-8dcb-167aba8b5bb8" type="uint32" direction="in" access-level="public" access-scope="local" />
+        <parameter name="ReadInProgress" uuid="7cbad7a9-cff3-4b11-ae8c-adebdeb530fd" type="bool" direction="out" access-level="public" access-scope="local">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="false" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="192" />
+        </parameter>
+        <handler name="On_CountId" uuid="fbe545e1-ea49-4698-a55d-283287849ec9">
+          <property name="source-code">if (CountId!=0)
+{
+	if (CountId &lt; 4096)
+	{
+		Query1Limit=CountId;
+		commit LastIDForQuery.Quality=192;
+		_SQLConnector.Query.MakeQuery_Command1=VQ(true,192);
+	}
+	else
+	{
+		Query1Limit=4096;
+		commit LastIDForQuery.Q = 192;
+		_SQLConnector.Query.MakeQuery_Command1=VQ(true,192);
+	}
+}
+else
+{
+	ReadInProgress = false;
+}</property>
+          <trigger on="CountId" cause="update" />
+        </handler>
+        <parameter name="Query1Limit" uuid="2958db3f-b44e-4a25-a3f5-e423744928a4" type="int64" direction="in" access-level="private" access-scope="local" />
+        <bind source="_PLC_View.Events" target="Messages" action="set_all" />
+        <bind source="Messages.LastID" target="LastIDForQuery" action="set_value" />
+        <bind source="LastIDForQuery" target="_PLC_View.LastIDForQuery" action="set_all" />
+        <bind source="_PLC_View.NewMessage" target="NewMessage" action="set_all" />
+        <bind source="CountIdIn" target="_PLC_View.CountIdIn" action="set_all" />
+        <bind source="Query1Limit" target="_PLC_View.Query1Limit" action="set_all" />
+        <bind source="_PLC_View.CountId" target="CountId" action="set_all" />
+        <handler name="On_LastIDForQuery" uuid="7bc0909c-f010-45ac-97e1-d835b51aaba2">
+          <trigger on="LastIDForQuery" />
+          <property name="source-code">temp: int8 = CountIdIn+Query1Limit;
+if (LastIDForQuery==temp)
+{
+	commit ReadInProgress=false;
+	NewMessage.Q=200;
+}
+if (FirstQuery)
+	{
+		FirstQuery=false;
+		ReadInProgress=false;
+	}</property>
+        </handler>
+        <parameter name="FirstQuery" uuid="2134539a-04dd-44f7-9200-8449edd811f7" type="bool" direction="out">
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="192" />
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="true" />
+        </parameter>
+      </type>
+      <socket-type name="Events" uuid="45e5f79c-4886-4857-833e-87497c96b081" access-level="private">
+        <socket-parameter name="Msg" uuid="3c1701f5-1b08-436a-9c50-ce5e9bb2c786" type="string">
+          <attribute type="unit.AlphaServer.Attributes.WriteVQTEnable" />
+          <attribute type="AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"1","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"","Severity":1,"Type":1}],"Type":1}}</property>
+          </attribute>
+        </socket-parameter>
+        <socket-parameter name="vqt_changemask" uuid="59eb0f13-4907-42fe-84fc-eefd748962bb" type="uint8">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Msg.vqt_changemask" />
+        </socket-parameter>
+        <socket-parameter name="vqt_quality" uuid="881204cc-0791-4e92-872f-d2160eacc6d0" type="int16">
+          <attribute type="AlphaServer.Attributes.InitialValue" value="192" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Msg.vqt_quality" />
+        </socket-parameter>
+        <socket-parameter name="vqt_timestamp64" uuid="a9f56dd6-5779-41a5-a22f-931b4bf1498a" type="uint64">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Msg.vqt_timestamp64" />
+        </socket-parameter>
+        <socket-parameter name="vqt_value" uuid="4ae523ca-5231-4d06-80fd-d2a7794bbaca" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Msg.vqt_value" />
+        </socket-parameter>
+        <socket-parameter name="LastID" uuid="84d6cd42-d345-4532-9d32-4ba41682a277" type="uint32">
+          <attribute type="AlphaServer.Attributes.InitialValue" value="0" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="TempTimeStamp" uuid="e897b3c1-f057-42eb-bc26-1fb799a089db" type="uint64" />
+        <socket-parameter name="TempValue" uuid="1807f15e-a326-476a-8b4f-9d3e339df8c7" type="string" />
+        <socket-parameter name="Login" uuid="18205f6c-4b75-46f1-b9b3-e3c32c3220b4" type="string">
+          <attribute type="AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"1","Subconditions":[{"AckStrategy":1,"Message":"DynMessage","Severity":100,"Type":1}],"Type":1}}</property>
+          </attribute>
+        </socket-parameter>
+        <socket-parameter name="TempSeverity" uuid="4fdbe538-e82f-44a8-9da2-d6b2f5ed0295" type="uint16" />
+        <socket-parameter name="TempAckRequired" uuid="11ab71ec-3280-4795-9f85-2c77b69bb608" type="uint16" />
+      </socket-type>
+      <type name="PLC_View" uuid="dd6dbc2d-7981-4302-917a-cf092768f0f4" aspect="Aspects.asp_SU" access-level="private" original="SQL_Messages">
+        <parameter name="NewMessage" uuid="771056e5-c377-4006-8eb0-74f77c690279" type="uint16" direction="in" access-level="private" access-scope="local" />
+        <socket name="Events" uuid="fe3d83fe-f603-4859-81f2-b43bac08ef80" direction="out" type="SQL_Messages.Events" access-level="private" access-scope="local" />
+        <parameter name="LastIDForQuery" uuid="0f2a14b5-3701-4b57-9bb7-78c4952745c7" type="uint32" direction="in" access-level="public" access-scope="local" />
+        <parameter name="CountIdIn" uuid="2e65b378-b4da-4e9a-bbdf-80906297f546" type="uint32" direction="in" access-level="private" access-scope="local" />
+        <parameter name="Query1Limit" uuid="9bea4e66-8dd5-4df5-a9f2-c7cddd514c22" type="int64" direction="in" access-level="private" access-scope="local" />
+        <parameter name="CountId" uuid="fef935aa-6ed8-4fbc-8b6f-c184c70145ab" type="int64" direction="out" access-level="private" access-scope="local" />
+      </type>
+    </type>
+    <type name="VU_Message" uuid="ec9efabc-09fa-4d8b-89e6-e653bd875cc8">
+      <type name="cv_VU_Message" uuid="c0e29931-f4c7-4e1f-8c2c-ad800e4bd9a4" aspect="Aspects.asp_AlphaServer" original="Objects.Messages.VU_Message">
+        <socket name="cs_Messages" uuid="7980435e-77a1-43c9-bb2c-66054cfce755">
+          <socket-parameter name="Message" uuid="73299330-d975-4295-a8c5-ee41c5688cf6" type="string">
+            <attribute type="unit.AlphaServer.Attributes.Alarm">
+              <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Severity":2,"Type":1}],"Type":1}}</property>
+            </attribute>
+            <attribute type="unit.System.Attributes.Description" value="Безопасность. " />
+          </socket-parameter>
+        </socket>
+      </type>
+    </type>
+    <type name="UserParams" uuid="1519f552-873b-4815-8949-427be8fd1863" access-level="private">
+      <type name="IOS_View" uuid="d696753b-a3bb-4e1b-97cf-2e8e6e64d2c7" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.Messages.UserParams">
+        <socket name="Params" uuid="e5285d69-9794-4315-91f8-a396858c0849" direction="out" type="Objects.Messages.UserParams.Parms" access-level="private" access-scope="local" />
+      </type>
+      <socket-type name="Parms" uuid="33bc3a86-47d8-4c06-9431-158f7dc93b46" access-level="private">
+        <socket-parameter name="CurrentUser" uuid="d533ec23-aeec-4601-bbe2-06c10ccaaaa4" type="string">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="Прочие" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+        <socket-parameter name="ARM" uuid="80292c4b-8dc7-4931-bd0a-0a280f4e4963" type="string">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="АРМ1" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+      </socket-type>
+    </type>
+    <type name="Params" uuid="81b82aea-6cd5-4b7f-ae51-e07d724ef161" access-level="private">
+      <socket-type name="Params" uuid="91215a04-10b9-47b2-87af-91273da90cd0" access-level="private">
+        <socket-parameter name="CurrentUser" uuid="854902f3-e26e-4b0b-acd8-f11da5ef2f65" type="string">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="Прочие" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+        <socket-parameter name="ARM" uuid="ee6fd9fb-8192-4d6e-a400-17dd86cc49dd" type="string">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="АРМ" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+      </socket-type>
+      <type name="IOS_View" uuid="fbf8ff0b-f5c0-422e-9602-01e2ec31e431" aspect="Aspects.asp_AlphaServer" original="Objects.Messages.Params" access-level="private">
+        <socket name="Params" uuid="e775c659-095e-4a9b-8b3a-d2642ede51b3" direction="out" type="Objects.Messages.Params.Params" access-level="private" access-scope="local" />
+        <socket name="CMD" uuid="c028484c-de27-4160-9eff-69737146338b" direction="in" type="Objects.Messages.Params.CMD" access-level="private" access-scope="local" />
+      </type>
+      <socket-type name="CMD" uuid="271d8095-ee77-4d9c-bc42-2fc7bd86c586" access-level="private">
+        <socket-parameter name="AlarmSound" uuid="468fd02a-d60e-4b1c-9693-506d48af54e4" type="bool" />
+      </socket-type>
+    </type>
+    <type name="SQL_Gen_PLC" uuid="0e1403d3-b967-4164-aec4-7c071c68fff5" access-level="private">
+      <type name="PLC_View" uuid="4cec5dcb-f57d-43e6-af2f-b7e77dec2bc8" aspect="Aspects.asp_SU" original="Objects.Messages.SQL_Gen_PLC" access-level="private">
+        <ref name="_SQL_View" uuid="a3de167c-1144-46d9-b2da-2ea4905fce23" type="Objects.Messages.SQL_Gen_PLC.SQL_View" const-access="false" aspected="true" />
+        <socket name="Events" uuid="e4060d94-4ce7-4b7f-8983-2cd34868ec3d" direction="in" type="Objects.Messages.SQL_Gen_PLC.Events" />
+        <bind source="Events" target="_SQL_View.Events" />
+      </type>
+      <socket-type name="Events" uuid="b8f7f795-c94a-4985-94e6-401608b94ba7" access-level="private">
+        <socket-parameter name="MsgText" uuid="a0064830-bf34-48f7-a250-3c5352d14826" type="string">
+          <attribute type="unit.AlphaServer.Attributes.WriteVQTEnable" />
+          <attribute type="AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"1","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"","Severity":1,"Type":1}],"Type":1}}</property>
+          </attribute>
+        </socket-parameter>
+        <socket-parameter name="DateTimeLong" uuid="6983f33d-84a9-4a74-9740-570220abaf58" type="uint64" />
+        <socket-parameter name="MsgTime" uuid="a5dcad09-6f75-4812-83cc-93eca89c734a" type="string" />
+        <socket-parameter name="ObjType" uuid="26d7ed15-d377-4325-8c4b-82c3ccc5051e" type="uint16">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="5" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+        <socket-parameter name="ObjNum" uuid="be82781a-4578-4e5a-8f3e-282b16ec0d75" type="uint16">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="5" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+        <socket-parameter name="MsgNum" uuid="72903142-746d-4812-9c80-05e77f4f479a" type="uint16">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="22" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+        <socket-parameter name="MsgArg1" uuid="b1116b3c-02d9-4629-9c69-8591e7610fba" type="uint16">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="0" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+        <socket-parameter name="MsgArg2" uuid="667c9243-e44b-457a-90c4-94814e203774" type="uint16">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="0" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+        <socket-parameter name="MsgProp_1" uuid="b629e360-40a6-4d83-8de9-859d26b4134c" type="uint16">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="2" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+        <socket-parameter name="MsgProp_2" uuid="efa344c4-945c-44d6-9675-b2939db1c00a" type="uint16">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="0" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+        <socket-parameter name="MsgProp" uuid="e46d2d04-bf42-497a-add2-379a58c1dc6f" type="uint16">
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="1" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+      </socket-type>
+      <type name="SQL_View" uuid="2ad92ccc-540f-4850-8a0c-e8e352942122" aspect="Aspects.asp_SQL_Imitator" original="Objects.Messages.SQL_Gen_PLC" access-level="private">
+        <socket name="Events" uuid="7981a3d6-86f5-4580-8e41-84ffa1aff367" direction="in" type="Objects.Messages.SQL_Gen_PLC.Events" access-level="private" access-scope="local" />
+      </type>
+    </type>
+  </namespace>
+</omx>

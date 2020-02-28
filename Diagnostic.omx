@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<omx migration="17">
+  <namespace name="Objects.Diagnostic" uuid="877a84af-a3bb-4134-9408-392ef8bd2e17">
+    <type name="cls_diag_ARM" uuid="01ea81a9-f115-4625-9257-2f42a5ca7ad1" access-level="private">
+      <type name="cvv_ARM_VU" uuid="2ada3271-eb51-4775-8080-af6dc8366e11" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.Diagnostic.cls_diag_ARM">
+        <bind source="_cvv_ARM_SU.cs_OutParams" target="cs_OutParams" action="set_all" />
+        <ref name="_cvv_ARM_SU" uuid="1bb4791c-e61a-4562-a678-9f74b2f615c2" const-access="False" access-level="private" access-scope="local" type="Objects.Diagnostic.cls_diag_ARM.cvv_ARM_Appl" aspected="true" />
+        <socket name="cs_OutParams" uuid="c4ef9043-9702-48b4-8dfa-6dd772d342e9" direction="out" type="Objects.Diagnostic.cls_diag_ARM.st_OutParams" access-level="public" access-scope="local" />
+        <socket name="cs_Calc" uuid="703e72b2-c3fe-43f4-a066-5b24e27b9588" direction="out" type="Objects.Diagnostic.cls_diag_ARM.st_Calc" access-level="private" access-scope="local" />
+        <formula target="cs_Calc.DiscFullSize_C">
+          <property name="source-code">(TypeConvert.ToFloat(cs_OutParams.hrStorageSize_C) * TypeConvert.ToFloat(cs_OutParams.hrStorageAllocationUnits_C))/Math.Pow(1024, 3)</property>
+        </formula>
+        <formula target="cs_Calc.DiscUsed_C">
+          <property name="source-code">(TypeConvert.ToFloat(cs_OutParams.hrStorageUsed_C) * TypeConvert.ToFloat(cs_OutParams.hrStorageAllocationUnits_C))/Math.Pow(1024, 3)</property>
+        </formula>
+        <formula target="cs_Calc.DiscFreeSpace_C" source-code="cs_Calc.DiscFullSize_C - cs_Calc.DiscUsed_C" />
+        <formula target="cs_Calc.FullSize_PhysicalMemory">
+          <property name="source-code">(TypeConvert.ToFloat(cs_OutParams.hrStorageSize_PhysicalMemory) * TypeConvert.ToFloat(cs_OutParams.hrStorageAllocationUnits_PhysicalMemory))/Math.Pow(1024, 3)</property>
+        </formula>
+        <formula target="cs_Calc.Used_PhysicalMemory">
+          <property name="source-code">(TypeConvert.ToFloat(cs_OutParams.hrStorageUsed_PhysicalMemory) * TypeConvert.ToFloat(cs_OutParams.hrStorageAllocationUnits_PhysicalMemory))/Math.Pow(1024, 3)</property>
+        </formula>
+        <formula target="cs_Calc.Free_PhysicalMemory" source-code="cs_Calc.FullSize_PhysicalMemory - cs_Calc.Used_PhysicalMemory"></formula>
+      </type>
+      <type name="cvv_ARM_Appl" uuid="550f35b7-f356-4048-97bd-d800865fe737" aspect="Aspects.asp_Applications" access-level="private" original="Objects.Diagnostic.cls_diag_ARM">
+        <socket name="cs_OutParams" uuid="8481140c-26b5-4698-b849-015e7c12ee2f" direction="out" type="Objects.Diagnostic.cls_diag_ARM.st_OutParams" access-level="private" access-scope="local" />
+      </type>
+      <socket-type name="st_OutParams" uuid="19cb4678-557f-42ba-8773-6d44e29f107a" access-level="private">
+        <socket-parameter name="hrStorageSize_C" uuid="a975f7b5-fdbc-40ff-91bb-386981cb9cc0" type="int32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="C.hrStorageSize" />
+        </socket-parameter>
+        <socket-parameter name="hrStorageAllocationUnits_C" uuid="b446c1f9-fe54-459c-b5e2-ccd3447194d3" type="int32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="C.hrStorageAllocationUnits" />
+        </socket-parameter>
+        <socket-parameter name="hrStorageUsed_C" uuid="4164e2f1-5944-45fe-bc7d-a96b703bbfe1" type="int32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="C.hrStorageUsed" />
+        </socket-parameter>
+        <socket-parameter name="hrStorageSize_PhysicalMemory" uuid="14d7d407-ba12-4603-8044-9c92b76f3e01" type="int32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="PhysicalMemory.hrStorageSize" />
+        </socket-parameter>
+        <socket-parameter name="hrStorageAllocationUnits_PhysicalMemory" uuid="0e1697f4-b666-4b41-8f29-1c53e805d579" type="int32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="PhysicalMemory.hrStorageAllocationUnits" />
+        </socket-parameter>
+        <socket-parameter name="hrStorageUsed_PhysicalMemory" uuid="352179f7-6942-48b1-8c21-67b16729363d" type="int32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="PhysicalMemory.hrStorageUsed" />
+        </socket-parameter>
+      </socket-type>
+      <socket-type name="st_Calc" uuid="cd830bce-6088-4c56-aaee-78833a19ddee" access-level="private">
+        <socket-parameter name="DiscFullSize_C" uuid="f32de010-4e29-4c5e-9a22-c24cd6d6ef9a" type="float32">
+          <attribute type="unit.System.Attributes.Description" value="Полный размер диска С, Гб" />
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="C.DiscFullSize" />
+        </socket-parameter>
+        <socket-parameter name="DiscUsed_C" uuid="9a002924-1e93-449c-b1bd-9d5241036a0a" type="float32">
+          <attribute type="unit.System.Attributes.Description" value="Используемый размер диска С, Гб" />
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="C.DiscUsed" />
+        </socket-parameter>
+        <socket-parameter name="DiscFreeSpace_C" uuid="cdc6e78f-4c9c-4d2e-b26f-712268ef9a44" type="float32">
+          <attribute type="unit.System.Attributes.Description" value="Свободное пространство на диске С, Гб" />
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="C.DiscFreeSpace" />
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"Severity":1,"Type":4},{"AckStrategy":1,"IsEnabled":true,"Message":".Свободное место на диске восстановлено (более 5Гб)","Severity":3,"Type":5},{"AckStrategy":1,"IsEnabled":true,"Message":".Свободное место на диске заканчивается (менее 5Гб)","Severity":1,"Type":6,"Value":5}],"Type":3}}</property>
+          </attribute>
+        </socket-parameter>
+        <socket-parameter name="FullSize_PhysicalMemory" uuid="fe335149-aac7-4257-96d3-267bf793eace" type="float32">
+          <attribute type="unit.System.Attributes.Description" value="Количество физической памяти, Гб" />
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="PhysicalMemory.FullSize" />
+        </socket-parameter>
+        <socket-parameter name="Used_PhysicalMemory" uuid="8e2355c1-b109-4c8c-9edb-ab6230890e55" type="float32">
+          <attribute type="unit.System.Attributes.Description" value="Используемая физическая память, Гб" />
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="PhysicalMemory.Used" />
+        </socket-parameter>
+        <socket-parameter name="Free_PhysicalMemory" uuid="6869360e-e39d-481a-955b-2084c432c4fe" type="float32">
+          <attribute type="unit.System.Attributes.Description" value="Свободное пространство на диске С, Гб" />
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="PhysicalMemory.Free" />
+        </socket-parameter>
+      </socket-type>
+    </type>
+    <type name="cls_diag_Switch" uuid="02f9b70c-3ddc-4945-854a-6703864cfb9f">
+      <socket-type name="st_Outputs" uuid="5d57eb4a-be19-4195-9cb0-3e88c6594978">
+        <socket-parameter name="StatePort_1" uuid="58da2e84-35e8-4f6e-b871-2098cfe214bb" type="int32">
+          <attribute type="unit.System.Attributes.Description" value="Состояние порта №1" />
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Порт1. Есть связь","Severity":3,"Value":1},{"AckStrategy":1,"IsEnabled":true,"Message":". Порт1. Нет связи","Severity":1,"Value":2}]}}</property>
+          </attribute>
+          <attribute type="unit.System.Attributes.Description" value="Порт 1" />
+        </socket-parameter>
+        <socket-parameter name="StatePort_2" uuid="cd7c3d22-e0be-483e-bdc5-4f30543ba5ba" type="int32">
+          <attribute type="unit.System.Attributes.Description" value="Состояние порта №2" />
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Порт2. Есть связь","Severity":3,"Value":1},{"AckStrategy":1,"IsEnabled":true,"Message":". Порт2. Нет связи","Severity":1,"Value":2}]}}</property>
+          </attribute>
+          <attribute type="unit.System.Attributes.Description" value="Порт 2" />
+        </socket-parameter>
+        <socket-parameter name="StatePort_3" uuid="56ef2594-cef5-4078-8179-26890a946c51" type="int32">
+          <attribute type="unit.System.Attributes.Description" value="Состояние порта №3" />
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Порт3. Есть связь","Severity":3,"Value":1},{"AckStrategy":1,"IsEnabled":true,"Message":". Порт3. Нет связи","Severity":1,"Value":2}]}}</property>
+          </attribute>
+          <attribute type="unit.System.Attributes.Description" value="Порт 3" />
+        </socket-parameter>
+        <socket-parameter name="StatePort_4" uuid="bd00485f-bca4-44f5-ad37-c8feb563419c" type="int32">
+          <attribute type="unit.System.Attributes.Description" value="Состояние порта №4" />
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Порт4. Есть связь","Severity":3,"Value":1},{"AckStrategy":1,"IsEnabled":true,"Message":". Порт4. Нет связи","Severity":1,"Value":2}]}}</property>
+          </attribute>
+          <attribute type="unit.System.Attributes.Description" value="Порт 4" />
+        </socket-parameter>
+        <socket-parameter name="StatePort_5" uuid="d6cae4b6-4b44-4b25-9e8d-ff5abc4126dd" type="int32">
+          <attribute type="unit.System.Attributes.Description" value="Состояние порта №5" />
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Порт5. Есть связь","Severity":3,"Value":1},{"AckStrategy":1,"IsEnabled":true,"Message":". Порт5. Нет связи","Severity":1,"Value":2}]}}</property>
+          </attribute>
+          <attribute type="unit.System.Attributes.Description" value="Порт 5" />
+        </socket-parameter>
+        <socket-parameter name="StatePort_6" uuid="c125f8d5-e019-4c25-819f-64300b0e0db6" type="int32">
+          <attribute type="unit.System.Attributes.Description" value="Состояние порта №6" />
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Порт6. Есть связь","Severity":3,"Value":1},{"AckStrategy":1,"IsEnabled":true,"Message":". Порт6. Нет связи","Severity":1,"Value":2}]}}</property>
+          </attribute>
+          <attribute type="unit.System.Attributes.Description" value="Порт 6" />
+        </socket-parameter>
+        <socket-parameter name="StatePort_7" uuid="fad76000-ff12-4712-a896-4df3ab5dc253" type="int32">
+          <attribute type="unit.System.Attributes.Description" value="Состояние порта №7" />
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Порт7. Есть связь","Severity":3,"Value":1},{"AckStrategy":1,"IsEnabled":true,"Message":". Порт7. Нет связи","Severity":1,"Value":2}]}}</property>
+          </attribute>
+          <attribute type="unit.System.Attributes.Description" value="Порт 7" />
+        </socket-parameter>
+        <socket-parameter name="StatePort_8" uuid="ac1bfb72-861b-4894-8895-625245348414" type="int32">
+          <attribute type="unit.System.Attributes.Description" value="Состояние порта №8" />
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Порт8. Есть связь","Severity":3,"Value":1},{"AckStrategy":1,"IsEnabled":true,"Message":". Порт8. Нет связи","Severity":1,"Value":2}]}}</property>
+          </attribute>
+          <attribute type="unit.System.Attributes.Description" value="Порт 8" />
+        </socket-parameter>
+        <socket-parameter name="StatePort_9" uuid="7ed69020-0749-49c2-8f02-c5657070a073" type="int32">
+          <attribute type="unit.System.Attributes.Description" value="Состояние порта №9" />
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Порт9. Есть связь","Severity":3,"Value":1},{"AckStrategy":1,"IsEnabled":true,"Message":". Порт9. Нет связи","Severity":1,"Value":2}]}}</property>
+          </attribute>
+          <attribute type="unit.System.Attributes.Description" value="Порт 9" />
+        </socket-parameter>
+        <socket-parameter name="StatePort_10" uuid="81014934-052a-44f3-83e9-9a4d522ceb06" type="int32">
+          <attribute type="unit.System.Attributes.Description" value="Состояние порта №10" />
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Порт10. Есть связь","Severity":3,"Value":1},{"AckStrategy":1,"IsEnabled":true,"Message":". Порт10. Нет связи","Severity":1,"Value":2}]}}</property>
+          </attribute>
+          <attribute type="unit.System.Attributes.Description" value="Порт 10" />
+        </socket-parameter>
+      </socket-type>
+      <type name="cvv_InzerSwitch_SU" uuid="633027e3-2a0a-43fa-8140-e801ef7f6a4a" aspect="Aspects.asp_SU" original="Objects.Diagnostic.cls_diag_Switch">
+        <socket name="cs_Outputs" uuid="a6841e17-9697-46a2-abd7-b74a2256e897" type="Objects.Diagnostic.cls_diag_Switch.st_Outputs">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="Ports" />
+        </socket>
+      </type>
+      <type name="cvv_InzerSwitch_VU" uuid="5800f932-6c1d-4169-afe7-fbb3fc918679" access-level="private" aspect="Aspects.asp_AlphaServer" original="Objects.Diagnostic.cls_diag_Switch">
+        <ref name="_cvv_InzerSwitch_SU" uuid="c18498e4-a5e5-4d12-9a80-25b47c766d01" const-access="False" type="Objects.Diagnostic.cls_diag_Switch.cvv_InzerSwitch_SU" aspected="true" />
+        <socket name="cs_Outputs" uuid="6c5f461c-fcf6-4c52-bc31-47ef0702e664" direction="out" access-level="public" type="Objects.Diagnostic.cls_diag_Switch.st_Outputs">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="Ports" />
+        </socket>
+        <bind source="_cvv_InzerSwitch_SU.cs_Outputs" target="cs_Outputs" />
+      </type>
+    </type>
+    <type name="cls_IntegrityControl_IVK" uuid="6d069dac-5f00-4883-b2fa-4337c20c86a5">
+      <socket-type name="st_IVK_Outputs" uuid="42e3305c-9034-4a95-9cbc-aff72d050c41">
+        <socket-parameter name="CRC" uuid="7d93f306-e2eb-4d15-ba5d-b9e646f38c1e" type="string"></socket-parameter>
+        <socket-parameter name="IsInited" uuid="99519419-dc07-4d8b-86fb-e73250c37d4b" type="string" />
+        <socket-parameter name="Name" uuid="ef4e7e43-847a-4dcd-be13-f90f727d57c2" type="string" />
+        <socket-parameter name="Version" uuid="515a10b0-20d4-411b-b713-c6d166bd0491" type="string" />
+      </socket-type>
+      <type name="cv_IVK" uuid="11b14779-459e-4ea9-83e3-7f4de2cd8d3e" aspect="Aspects.asp_SU" original="Objects.Diagnostic.cls_IntegrityControl_IVK">
+        <socket name="cs_IVK_Uutputs" uuid="746f8516-6e0e-4390-b8ca-bd3ce3eb57be" type="Objects.Diagnostic.cls_IntegrityControl_IVK.st_IVK_Outputs" />
+      </type>
+      <type name="cv_AlphaServer" uuid="d743e127-4817-4197-9d6c-ed9a255c6d57" aspect="Aspects.asp_AlphaServer" original="Objects.Diagnostic.cls_IntegrityControl_IVK">
+        <ref name="_cv_IVK" uuid="2b3003c8-b6aa-410d-bc56-33316192ae23" const-access="False" type="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_IVK" aspected="true" />
+        <socket name="cs_IVK_Outputs" uuid="4c1dc561-a917-4359-968c-3ba58e610826" direction="out" access-level="public" type="Objects.Diagnostic.cls_IntegrityControl_IVK.st_IVK_Outputs" />
+        <bind source="_cv_IVK.cs_IVK_Uutputs" target="cs_IVK_Outputs" />
+        <handler name="On_cs_IVK_Uutputs_CRC" uuid="dacc159e-1697-40bf-9181-b702a1a1eea3">
+          <trigger on="cs_IVK_Outputs.CRC" />
+          <property name="source-code">// Строка букв, соответствующих шестнадцатеричным цифрам
+hexChars: string = "0123456789ABCDEF";
+decCRC: uint4 = Str.ToUint4(cs_IVK_Outputs.CRC,0);
+//Количество разрядов
+numDigits: uint4 = 8;
+
+// Результирующая строка, которую вернём
+result: string = "";
+
+/*
+	Будем подсчитывать длину строки. Можно было бы, конечно, каждый раз вызывать Str.Length( result ),
+	но обращение к локальной переменной должно проходить быстрее, поскольку нет вызова нативного кода.
+	(Правда, у нас пока что ведь только интерпретация байт-кода, разница в общей массе вряд ли будет
+	сколь-нибудь ощутимой.)
+*/
+len: uint4 = 0;
+
+// До тех пор, пока мы ещё не достигли предела по количеству разрядов, переводим
+while( len &lt; numDigits )
+{
+	// Берём младшую шестнадцатеричную цифру и получаем соответствующую ей букву
+	d: decCRC &amp; 0xf;
+	c: Str.SubString( hexChars, TypeConvert.ToInt4( d ), 1 );
+
+	// Добавляем букву спереди к результирующей строке
+	result = Str.Concat( c, result );
+
+	// Переходим к следующей цифре
+	decCRC &gt;&gt;= 4;
+
+	// Увеличиваем длину строки (очень хочется использовать оператор инкремента "++", но он пока не работает)
+	len = len + 1;
+}
+
+// Возвращаем результирующую строку
+CRC_Hex = result;</property>
+        </handler>
+        <parameter name="CRC_Hex" uuid="7f7be429-b220-4da0-ac07-8351c7b74f0c" type="string" />
+        <parameter name="CRC_Hex_Etalon" uuid="7b67c877-fd0c-4c0d-b8bc-ad878e9e7397" type="string" direction="out" access-level="private" access-scope="local"></parameter>
+        <ref name="Reference" uuid="b34d31d9-ec55-4ecf-8013-590451455da6" type="Objects.Services_objects.SnapshotModule.IOS_SnapShot" />
+        <parameter name="SaveCRC_ToEtalon" uuid="89b43b9c-a129-4439-a397-b28e19dc3b61" type="bool" direction="out" access-level="private" access-scope="local">
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Подана команда обновления эталонной контрольной суммы","Severity":4,"Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <handler name="On_SaveCRC_ToEtalon" uuid="54d84bc8-a05a-4953-9d80-b202ade1b6cb" source-code="CRC_Hex_Etalon=CRC_Hex;">
+          <trigger on="SaveCRC_ToEtalon" cause="update" />
+        </handler>
+        <handler name="On_CRC_Hex_Etalon" uuid="9d38c6b7-0b84-4dd1-b6b2-d20cc8031bab" source-code="Reference.Control.Generate=true;">
+          <trigger on="CRC_Hex_Etalon" />
+        </handler>
+        <parameter name="ChangeCRC" uuid="d1f9bb06-2b4e-445a-a7ac-6bf56c80e0c5" type="bool" direction="out" access-level="private" access-scope="local">
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Контрольная сумма не равна эталону. Значение установлено","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":". Контрольная сумма ПО не равна эталону. Значение снято","Severity":3,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <formula target="ChangeCRC" source-code="!Str.Equals(CRC_Hex, CRC_Hex_Etalon, true)" />
+      </type>
+    </type>
+    <type name="cls_IntegrityControl_PLC" uuid="0ab95844-c15f-4eb7-b435-b4e2e4bf827a" access-level="private">
+      <type name="ccv_PLC_VU" uuid="54cf61b6-34b7-4ce2-b93e-aa96414553a7" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.Diagnostic.cls_IntegrityControl_PLC">
+        <bind source="_ccv_PLC_SU.cs_iControl_Output" target="cs_iControl_Output" action="set_all" />
+        <handler name="On_Message" uuid="474bd42b-36b2-45e8-8c02-3cf5d82d1ffa">
+          <property name="source-code">P1: string = Str.ToString(MessParameter1);
+P2: string = Str.ToString(MessParameter2);
+Message.Messages.Selected.Message=Str.Replace(Message.Messages.Selected.Message,"#1#",P1);
+Message.Messages.Selected.Message=Str.Replace(Message.Messages.Selected.Message,"#2#",P2);</property>
+          <trigger on="Message" cause="update" />
+        </handler>
+        <parameter name="Message" uuid="4a4f73c0-2865-4981-a140-b1c4306cbce9" type="uint32" direction="out" access-level="private" access-scope="local">
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Полная прогрузка контроллера","Severity":2,"Value":2},{"AckStrategy":1,"IsEnabled":true,"Message":". Загружен","Severity":3,"Value":3},{"AckStrategy":1,"IsEnabled":true,"Message":". Программа модифицирована","Severity":1,"Value":4},{"AckStrategy":1,"IsEnabled":true,"Message":". Модуль неисправен","Severity":1,"Value":10},{"AckStrategy":1,"IsEnabled":true,"Message":". Модуль исправен","Severity":3,"Value":11},{"AckStrategy":1,"IsEnabled":true,"Message":". Нет связи","Severity":1,"Value":12},{"AckStrategy":1,"IsEnabled":true,"Message":". Есть связь","Severity":3,"Value":13}]}}</property>
+          </attribute>
+          <attribute type="unit.AlphaServer.Attributes.DataBuffer.Parameter" />
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="Message.CodeMessage" />
+        </parameter>
+        <parameter name="MessParameter1" uuid="59d1711e-0a4c-44b0-978a-c48efaaee042" type="float32" direction="out" access-level="private" access-scope="local">
+          <attribute type="unit.AlphaServer.Attributes.DataBuffer.Parameter" value="Param1" />
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="Message.Param1" />
+        </parameter>
+        <parameter name="MessParameter2" uuid="72670268-8199-471e-a17a-85c74959e57e" type="float32" direction="out" access-level="private" access-scope="local">
+          <attribute type="unit.AlphaServer.Attributes.DataBuffer.Parameter" value="Param2" />
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="Message.Param2" />
+        </parameter>
+        <ref name="_ccv_PLC_SU" uuid="8a105141-2151-4c9e-bd08-9ff6adcf0b42" const-access="False" access-level="private" access-scope="local" type="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_SU" aspected="true" />
+        <socket name="cs_iControl_Output" uuid="509a2459-be0b-490d-a68c-70c76f18e112" direction="out" type="Objects.Diagnostic.cls_IntegrityControl_PLC.st_iControl_Output" access-level="public" access-scope="local" />
+        <parameter name="CRCtoHEX" uuid="333518a7-2739-43ab-a512-c4f9fea7e3ee" type="string" direction="out" access-level="private" access-scope="local">
+          <attribute type="unit.System.Attributes.Description" value="Контрольная сумма (hex)" />
+        </parameter>
+        <handler name="on_CRCChange" uuid="b8b5fc01-4e7a-4633-8a6b-978b8fb27505">
+          <property name="source-code">// Строка букв, соответствующих шестнадцатеричным цифрам
+hexChars: string = "0123456789ABCDEF";
+decCRC: uint4 = cs_iControl_Output.CRC;
+//Количество разрядов
+numDigits: uint4 = 8;
+
+// Результирующая строка, которую вернём
+result: string = "";
+
+/*
+	Будем подсчитывать длину строки. Можно было бы, конечно, каждый раз вызывать Str.Length( result ),
+	но обращение к локальной переменной должно проходить быстрее, поскольку нет вызова нативного кода.
+	(Правда, у нас пока что ведь только интерпретация байт-кода, разница в общей массе вряд ли будет
+	сколь-нибудь ощутимой.)
+*/
+len: uint4 = 0;
+
+// До тех пор, пока мы ещё не достигли предела по количеству разрядов, переводим
+while( len &lt; numDigits )
+{
+	// Берём младшую шестнадцатеричную цифру и получаем соответствующую ей букву
+	d: decCRC &amp; 0xf;
+	c: Str.SubString( hexChars, TypeConvert.ToInt4( d ), 1 );
+
+	// Добавляем букву спереди к результирующей строке
+	result = Str.Concat( c, result );
+
+	// Переходим к следующей цифре
+	decCRC &gt;&gt;= 4;
+
+	// Увеличиваем длину строки (очень хочется использовать оператор инкремента "++", но он пока не работает)
+	len = len + 1;
+}
+
+// Возвращаем результирующую строку
+CRCtoHEX = result;
+</property>
+          <trigger on="cs_iControl_Output.CRC" cause="update" />
+        </handler>
+        <parameter name="CRCtoHEX_Etalon" uuid="a665f66f-3265-4ebf-9cf4-79d288c7b5f1" type="string" direction="out" access-level="private" access-scope="local" />
+        <parameter name="SaveCRC_ToEtalon" uuid="4f2e4fb6-18c7-443b-92e9-c12280fee345" type="bool" direction="out" access-level="private" access-scope="local">
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Подана команда обновления контрольной суммы ПО контроллера управления","Severity":4,"Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <handler name="On_SaveCRC_ToEtalon" uuid="2977495c-f7bf-471c-915f-c2d45a8fdfb1" source-code="CRCtoHEX_Etalon=CRCtoHEX;">
+          <trigger on="SaveCRC_ToEtalon" cause="update" />
+        </handler>
+        <ref name="Reference" uuid="67a24752-7148-4043-9c66-bfd9e86a3de2" const-access="False" access-level="private" access-scope="local" type="Objects.Services_objects.SnapshotModule.IOS_SnapShot" />
+        <handler name="On_CRCtoHEX_Etalon" uuid="b0e260a5-00c1-43bb-984e-ac99306d5cda" source-code="Reference.Control.Generate=true;">
+          <trigger on="CRCtoHEX_Etalon" cause="update" />
+        </handler>
+        <parameter name="ChangeCRC" uuid="02190a12-fb5c-4860-94db-ffba9682a5fe" type="bool" direction="out" access-level="private" access-scope="local">
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Подана команда обновления контрольной суммы ПО контроллера управления","Severity":4,"Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <formula target="ChangeCRC" source-code="!Str.Equals(CRCtoHEX, CRCtoHEX_Etalon, true)" />
+      </type>
+      <type name="ccv_PLC_SU" uuid="64230328-3d00-498e-83fb-b87f83a2f107" aspect="Aspects.asp_SU" access-level="private" original="Objects.Diagnostic.cls_IntegrityControl_PLC">
+        <socket name="cs_iControl_Output" uuid="090c8f8a-5ade-49ab-94e5-b3427956f988" direction="out" type="Objects.Diagnostic.cls_IntegrityControl_PLC.st_iControl_Output" access-level="public" access-scope="local" />
+      </type>
+      <socket-type name="st_iControl_Output" uuid="695ee3db-3947-42fd-944a-469c97a22b6e">
+        <socket-parameter name="CRC" uuid="b957ba1f-770e-46d5-9f2d-6f7332783def" type="uint32" />
+      </socket-type>
+    </type>
+    <type name="cls_IntegrityControl_ARM" uuid="f00c1d3e-f41e-425f-891c-47e83da9a039" access-level="private">
+      <socket-type name="st_Outputs" uuid="7215db1b-5060-46de-8ff7-69830ae7860f" access-level="private">
+        <socket-parameter name="ChangeFilesCount" uuid="a27cc581-1a8d-47df-a547-488b62542d19" type="uint32">
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Модуль контроля целостности ПО АРМ. Контрольная сумма не равна эталону. Значение установлено","Severity":1,"Type":4,"Value":0.5},{"AckStrategy":1,"IsEnabled":true,"Message":". Модуль контроля целостности ПО АРМ. Контрольная сумма не равна эталону. Значение снято","Severity":3,"Type":5,"Value":0},{"AckStrategy":1,"Severity":1,"Type":6}],"Type":3}}</property>
+          </attribute>
+        </socket-parameter>
+        <socket-parameter name="EtalonVersion" uuid="58368b87-a4a6-4275-9e91-62050af0acbe" type="string" />
+      </socket-type>
+      <type name="cv_Appl" uuid="ae16bea1-e2f8-4a5c-9eb0-3b43b38ce803" aspect="Aspects.asp_Applications" access-level="private" original="Objects.Diagnostic.cls_IntegrityControl_ARM">
+        <socket name="cs_Outputs" uuid="069c9636-e5eb-4693-8ad1-224bd6a543ff" direction="out" type="Objects.Diagnostic.cls_IntegrityControl_ARM.st_Outputs" access-level="private" access-scope="local" />
+      </type>
+      <type name="cv_IOS" uuid="e63f425d-4aa6-4971-abeb-eef451fe463a" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.Diagnostic.cls_IntegrityControl_ARM">
+        <ref name="_cv_Device" uuid="21b954a9-1a3e-43d9-b733-6d323009ae74" const-access="False" access-level="private" access-scope="local" type="Objects.Diagnostic.cls_IntegrityControl_ARM.cv_Appl" aspected="true" />
+        <socket name="cs_Outputs" uuid="1686ae9e-2ddc-40ad-9619-77c2bc7fc80c" direction="out" type="Objects.Diagnostic.cls_IntegrityControl_ARM.st_Outputs" access-level="public" access-scope="local" />
+        <bind source="_cv_Device.cs_Outputs" target="cs_Outputs" action="set_all" />
+        <handler name="On_cs_Outputs_EtalonVersion" uuid="dd2855e0-4eb3-4d9a-8964-fc7137080841" source-code="ChangeEtalon=!(ChangeEtalon);">
+          <trigger on="cs_Outputs.EtalonVersion" cause="update" />
+        </handler>
+        <var name="ChangeEtalon" uuid="fc2457cb-14af-46b4-814a-e8a411f57e54" type="bool" access-level="private" access-scope="local">
+          <attribute type="unit.AlphaServer.Attributes.Alarm">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":". Модуль контроля целостности ПО АРМ. Изменена\/обновлена эталонная контрольная сумма","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":". Модуль контроля целостности ПО АРМ. Изменена эталонная контрольная сумма","Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="192" />
+        </var>
+      </type>
+    </type>
+  </namespace>
+</omx>

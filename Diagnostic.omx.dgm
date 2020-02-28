@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Diagrams>
+  <Type Id="2ada3271-eb51-4775-8080-af6dc8366e11" OffsetX="0" OffsetY="0" Scale="1">
+    <Reference Id="Objects.Diagnostic.cls_diag_ARM.cvv_ARM_VU._cvv_ARM_SU" Left="177.4" Top="26" Width="314.89666666666665" Height="72.63" />
+    <Socket Id="Objects.Diagnostic.cls_diag_ARM.cvv_ARM_VU.cs_OutParams" Left="779.56999999999994" Top="26" Width="306.43" Height="40.59" />
+    <Socket Id="Objects.Diagnostic.cls_diag_ARM.cvv_ARM_VU.cs_Calc" Left="812.60666666666668" Top="71.59" Width="273.39333333333332" Height="40.59" />
+  </Type>
+  <Type Id="01ea81a9-f115-4625-9257-2f42a5ca7ad1" OffsetX="0" OffsetY="0" Scale="0.8">
+    <Type Id="Objects.Diagnostic.cls_diag_ARM.cvv_ARM_VU" Left="177.4" Top="26" Width="267.12333333333333" Height="98.63" />
+    <Type Id="Objects.Diagnostic.cls_diag_ARM.cvv_ARM_Appl" Left="177.4" Top="145.63" Width="277.76" Height="72.63" />
+    <SocketType Id="Objects.Diagnostic.cls_diag_ARM.st_OutParams" Left="476.15999999999997" Top="26" Width="273.05" Height="156" />
+    <SocketType Id="Objects.Diagnostic.cls_diag_ARM.st_Calc" Left="770.21" Top="26" Width="180.70000000000002" Height="156" />
+  </Type>
+  <SocketType Id="19cb4678-557f-42ba-8773-6d44e29f107a" OffsetX="0" OffsetY="0" Scale="0.8">
+    <SocketParameter Id="Objects.Diagnostic.cls_ARM.st_OutParams.hrStorageSize_C" Left="24" Top="2" Width="133.06333333333333" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_ARM.st_OutParams.hrStorageAllocationUnits_C" Left="24" Top="31" Width="192.20666666666668" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_ARM.st_OutParams.hrStorageUsed_C" Left="24" Top="60" Width="138.76" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_ARM.st_OutParams.hrStorageSize_PhysicalMemory" Left="24" Top="89" Width="211.90666666666667" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_ARM.st_OutParams.hrStorageAllocationUnits_PhysicalMemory" Left="24" Top="118" Width="271.05" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_ARM.st_OutParams.hrStorageUsed_PhysicalMemory" Left="24" Top="147" Width="217.60333333333335" Height="24" />
+  </SocketType>
+  <SocketType Id="cd830bce-6088-4c56-aaee-78833a19ddee" OffsetX="0" OffsetY="0" Scale="0.8">
+    <SocketParameter Id="Objects.Diagnostic.cls_ARM.st_Calc.DiscFullSize_C" Left="24" Top="2" Width="121.81333333333333" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_ARM.st_Calc.DiscUsed_C" Left="24" Top="31" Width="109.04666666666668" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_ARM.st_Calc.DiscFreeSpace_C" Left="24" Top="60" Width="136.30666666666667" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_ARM.st_Calc.FullSize_PhysicalMemory" Left="24" Top="89" Width="178.70000000000002" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_ARM.st_Calc.Used_PhysicalMemory" Left="24" Top="118" Width="165.93333333333334" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_ARM.st_Calc.Free_PhysicalMemory" Left="24" Top="147" Width="161.84" Height="24" />
+  </SocketType>
+  <Class Id="02f9b70c-3ddc-4945-854a-6703864cfb9f" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.Diagnostic.cls_InzerSwitch.st_Outputs" Left="66" Top="26" Width="120.47" Height="256" />
+    <ClassView Id="Objects.Diagnostic.cls_InzerSwitch.cvv_InzerSwitch_SU" Left="217.04999999999998" Top="26" Width="251.39000000000001" Height="72.63" />
+    <ClassView Id="Objects.Diagnostic.cls_InzerSwitch.cvv_InzerSwitch_VU" Left="217.04999999999998" Top="119.63" Width="253.55" Height="72.63" />
+  </Class>
+  <SocketType Id="5d57eb4a-be19-4195-9cb0-3e88c6594978" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.Diagnostic.cls_diag_Switch.st_Outputs.StatePort_1" Left="24" Top="2" Width="107.5" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_diag_Switch.st_Outputs.StatePort_2" Left="24" Top="31" Width="107.5" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_diag_Switch.st_Outputs.StatePort_3" Left="24" Top="60" Width="107.5" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_diag_Switch.st_Outputs.StatePort_4" Left="24" Top="89" Width="107.5" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_diag_Switch.st_Outputs.StatePort_5" Left="24" Top="118" Width="107.5" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_diag_Switch.st_Outputs.StatePort_6" Left="24" Top="147" Width="107.5" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_diag_Switch.st_Outputs.StatePort_7" Left="24" Top="176" Width="107.5" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_diag_Switch.st_Outputs.StatePort_8" Left="24" Top="205" Width="107.5" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_diag_Switch.st_Outputs.StatePort_9" Left="24" Top="234" Width="107.5" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_diag_Switch.st_Outputs.StatePort_10" Left="24" Top="263" Width="113.97" Height="24" />
+  </SocketType>
+  <ClassSocket Id="c4ef9043-9702-48b4-8dfa-6dd772d342e9" OffsetX="0" OffsetY="0" Scale="1" />
+  <ClassSocket Id="703e72b2-c3fe-43f4-a066-5b24e27b9588" OffsetX="0" OffsetY="0" Scale="1" />
+  <ClassView Id="5800f932-6c1d-4169-afe7-fbb3fc918679" OffsetX="91" OffsetY="0" Scale="1">
+    <ThisReference Id="Objects.Diagnostic.cls_InzerSwitch.cvv_InzerSwitch_VU._cvv_InzerSwitch_SU" Left="159.85" Top="26" Width="342.7833333333333" Height="72.63" />
+    <ClassSocket Id="Objects.Diagnostic.cls_InzerSwitch.cvv_InzerSwitch_VU.cs_Outputs" Left="667.72333333333336" Top="26" Width="298.27666666666664" Height="290.59000000000003" IsExpanded="true" />
+  </ClassView>
+  <Namespace Id="877a84af-a3bb-4134-9408-392ef8bd2e17" OffsetX="0" OffsetY="0" Scale="1">
+    <Class Id="Objects.Diagnostic.cls_ARM" Left="40" Top="40" Width="116.17" Height="118" />
+    <Class Id="Objects.Diagnostic.cls_InzerSwitch" Left="197.17000000000002" Top="40" Width="146.73333333333335" Height="96" />
+    <Class Id="Objects.Diagnostic.cls_IntegrityControl_ARM" Left="405" Top="41.039999999999992" Width="201.63" Height="130" />
+    <Class Id="Objects.Diagnostic.cls_IntegrityControl_IVK" Left="701" Top="37.039999999999992" Width="221.63" Height="131" />
+    <Class Id="Objects.Diagnostic.cls_IntegrityControl_PLC" Left="34" Top="205.00000000000003" Width="193.29000000000008" Height="97" />
+  </Namespace>
+  <ApplicationClass Id="0ab1d1e2-460f-4329-a5fd-2684f6a563c8" OffsetX="0" OffsetY="0" Scale="1" />
+  <ClassView Id="bc9d6039-1d90-4890-b494-cdc26ddbeb65" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.Diagnostic.cls_IntegrityControl.cv_Device.cs_Outputs" Left="845.11666666666667" Top="26" Width="119.88333333333334" Height="40.59" />
+  </ClassView>
+  <SocketType Id="a3b45352-f9fb-42d0-bcf1-3cb2a6818cc4" OffsetX="0" OffsetY="0" Scale="1" />
+  <ClassSocket Id="d8dabfb4-dbcb-441a-b216-f4f7523eaba4" OffsetX="0" OffsetY="0" Scale="1" />
+  <ClassView Id="6bd5b7e6-b2aa-46cd-934c-82da7c33e859" OffsetX="0" OffsetY="0" Scale="1" />
+  <Type Id="f00c1d3e-f41e-425f-891c-47e83da9a039" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.Diagnostic.cls_IntegrityControl_ARM.st_Outputs" Left="66" Top="26" Width="147.64333333333335" Height="58" />
+    <Type Id="Objects.Diagnostic.cls_IntegrityControl_ARM.cv_Appl" Left="229.5" Top="105" Width="275.89333333333332" Height="72.63" />
+    <Type Id="Objects.Diagnostic.cls_IntegrityControl_ARM.cv_IOS" Left="229.5" Top="198.63" Width="275.89333333333332" Height="72.63" />
+  </Type>
+  <Type Id="e63f425d-4aa6-4971-abeb-eef451fe463a" OffsetX="0" OffsetY="0" Scale="1">
+    <Reference Id="Objects.Diagnostic.cls_IntegrityControl_ARM.cv_IOS._cv_Device" Left="66" Top="32" Width="337.08333333333337" Height="145.63000000000005">
+      <Socket Name="cs_Outputs" IsExpanded="true" />
+    </Reference>
+    <Socket Id="Objects.Diagnostic.cls_IntegrityControl_ARM.cv_IOS.cs_Outputs" Left="751.84666666666658" Top="26" Width="348.15333333333336" Height="136.59" IsExpanded="true" />
+    <Handler Id="Objects.Diagnostic.cls_IntegrityControl_ARM.cv_IOS.On_cs_Outputs_EtalonVersion" Left="424.08333333333337" Top="26" Width="212.25" Height="44" />
+    <Variable Id="Objects.Diagnostic.cls_IntegrityControl_ARM.cv_IOS.ChangeEtalon" Left="424.08333333333337" Top="96" Width="153.40498035430909" Height="22" />
+  </Type>
+  <ClassView Id="550f35b7-f356-4048-97bd-d800865fe737" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.Diagnostic.cls_ARM.cvv_ARM_Appl.cs_OutParams" Left="684.35" Top="26" Width="280.65" Height="194.59" IsExpanded="true" />
+  </ClassView>
+  <SocketType Id="7215db1b-5060-46de-8ff7-69830ae7860f" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.Diagnostic.cls_IntegrityControl_ARM.st_Outputs.ChangeFilesCount" Left="24" Top="2" Width="143.61" Height="24" />
+  </SocketType>
+  <ClassView Id="ae16bea1-e2f8-4a5c-9eb0-3b43b38ce803" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.Diagnostic.cls_IntegrityControl_ARM.cv_Appl.cs_Outputs" Left="853.84666666666658" Top="26" Width="348.15333333333336" Height="74.59" IsExpanded="true" />
+  </ClassView>
+  <ClassSocket Id="1686ae9e-2ddc-40ad-9619-77c2bc7fc80c" OffsetX="0" OffsetY="0" Scale="1" />
+  <Class Id="6d069dac-5f00-4883-b2fa-4337c20c86a5" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.Diagnostic.cls_IntegrityControl_IVK.st_IVK_Outputs" Left="66" Top="26" Width="131.63333333333333" Height="124" />
+    <ClassView Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_IVK" Left="214.04999999999998" Top="171" Width="268.48" Height="72.63" />
+    <ClassView Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_AlphaServer" Left="214.04999999999998" Top="264.63" Width="278.62333333333333" Height="144.63" />
+  </Class>
+  <SocketType Id="42e3305c-9034-4a95-9cbc-aff72d050c41" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.Diagnostic.cls_IntegrityControl_IVK.st_IVK_Outputs.CRC" Left="16" Top="14.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_IntegrityControl_IVK.st_IVK_Outputs.IsInited" Left="16" Top="41.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_IntegrityControl_IVK.st_IVK_Outputs.Name" Left="15" Top="71.039999999999992" Width="137.08" Height="24" />
+    <SocketParameter Id="Objects.Diagnostic.cls_IntegrityControl_IVK.st_IVK_Outputs.Version" Left="16" Top="99.039999999999992" Width="137.08" Height="24" />
+  </SocketType>
+  <ClassView Id="11b14779-459e-4ea9-83e3-7f4de2cd8d3e" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_IVK.cs_IVK_Uutputs" Left="886.55333333333328" Top="26" Width="361.44666666666666" Height="40.59" />
+  </ClassView>
+  <ClassView Id="d743e127-4817-4197-9d6c-ed9a255c6d57" OffsetX="295.7" OffsetY="0" Scale="1">
+    <ThisReference Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_AlphaServer._cv_IVK" Left="214.04999999999998" Top="26" Width="323.11666666666667" Height="72.63" />
+    <ClassSocket Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_AlphaServer.cs_IVK_Outputs" Left="898.25333333333333" Top="26" Width="361.44666666666666" Height="40.59" />
+    <Handler Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_AlphaServer.On_cs_IVK_Uutputs_CRC" Left="66" Top="126" Width="183.97000000000003" Height="44" />
+    <ClassParameter Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_AlphaServer.CRC_Hex" Left="1164.55" Top="87.59" Width="97.15" Height="22" />
+    <ClassParameter Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_AlphaServer.CRC_Hex_Etalon" Left="1126.6000000000001" Top="114.59" Width="135.10000000000002" Height="22" />
+    <Reference Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_AlphaServer.Reference" Left="131.04999999999998" Top="190" Width="414.20000000000005" Height="220.63">
+      <Socket Name="Control" IsExpanded="true" />
+    </Reference>
+    <ClassParameter Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_AlphaServer.SaveCRC_ToEtalon" Left="1113.2333333333333" Top="147.59" Width="146.46666666666667" Height="22" />
+    <Handler Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_AlphaServer.On_SaveCRC_ToEtalon" Left="682.97" Top="333" Width="173.28333333333336" Height="44" />
+    <Handler Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_AlphaServer.On_CRC_Hex_Etalon" Left="465.25333333333339" Top="126" Width="161.91666666666669" Height="44" />
+    <ClassParameter Id="Objects.Diagnostic.cls_IntegrityControl_IVK.cv_AlphaServer.ChangeCRC" Left="1116.0533333333333" Top="198.54999999999995" Width="130.45666666666668" Height="22" />
+  </ClassView>
+  <SocketType Id="8ec177f4-9be7-429c-9ebe-4f5a7e9d3ff3" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.Diagnostic.cls_IntegrityControl_IVK.st_Calc.CRC" Left="24" Top="2" Width="69.866666666666674" Height="24" />
+  </SocketType>
+  <ClassView Id="633027e3-2a0a-43fa-8140-e801ef7f6a4a" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.Diagnostic.cls_InzerSwitch.cvv_InzerSwitch_SU.cs_Outputs" Left="701.72333333333336" Top="26" Width="298.27666666666664" Height="290.59000000000003" IsExpanded="true" />
+  </ClassView>
+  <ClassSocket Id="6c5f461c-fcf6-4c52-bc31-47ef0702e664" OffsetX="0" OffsetY="0" Scale="1" />
+  <Class Id="0ab95844-c15f-4eb7-b435-b4e2e4bf827a" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassView Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU" Left="102.08333333333334" Top="26" Width="282.61333333333334" Height="240.63" />
+    <ClassView Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_SU" Left="537.08333333333337" Top="26" Width="282.61333333333334" Height="240.63" />
+    <SocketType Id="Objects.Diagnostic.cls_IntegrityControl_PLC.st_iControl_Output" Left="845.98333333333335" Top="27.039999999999992" Width="112.01666666666668" Height="36" />
+  </Class>
+  <ClassView Id="54cf61b6-34b7-4ce2-b93e-aa96414553a7" OffsetX="116.733333333334" OffsetY="83.7080308914184" Scale="1">
+    <Handler Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.On_Message" Left="66" Top="26" Width="143.01333333333335" Height="84" />
+    <ClassParameter Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.Message" Left="1007.0433333333335" Top="39.669999999999959" Width="96.69" Height="22" />
+    <ClassParameter Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.MessParameter1" Left="966.19666666666694" Top="66.669999999999959" Width="137.53666666666669" Height="22" />
+    <ClassParameter Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.MessParameter2" Left="966.19666666666694" Top="93.669999999999959" Width="137.53666666666669" Height="22" />
+    <ThisReference Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU._ccv_PLC_SU" Left="221.1" Top="131" Width="253.5866666666667" Height="98.63" />
+    <ClassSocket Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.cs_iControl_Output" Left="815.4966666666669" Top="120.66999999999996" Width="288.23666666666668" Height="74.59" IsExpanded="true" />
+    <ClassParameter Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.CRCtoHEX" Left="999.10333333333358" Top="166.25999999999996" Width="104.63" Height="22" />
+    <Handler Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.on_CRCChange" Left="230.01333333333335" Top="26" Width="158.80333333333334" Height="24" />
+    <ClassParameter Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.CRCtoHEX_Etalon" Left="961.15333333333353" Top="193.25999999999996" Width="142.58" Height="22" />
+    <ClassParameter Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.SaveCRC_ToEtalon" Left="957.26666666666688" Top="220.25999999999996" Width="146.46666666666667" Height="22" />
+    <Handler Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.On_SaveCRC_ToEtalon" Left="409.81666666666672" Top="26" Width="173.28333333333336" Height="44" />
+    <Reference Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.Reference" Left="239.1" Top="286.63" Width="355.20000000000005" Height="72.63" />
+    <Handler Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.On_CRCtoHEX_Etalon" Left="604.10000000000014" Top="26" Width="169.39666666666668" Height="44" />
+    <ClassParameter Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU.ChangeCRC" Left="955.26666666666688" Top="277.26" Width="146.46666666666667" Height="22" />
+  </ClassView>
+  <ClassView Id="80a9a21b-bce0-43af-8d82-acdcc81c453d" OffsetX="0" OffsetY="0" Scale="1" />
+  <SocketType Id="695ee3db-3947-42fd-944a-469c97a22b6e" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.Diagnostic.cls_IntegrityControl_PLC.st_iControl_Output.CRC" Left="604" Top="172.04" Width="137.08" Height="24" />
+  </SocketType>
+  <ClassView Id="64230328-3d00-498e-83fb-b87f83a2f107" OffsetX="99.7333333333336" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU1.cs_iControl_Output" Left="815.4966666666669" Top="133" Width="288.23666666666668" Height="40.59" />
+  </ClassView>
+  <RootNamespace Id="2232d751-c238-4a21-9eaf-2ce09b406d1b" OffsetX="0" OffsetY="0" Scale="1">
+    <Namespace Id="Objects" Left="40" Top="40" Width="158.38333333333333" Height="166" />
+    <Domain Id="Domain" Left="239.38333333333333" Top="40" Width="169.27333333333334" Height="219.27666666666667" />
+    <UnitLink Id="System" Left="449.65666666666664" Top="40" Width="154.08" Height="37.276666666666671" />
+    <UnitLink Id="AlphaServer" Left="445.65666666666664" Top="115" Width="250.97" Height="69.276666666666671" />
+    <Namespace Id="Aspects" Left="449.65666666666664" Top="200" Width="148.34666666666669" Height="100" />
+    <Namespace Id="Attributes" Left="40" Top="260" Width="138.28" Height="144" />
+  </RootNamespace>
+</Diagrams>

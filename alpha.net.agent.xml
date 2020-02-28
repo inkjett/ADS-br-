@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<Alpha.Net.Agent>
+	Обязательный атрибут:
+		Name - имя агента в сети (не должно содержать символы: '.' и '\')
+
+	Опциональные атрибуты:
+		ParentAgentPort - номер порта для соединения с родительским агентом
+		NetEnterPort - номер порта для предоставления точки доступа в сеть
+
+	Может содержать один дочерний элемент <ChildAgents>
+-->
+
+<Alpha.Net.Agent Name="LOCAL" ParentAgentPort="1011" NetEnterPort="1010">
+
+	<!--
+	<ChildAgents>
+		Может содержать несколько дочерних узлов <ChildAgent>
+	-->
+	<xChildAgents>
+		<!--
+		<ChildAgent>
+			Обязательные атрибуты:
+				Name - имя дочернего агента (уникальное среди всех ChildAgent'ов; не должно содержать символы: '.' и '\')
+				Address - адрес дочернего агента
+				Port - номер порта дочернего агента
+
+		<ChildAgent Name="Это имя №1" Address="192.168.0.1" Port="1001"/>
+		<ChildAgent Name="Linux_1" Address="192.168.22.22" Port="1003"/>
+		<ChildAgent Name="Localx" Address="192.168.22.22" Port="1004"/>
+        -->
+	</xChildAgents>
+
+	<Options LoggerLevel="2"/>	<!-- Изменяет количество информации, выводимой в журнал. -->
+								<!-- Больше значение - больше информации. -->
+								<!-- Рекомендуемое значение - 2 -->
+
+</Alpha.Net.Agent>

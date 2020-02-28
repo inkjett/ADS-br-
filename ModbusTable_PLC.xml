@@ -1,0 +1,782 @@
+<root>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T01</node-path>
+    <table>Holding Registers</table>
+    <address>152</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T02</node-path>
+    <table>Holding Registers</table>
+    <address>154</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T03</node-path>
+    <table>Holding Registers</table>
+    <address>156</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T04</node-path>
+    <table>Holding Registers</table>
+    <address>158</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T05</node-path>
+    <table>Holding Registers</table>
+    <address>160</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T06</node-path>
+    <table>Holding Registers</table>
+    <address>162</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T07</node-path>
+    <table>Holding Registers</table>
+    <address>164</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T08</node-path>
+    <table>Holding Registers</table>
+    <address>166</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T09</node-path>
+    <table>Holding Registers</table>
+    <address>168</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T10</node-path>
+    <table>Holding Registers</table>
+    <address>170</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T11</node-path>
+    <table>Holding Registers</table>
+    <address>172</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T12</node-path>
+    <table>Holding Registers</table>
+    <address>174</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T13</node-path>
+    <table>Holding Registers</table>
+    <address>176</address>
+    <protocoltype>TMC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.CmdFull</node-path>
+    <table>Holding Registers</table>
+    <address>111</address>
+    <protocoltype>TM2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.State1.KVO</node-path>
+    <table>Holding Registers</table>
+    <address>114</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.State1.KVZ</node-path>
+    <table>Holding Registers</table>
+    <address>113</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.State</node-path>
+    <table>Holding Registers</table>
+    <address>190</address>
+    <protocoltype>TM2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.State1.MPO</node-path>
+    <table>Holding Registers</table>
+    <address>115</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.State1.MPZ</node-path>
+    <table>Holding Registers</table>
+    <address>116</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.State1.Dist</node-path>
+    <table>Holding Registers</table>
+    <address>117</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.State1.U</node-path>
+    <table>Holding Registers</table>
+    <address>118</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.State1.MVO</node-path>
+    <table>Holding Registers</table>
+    <address>119</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.State1.MVZ</node-path>
+    <table>Holding Registers</table>
+    <address>120</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T01.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>152</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T02.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>154</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T03.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>156</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T04.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>158</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T05.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>160</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T06.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>162</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T07.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>164</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T08.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>166</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T09.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>168</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T10.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>170</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T11.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>172</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T12.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>174</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.Timers.T13.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>176</address>
+    <protocoltype>TR4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.Valves.1.CmdFull.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>111</address>
+    <protocoltype>TR2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max3.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>29</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max2.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>26</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max1.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>23</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min1.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>5</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min2.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>8</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min3.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>11</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ValueImit.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>3</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.ElectrValue.ValidMin.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>47</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.ElectrValue.ValidMax.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>49</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.TechMin.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>51</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.TechMax.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>53</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Gist.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>41</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max4.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>32</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max5.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>35</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max6.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>38</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min4.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>14</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min5.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>17</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min6.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>20</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ElAllowedRange_Bottom.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>43</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ElAllowedRange_Top.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>45</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ImRange_Bottom.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>55</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ImRange_Top.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>57</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.CmdIn.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>59</address>
+    <protocoltype>TR2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.EnableFiltering.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>60</address>
+    <protocoltype>TC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.K.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>61</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.NeedNormMsg.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>63</address>
+    <protocoltype>TC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ImitIn.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>64</address>
+    <protocoltype>TC</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ValueTechIn.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>67</address>
+    <protocoltype>TRF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max1_param.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>25</address>
+    <protocoltype>TR2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max2_param.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>28</address>
+    <protocoltype>TR2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max3_param.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>31</address>
+    <protocoltype>TR2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min1_param.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>7</address>
+    <protocoltype>TR2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min2_param.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>10</address>
+    <protocoltype>TR2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min3_param.writeValue</node-path>
+    <table>Holding Registers</table>
+    <address>13</address>
+    <protocoltype>TR2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.State</node-path>
+    <table>Holding Registers</table>
+    <address>85</address>
+    <protocoltype>TM2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ValueTechIn</node-path>
+    <table>Holding Registers</table>
+    <address>67</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ValueTechOut</node-path>
+    <table>Holding Registers</table>
+    <address>69</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ValueImit</node-path>
+    <table>Holding Registers</table>
+    <address>3</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.ElectrValue.ValueElectr</node-path>
+    <table>Holding Registers</table>
+    <address>0</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max3</node-path>
+    <table>Holding Registers</table>
+    <address>29</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max2</node-path>
+    <table>Holding Registers</table>
+    <address>26</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max1</node-path>
+    <table>Holding Registers</table>
+    <address>23</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min1</node-path>
+    <table>Holding Registers</table>
+    <address>5</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min2</node-path>
+    <table>Holding Registers</table>
+    <address>8</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min3</node-path>
+    <table>Holding Registers</table>
+    <address>11</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.ElectrValue.ValidMin</node-path>
+    <table>Holding Registers</table>
+    <address>47</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.ElectrValue.ValidMax</node-path>
+    <table>Holding Registers</table>
+    <address>49</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.TechMin</node-path>
+    <table>Holding Registers</table>
+    <address>51</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.TechMax</node-path>
+    <table>Holding Registers</table>
+    <address>53</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Gist</node-path>
+    <table>Holding Registers</table>
+    <address>41</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max4</node-path>
+    <table>Holding Registers</table>
+    <address>32</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max5</node-path>
+    <table>Holding Registers</table>
+    <address>35</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max6</node-path>
+    <table>Holding Registers</table>
+    <address>38</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min4</node-path>
+    <table>Holding Registers</table>
+    <address>14</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min5</node-path>
+    <table>Holding Registers</table>
+    <address>17</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min6</node-path>
+    <table>Holding Registers</table>
+    <address>20</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ElAllowedRange_Bottom</node-path>
+    <table>Holding Registers</table>
+    <address>43</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ElAllowedRange_Top</node-path>
+    <table>Holding Registers</table>
+    <address>45</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ImRange_Bottom</node-path>
+    <table>Holding Registers</table>
+    <address>55</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ImRange_Top</node-path>
+    <table>Holding Registers</table>
+    <address>57</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.CmdIn</node-path>
+    <table>Holding Registers</table>
+    <address>59</address>
+    <protocoltype>TM2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.EnableFiltering</node-path>
+    <table>Holding Registers</table>
+    <address>60</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.K</node-path>
+    <table>Holding Registers</table>
+    <address>61</address>
+    <protocoltype>TMF4</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.NeedNormMsg</node-path>
+    <table>Holding Registers</table>
+    <address>63</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.ImitIn</node-path>
+    <table>Holding Registers</table>
+    <address>64</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.StateImit</node-path>
+    <table>Holding Registers</table>
+    <address>75</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.WorkOut.Min1</node-path>
+    <table>Holding Registers</table>
+    <address>92</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.WorkOut.Min2</node-path>
+    <table>Holding Registers</table>
+    <address>93</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.WorkOut.Min3</node-path>
+    <table>Holding Registers</table>
+    <address>94</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.WorkOut.Max1</node-path>
+    <table>Holding Registers</table>
+    <address>91</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.WorkOut.Max2</node-path>
+    <table>Holding Registers</table>
+    <address>90</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.WorkOut.Max3</node-path>
+    <table>Holding Registers</table>
+    <address>89</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.OutSignal_Ext</node-path>
+    <table>Holding Registers</table>
+    <address>71</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.OutSignal_Ndv</node-path>
+    <table>Holding Registers</table>
+    <address>72</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.OutSignal_MTMax</node-path>
+    <table>Holding Registers</table>
+    <address>73</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.OutSignal_LTMin</node-path>
+    <table>Holding Registers</table>
+    <address>74</address>
+    <protocoltype>TS</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max1_param</node-path>
+    <table>Holding Registers</table>
+    <address>25</address>
+    <protocoltype>TM2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max2_param</node-path>
+    <table>Holding Registers</table>
+    <address>28</address>
+    <protocoltype>TM2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Max3_param</node-path>
+    <table>Holding Registers</table>
+    <address>31</address>
+    <protocoltype>TM2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min3_param</node-path>
+    <table>Holding Registers</table>
+    <address>13</address>
+    <protocoltype>TM2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min2_param</node-path>
+    <table>Holding Registers</table>
+    <address>10</address>
+    <protocoltype>TM2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.PLC.AI.1.TechValue.Ust.Min1_param</node-path>
+    <table>Holding Registers</table>
+    <address>7</address>
+    <protocoltype>TM2</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>DataBuffer.Value1</node-path>
+    <table>Holding Registers</table>
+    <address>245</address>
+    <protocoltype>TMC_TIME</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>DataBuffer.Value2</node-path>
+    <table>Holding Registers</table>
+    <address>256</address>
+    <protocoltype>TMC_TIME</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>DataBuffer.Value3</node-path>
+    <table>Holding Registers</table>
+    <address>267</address>
+    <protocoltype>TMC_TIME</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>DataBuffer.Value4</node-path>
+    <table>Holding Registers</table>
+    <address>278</address>
+    <protocoltype>TMC_TIME</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>DataBuffer.Value5</node-path>
+    <table>Holding Registers</table>
+    <address>289</address>
+    <protocoltype>TMC_TIME</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>DataBuffer.Value6</node-path>
+    <table>Holding Registers</table>
+    <address>300</address>
+    <protocoltype>TMC_TIME</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>DataBuffer.Value7</node-path>
+    <table>Holding Registers</table>
+    <address>311</address>
+    <protocoltype>TMC_TIME</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>DataBuffer.Value8</node-path>
+    <table>Holding Registers</table>
+    <address>322</address>
+    <protocoltype>TMC_TIME</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>DataBuffer.Value9</node-path>
+    <table>Holding Registers</table>
+    <address>333</address>
+    <protocoltype>TMC_TIME</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>DataBuffer.Value10</node-path>
+    <table>Holding Registers</table>
+    <address>344</address>
+    <protocoltype>TMC_TIME</protocoltype>
+  </item>
+  <item Binding="Introduced">
+    <node-path>DataBuffer.Value11</node-path>
+    <table>Holding Registers</table>
+    <address>355</address>
+    <protocoltype>TMC_TIME</protocoltype>
+  </item>
+</root>

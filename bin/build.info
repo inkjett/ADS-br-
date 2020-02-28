@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<BuildProductsInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Environments>
+    <Environment Name="локальная" Version="44">
+      <Products>
+        <Product Domain="Domain" Runtime="Domain.ARM.AlphaServer">
+          <Info>
+            <Configuration FilePath="C:\Users\Inkjet\Desktop\fromFlash\Automiq\b&amp;r\proj\ADS\bin\локальная\Domain\ARM\AlphaServer\alpha.server.cfg" />
+          </Info>
+        </Product>
+        <Product Domain="Domain" Runtime="Domain.ImitatorPLC.AlphaServer">
+          <Info>
+            <Configuration FilePath="C:\Users\Inkjet\Desktop\fromFlash\Automiq\b&amp;r\proj\ADS\bin\локальная\Domain\ImitatorPLC\AlphaServer\alpha.server.cfg" />
+          </Info>
+        </Product>
+      </Products>
+    </Environment>
+    <Environment Name="local" Version="70">
+      <Products>
+        <Product Domain="Domain" Runtime="Domain.ARM.AlphaServer">
+          <Info>
+            <Configuration FilePath="D:\Task\THBB-nix\ADS\bin\local\Domain\ARM\AlphaServer\alpha.server.cfg" />
+          </Info>
+        </Product>
+        <Product Domain="Domain" Runtime="Domain.ImitatorPLC.AlphaServer">
+          <Info>
+            <Configuration FilePath="D:\Task\THBB-nix\ADS\bin\local\Domain\ImitatorPLC\AlphaServer\alpha.server.cfg" />
+          </Info>
+        </Product>
+      </Products>
+    </Environment>
+  </Environments>
+</BuildProductsInfo>

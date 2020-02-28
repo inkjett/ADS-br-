@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<omx migration="17">
+  <namespace name="Objects.Services_objects" uuid="b7ac1ff2-d4b1-45b5-bbab-9b59297c39f6">
+    <type name="SQL Connector Module" uuid="c71695fd-9b9c-4426-a2de-bbc219e659ad" access-level="private">
+      <socket-type name="Запрос" uuid="a68821cb-63a7-42f3-94b2-674f0676ff0f" access-level="private" />
+      <type name="IOS_View" uuid="1b7281bc-c151-4310-921f-afc0639f6418" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.Services_objects.SQL Connector Module">
+        <socket name="QueryOut" uuid="67574708-853b-4f76-b39e-650534b4449c" direction="out" type="Objects.Services_objects.SQL Connector Module.Запрос" access-level="private" access-scope="local">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1" />
+        </socket>
+        <parameter name="Active" uuid="d8c1281c-3e35-46c8-82e9-332182ba6f1e" type="bool" direction="out" access-level="private" access-scope="local" />
+        <socket name="Query" uuid="06ecd690-55de-411b-a131-3aa28853ba10" direction="in" type="Objects.Services_objects.SQL Connector Module.Запрос_CMD" access-level="private" access-scope="local"></socket>
+      </type>
+      <socket-type name="Запрос_CMD" uuid="c169a5b6-2545-49cc-8a2f-1cc84504c171" access-level="private">
+        <socket-parameter name="MakeQuery_Command1" uuid="155d9b60-bd0b-45bd-9dbc-7073c6abfaef" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 1.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command2" uuid="3300bd12-da91-4b06-8fc7-5121f99cf75d" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 2.MakeQuery_Command" />
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="true" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command3" uuid="68edf753-cf36-45e5-822c-3b34731d0747" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 3.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command4" uuid="ca1285a5-a617-4c31-845f-d7241904cece" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 4.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command5" uuid="cf1d1fca-d8c4-47fd-89de-e5cbb54034a8" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 5.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command6" uuid="9891a2e7-bad3-4221-a89f-a5604a24741c" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 6.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command7" uuid="bdfcee60-6aab-4384-858d-9fdf283ea254" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 7.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command8" uuid="5a9a4e60-9836-4e23-a06b-3d3c3094bf53" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 8.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command9" uuid="59dc02ec-6cdc-497c-bb51-89c397986cf1" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 9.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command10" uuid="9652c6e7-a881-4d2d-8467-7073c371fedb" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 10.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command11" uuid="5bf577f5-d2dc-44ba-9ffb-ee433d3c2ce0" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 11.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command12" uuid="69704279-4c76-49e0-8f98-da8e92f2b4bb" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 12.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command13" uuid="2c8a8729-b039-4346-aa45-14b54991f736" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 13.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command14" uuid="3b82c18d-984d-4a52-8251-f0590c387c3b" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 14.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command15" uuid="cf1b742f-47d5-4757-8990-6552aa733028" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 15.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command16" uuid="8fb7bed4-8bff-438a-90b4-1c85f631ced8" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 16.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command17" uuid="2be07505-6831-451f-8781-a50fd619a325" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 17.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command18" uuid="4c861cd1-e759-4395-9d85-cd7ee7cfe422" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 18.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command19" uuid="d0827090-b1b6-410b-8111-63ba5a0c4ed7" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 19.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command20" uuid="59df7690-d1e7-4d0c-bd43-40e364a9785f" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 20.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command21" uuid="2eeb61a7-dfd4-4dab-82da-4249876db120" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 21.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command22" uuid="538787f5-5f84-4ba6-b00f-87778ecd0fbe" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 22.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command23" uuid="a074965f-dfab-4cac-bb10-94c8f8f8f96e" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 23.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command24" uuid="c3b29126-36d9-43e4-b196-13b4cc0fbc05" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 24.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command25" uuid="30f99a87-6bcb-4f13-80e8-b76faa46d145" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 25.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command26" uuid="05a743a3-53c3-4ce8-a3a2-cc54a5a5b2f9" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 26.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command27" uuid="3628ed82-ad60-4f55-8f46-1ca0584f320f" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 27.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command28" uuid="896e6365-a89d-4d61-9322-50ad6b21265f" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 28.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command29" uuid="43874c34-62db-4c5c-b6e2-11f71574480f" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 29.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command30" uuid="0c4ffdd2-25a3-48fc-bb78-1ef96726b21f" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 30.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command31" uuid="8f7b1171-39b5-4869-984a-7b58b98ae8db" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 31.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command32" uuid="25dbf2ef-772b-4995-b3e2-de38a1470e24" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 32.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command33" uuid="0380a9e8-fc3d-4116-8bef-d83a36e4f1a2" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 33.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command34" uuid="6704cada-9025-4e3e-9698-c2a1cff65011" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 34.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command35" uuid="33cee3d4-6f2a-44b7-b48f-80d8c70ec264" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 35.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command36" uuid="13a4d813-a782-45d4-b2e9-7408aede0f49" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 36.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command37" uuid="fc189eb9-543f-4260-b623-adf63df21812" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 37.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command38" uuid="7e885bb8-af03-4335-9dba-312bdc39a13b" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 38.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command39" uuid="189dbe62-895e-47ec-9847-1e4b54750246" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 39.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command40" uuid="46330f5c-c83e-4595-8205-e41678abd327" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 40.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command41" uuid="b4839b9f-88f9-45b5-9768-352dad493fe9" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 41.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command42" uuid="7b513018-d10e-4ded-abc4-d483371a3631" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 42.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command43" uuid="f5022d6a-597b-4956-969f-26c0f6c93c93" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 43.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command44" uuid="8a683964-dc9c-46d4-905e-6d9c09a9cbcc" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 44.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command45" uuid="c6780008-bd3f-41ee-97d4-67c4a3499e59" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 45.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command46" uuid="0b24e42c-5297-4147-9ac0-8cff625afacf" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 46.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command47" uuid="6e43f77c-0114-4874-86fa-fb02c9c4af0e" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 47.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command48" uuid="869eb4e1-20c6-4dff-9911-d1b339725945" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 48.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command49" uuid="a91cc029-1e13-4fb8-8f00-25f4ddcfa4a3" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 49.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command50" uuid="92b124a4-3527-40c7-b18c-726d8359cb38" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 50.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command51" uuid="fe354404-61ab-438e-ac91-0564022b62db" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 51.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command52" uuid="936ec083-0845-43c1-87e7-32197e18d1ae" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 52.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command53" uuid="f3a48aae-f193-4995-b452-bfbcd867dc93" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 53.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command54" uuid="45d60fe1-5aba-4629-beb0-f38e3dbe5c04" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 54.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command55" uuid="4544eda9-1acd-4b9c-8c65-adc53d4b776c" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 55.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command56" uuid="fe5bdafd-89ff-46e2-b0b9-fdf46fc839ef" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 56.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command57" uuid="d6a31384-43d2-4784-b768-95e586370a8b" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 57.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command58" uuid="c6121925-5517-483d-a84c-a7f4a6a49309" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 58.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command59" uuid="59aaad9c-8f49-4dba-9c65-da05b7a67385" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 59.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command60" uuid="c298f4d3-8501-4e9c-89d0-825f786046f9" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 60.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command61" uuid="d9f55d39-3b26-4d76-99f7-9245a05688e2" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 61.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command62" uuid="46324c82-8dac-441c-b2da-54d1e1540e6f" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 62.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command63" uuid="3c7f48cf-94d2-4fc0-b37a-5bab19a8d664" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 63.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command64" uuid="ead651f2-338b-4d11-89d7-7f54ec32c877" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 64.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command65" uuid="8970ea68-90de-41a9-9dfd-a1347a91bd41" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 65.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command66" uuid="c050e368-a13e-4f59-a44d-eae3ccf0e3f8" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 66.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command67" uuid="65bdb352-b89f-4341-a098-0b42a7d7d123" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 67.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command68" uuid="1e90af2a-a0be-4ec0-abbf-ec89486ac960" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 68.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command69" uuid="aec132f2-9b97-499a-b484-8d4a622ffc95" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 69.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command70" uuid="ce5ac440-d302-48fd-81b9-6f402afb51c5" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 70.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command71" uuid="82f440ca-fb78-47c2-b3da-d581dbfaeffe" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 71.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command72" uuid="8e3884e2-e877-4a21-b606-d3b458a1956b" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 72.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command73" uuid="7f0ab466-e1a4-4b5b-b13a-666ae8c1ee91" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 73.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command74" uuid="277f8bb7-7da3-4ffd-ba3a-02330bd5f1b4" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 74.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command75" uuid="03dcd383-94cd-4167-b71f-f32da7d10c14" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 75.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command76" uuid="50aef8c5-afc3-4fd4-99a1-1bb1c46abcd7" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 76.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command78" uuid="16bdd560-1263-4728-8045-6884a9afb9e6" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1.Запрос 79.MakeQuery_Command" />
+        </socket-parameter>
+      </socket-type>
+    </type>
+    <type name="SnapshotModule" uuid="5290bc8c-3ebf-4559-b4c5-40c6decb91a7" access-level="private">
+      <socket-type name="Control" uuid="138f7905-d5d4-4583-843c-b23e4116b2d9" access-level="private">
+        <socket-parameter name="Generate" uuid="6695286a-1a46-4f42-91e0-f9fa23cbd289" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Generator.Generate" />
+        </socket-parameter>
+        <socket-parameter name="OutFileName" uuid="3b9f2342-9b0a-48c0-8eec-266f8d9f9830" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Generator.OutFileName" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="SnapShot" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="TemplateName" uuid="dc8af3de-d88f-474a-843e-b5ea26c64446" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Generator.TemplateName" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="Template" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Extract" uuid="dedaf6e9-81f0-49cc-ae1f-72918eb2e3aa" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Extractor.Extract" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="true" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="SnapShotName" uuid="80955029-d682-4683-ab27-28a342c8b428" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Extractor.SnapShotName" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="SnapShot" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+      </socket-type>
+      <type name="IOS_SnapShot" uuid="ec45dba4-33fb-454f-bced-1865c230bf89" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.Services_objects.SnapshotModule">
+        <socket name="Control" uuid="655bf807-bb46-4bf9-bdf2-1da724fa53ed" direction="in" type="Objects.Services_objects.SnapshotModule.Control" access-level="private" access-scope="local">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Control" />
+        </socket>
+      </type>
+    </type>
+    <type name="BufferService" uuid="93955f2f-fd0c-490a-8d26-7fa37ccf2a55" access-level="private">
+      <attribute type="unit.System.Attributes.Comment">
+        <property name="value">С параметром этого класса будет работать модуль Альфа.Сервера ModbusTCPMaster_OSIKN. Смысл: если параметр равен 1, то включаем ModbusTCPMaster_DataBuffer и вычитываем сообщения, если параметр != 1, то выключаем ModbusTCPMaster_DataBuffer</property>
+      </attribute>
+      <type name="PLC_View" uuid="30ae0ed2-53c3-47dc-8a45-7a98c719d355" aspect="Aspects.asp_SU" access-level="private" original="Objects.Services_objects.BufferService">
+        <socket name="Out" uuid="a08f51c9-9817-4f14-a116-889a9a5a6f8d" direction="out" type="Objects.Services_objects.BufferService.Params" access-level="private" access-scope="local" />
+      </type>
+      <socket-type name="Params" uuid="4b7cec33-d66f-49a7-9473-7db6038d9029" access-level="private">
+        <socket-parameter name="isRead" uuid="2f190fb1-bc6c-4319-9867-c8779cf2537b" type="uint16">
+          <attribute type="unit.System.Attributes.Comment" value="Если этот параметр =1, то нужно читать буфер" />
+          <attribute type="unit.System.Attributes.Description" value="Признак необходимости чтения буфера сообщений" />
+        </socket-parameter>
+      </socket-type>
+      <type name="IOS_View" uuid="fd5c7e69-83ce-4a13-9937-a2ab6d8b5052" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.Services_objects.BufferService">
+        <bind source="_PLC_View.Out" target="Out" action="set_all" />
+        <ref name="_PLC_View" uuid="c146e5b0-106b-4864-93b8-f74b20b011e2" const-access="False" access-level="private" access-scope="local" type="Objects.Services_objects.BufferService.PLC_View" aspected="true" />
+        <socket name="Out" uuid="c38234f2-72fe-4310-9e41-67ebc76f8f2b" direction="out" type="Objects.Services_objects.BufferService.Params" access-level="public" access-scope="local" />
+      </type>
+    </type>
+    <type name="PLC_SQL Connector Module" uuid="8c1259d3-ed18-4c12-8435-6b788befbfad" access-level="private">
+      <socket-type name="Запрос" uuid="a1885349-09bd-4b36-8850-c2391519f668" access-level="private" />
+      <type name="PLC_View" uuid="96347042-5ba9-4ec1-9e81-b2b7b32b385b" aspect="Aspects.asp_SU" original="Objects.Services_objects.PLC_SQL Connector Module" access-level="private">
+        <socket name="QueryOut" uuid="14076a94-5b1b-4c1a-b80b-d47cdb7fdbf2" direction="in" type="Objects.Services_objects.PLC_SQL Connector Module.Запрос_CMD" access-level="private" access-scope="local">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Источник 1" />
+        </socket>
+      </type>
+      <socket-type name="Запрос_CMD" uuid="29cee999-be61-4321-8acf-2b40a34fb1bf" access-level="private">
+        <socket-parameter name="MakeQuery_Command1" uuid="81411bd4-2678-4ae7-9480-0ef367d97ee7" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Запрос 1.MakeQuery_Command" />
+        </socket-parameter>
+        <socket-parameter name="MakeQuery_Command2" uuid="0d8eaf4e-2a3e-4aa2-a205-bc0da794d920" type="bool">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Запрос 2.MakeQuery_Command" />
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="true" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+      </socket-type>
+    </type>
+  </namespace>
+</omx>

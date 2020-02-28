@@ -1,0 +1,25 @@
+﻿<alpha-omx xmlns="system" xmlns:ct="automation.control" xmlns:r="automation.reference">
+  <ct:control-class name="cls_IntegrityControl_ARM" uuid="f00c1d3e-f41e-425f-891c-47e83da9a039" access-level="private">
+    <ct:control-socket-type name="st_Outputs" uuid="7215db1b-5060-46de-8ff7-69830ae7860f" access-level="private">
+      <ct:socket-parameter name="ChangeFilesCount" uuid="a27cc581-1a8d-47df-a547-488b62542d19" type="uint32">
+        <attribute type="unit.AlphaServer.Attributes.Alarm" value="{&quot;Condition&quot;:{&quot;IsEnabled&quot;:&quot;true&quot;,&quot;Subconditions&quot;:[{&quot;IsEnabled&quot;:true,&quot;Message&quot;:&quot;. Модуль контроля целостности ПО АРМ. Контрольная сумма не равна эталону. Значение установлено&quot;,&quot;Severity&quot;:1,&quot;Type&quot;:4,&quot;Value&quot;:0.5},{&quot;IsEnabled&quot;:true,&quot;Message&quot;:&quot;. Модуль контроля целостности ПО АРМ. Контрольная сумма не равна эталону. Значение снято&quot;,&quot;Severity&quot;:3,&quot;Type&quot;:5,&quot;Value&quot;:0},{&quot;Severity&quot;:1,&quot;Type&quot;:6}],&quot;Type&quot;:3}}" />
+      </ct:socket-parameter>
+      <ct:socket-parameter name="EtalonVersion" uuid="58368b87-a4a6-4275-9e91-62050af0acbe" type="string" />
+    </ct:control-socket-type>
+    <ct:control-class-view name="cv_Appl" uuid="ae16bea1-e2f8-4a5c-9eb0-3b43b38ce803" aspect="Aspects.asp_Applications" class="Objects.Diagnostic.cls_IntegrityControl_ARM" access-level="private">
+      <ct:socket name="cs_Outputs" uuid="069c9636-e5eb-4693-8ad1-224bd6a543ff" direction="out" type="Objects.Diagnostic.cls_IntegrityControl_ARM.st_Outputs" access-level="private" access-scope="local" />
+    </ct:control-class-view>
+    <ct:control-class-view name="cv_IOS" uuid="e63f425d-4aa6-4971-abeb-eef451fe463a" aspect="Aspects.asp_AlphaServer" class="Objects.Diagnostic.cls_IntegrityControl_ARM" access-level="private">
+      <r:this-ref name="_cv_Device" uuid="21b954a9-1a3e-43d9-b733-6d323009ae74" class="Objects.Diagnostic.cls_IntegrityControl_ARM.cv_Appl" const-access="False" access-level="private" access-scope="local" />
+      <ct:socket name="cs_Outputs" uuid="1686ae9e-2ddc-40ad-9619-77c2bc7fc80c" direction="out" type="Objects.Diagnostic.cls_IntegrityControl_ARM.st_Outputs" access-level="public" access-scope="local" />
+      <ct:bind source="_cv_Device.cs_Outputs" target="cs_Outputs" action="set_all" />
+      <ct:handler name="On_cs_Outputs_EtalonVersion" uuid="dd2855e0-4eb3-4d9a-8964-fc7137080841" source-code="ChangeEtalon=!(ChangeEtalon);">
+        <ct:trigger on="cs_Outputs.EtalonVersion" cause="update" />
+      </ct:handler>
+      <ct:var name="ChangeEtalon" uuid="fc2457cb-14af-46b4-814a-e8a411f57e54" type="bool" access-level="private" access-scope="local">
+        <attribute type="unit.AlphaServer.Attributes.Alarm" value="{&quot;Condition&quot;:{&quot;IsEnabled&quot;:&quot;true&quot;,&quot;Subconditions&quot;:[{&quot;IsEnabled&quot;:true,&quot;Message&quot;:&quot;. Модуль контроля целостности ПО АРМ. Изменена\/обновлена эталонная контрольная сумма&quot;,&quot;Severity&quot;:1,&quot;Type&quot;:2},{&quot;IsEnabled&quot;:true,&quot;Message&quot;:&quot;. Модуль контроля целостности ПО АРМ. Изменена эталонная контрольная сумма&quot;,&quot;Severity&quot;:1,&quot;Type&quot;:3}],&quot;Type&quot;:2}}" />
+        <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="192" />
+      </ct:var>
+    </ct:control-class-view>
+  </ct:control-class>
+</alpha-omx>

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Diagrams>
+  <Class Id="59a6735a-4126-4506-90c8-55a98e9c0384" OffsetX="0" OffsetY="0" Scale="0.8">
+    <ClassView Id="Objects.Services_objects.SQL_Messages.IOS_View" Left="233.1" Top="26" Width="257.59000000000003" Height="96.63" />
+    <SocketType Id="Objects.Services_objects.SQL_Messages.Events" Left="66" Top="26" Width="146.72" Height="300" />
+    <ClassView Id="Objects.Services_objects.SQL_Messages.PLC_View" Left="233.1" Top="143.63" Width="257.59000000000003" Height="96.63" />
+  </Class>
+  <Class Id="5290bc8c-3ebf-4559-b4c5-40c6decb91a7" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.Services_objects.SnapshotModule.Control" Left="66" Top="26" Width="135.43" Height="146" />
+    <ClassView Id="Objects.Services_objects.SnapshotModule.IOS_SnapShot" Left="233.1" Top="26" Width="263.61333333333334" Height="72.63" />
+  </Class>
+  <ClassView Id="4fdba1e9-8841-436f-a9fe-aaed7866114a" OffsetX="0" OffsetY="0" Scale="0.8">
+    <ClassSocket Id="Objects.Services_objects.SQL_Messages.IOS_View.Messages" Left="1122.8200000000002" Top="52" Width="303.48" Height="40.59" />
+    <Reference Id="Objects.Services_objects.SQL_Messages.IOS_View._SnapShot" Left="347.53" Top="26" Width="355.20000000000005" Height="72.63" />
+    <Handler Id="Objects.Services_objects.SQL_Messages.IOS_View.On_Messages_LastID" Left="197.68" Top="126" Width="166.10333333333335" Height="44" />
+    <ThisReference Id="Objects.Services_objects.SQL_Messages.IOS_View._PLC_View" Left="347.53" Top="191" Width="257.59000000000003" Height="96.63" />
+    <ClassParameter Id="Objects.Services_objects.SQL_Messages.IOS_View.NewMessage" Left="1305.6833333333334" Top="97.59" Width="120.61666666666667" Height="22" />
+    <Reference Id="Objects.Services_objects.SQL_Messages.IOS_View._SQLConnector" Left="347.53" Top="308.63" Width="377.26" Height="96.63" />
+    <Handler Id="Objects.Services_objects.SQL_Messages.IOS_View.On_NewMessage" Left="626.12000000000012" Top="126" Width="211.98000000000002" Height="84" />
+    <Handler Id="Objects.Services_objects.SQL_Messages.IOS_View.On_Messages_vqt_value" Left="384.78333333333336" Top="126" Width="183.26666666666668" Height="44" />
+    <ClassParameter Id="Objects.Services_objects.SQL_Messages.IOS_View.LastIDForQuery" Left="24" Top="383.26" Width="131.68" Height="22" />
+    <Handler Id="Objects.Services_objects.SQL_Messages.IOS_View.On_Messages_TempTimeStamp" Left="859.10000000000014" Top="146" Width="221.72" Height="44" />
+    <Handler Id="Objects.Services_objects.SQL_Messages.IOS_View.Handler" Left="859.10000000000014" Top="216" Width="130.09" Height="84" />
+  </ClassView>
+  <SocketType Id="138f7905-d5d4-4583-843c-b23e4116b2d9" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.Services_objects.SnapshotModule.Control.Generate" Left="24" Top="2" Width="96.2" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SnapshotModule.Control.OutFileName" Left="24" Top="31" Width="117.55000000000001" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SnapshotModule.Control.TemplateName" Left="24" Top="60" Width="127.83666666666667" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SnapshotModule.Control.Extract" Left="24" Top="89" Width="83.533333333333331" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SnapshotModule.Control.SnapShotName" Left="24" Top="118" Width="130.28" Height="24" />
+  </SocketType>
+  <Class Id="4dc669aa-e3bb-4d60-a720-be560011b835" OffsetX="0" OffsetY="127.66" Scale="1">
+    <SocketType Id="Objects.Services_objects.DataBuffer.Params" Left="66" Top="26" Width="117.19666666666667" Height="476" />
+    <SocketType Id="Objects.Services_objects.DataBuffer.DataBuffer_Values" Left="204.19666666666666" Top="26" Width="147.05333333333334" Height="256" />
+    <SocketType Id="Objects.Services_objects.DataBuffer.Commands" Left="372.25" Top="26" Width="113.64333333333335" Height="58" />
+    <ClassView Id="Objects.Services_objects.DataBuffer.PLC_View" Left="232.35" Top="303" Width="232.60000000000002" Height="98.63" />
+    <ClassView Id="Objects.Services_objects.DataBuffer.IOS_View" Left="232.35" Top="422.63" Width="232.60000000000002" Height="98.63" />
+    <SocketType Id="Objects.Services_objects.DataBuffer.Temp" Left="506.89333333333332" Top="26" Width="111.26666666666668" Height="80" />
+  </Class>
+  <ClassView Id="b44849b8-fec5-4db2-a01e-9aed66973e74" OffsetX="144.503333333334" OffsetY="0" Scale="1">
+    <ThisReference Id="Objects.Services_objects.DataBuffer.IOS_View._PLC_View" Left="540.0866666666667" Top="26" Width="301.72" Height="98.63" />
+    <ClassSocket Id="Objects.Services_objects.DataBuffer.IOS_View.CMD" Left="24" Top="84.039999999999992" Width="307.73666666666668" Height="40.59" />
+    <ClassSocket Id="Objects.Services_objects.DataBuffer.IOS_View.Values" Left="883.80666666666684" Top="38.449999999999989" Width="339.69666666666666" Height="40.59" />
+    <ClassSocket Id="Objects.Services_objects.DataBuffer.IOS_View.Params" Left="935.9966666666669" Top="84.039999999999992" Width="287.50666666666666" Height="530.59" IsExpanded="true" />
+    <Handler Id="Objects.Services_objects.DataBuffer.IOS_View.on_Last" Left="373.73666666666668" Top="26" Width="95.716666666666669" Height="44" />
+  </ClassView>
+  <type Id="93955f2f-fd0c-490a-8d26-7fa37ccf2a55" OffsetX="0" OffsetY="0" Scale="0.8">
+    <type Id="Objects.Services_objects.BufferService.PLC_View" Left="232.35" Top="26" Width="244.15333333333334" Height="98.63">
+      <Socket Name="Out" IsExpanded="true" />
+    </type>
+    <socket-type Id="Objects.Services_objects.BufferService.Params" Left="66" Top="26" Width="117.66333333333333" Height="140.5" />
+    <type Id="Objects.Services_objects.BufferService.IOS_View" Left="237.35" Top="155.88" Width="244.15333333333334" Height="98.63">
+      <Socket Name="Out" IsExpanded="true" />
+    </type>
+  </type>
+  <type Id="fd5c7e69-83ce-4a13-9937-a2ab6d8b5052" OffsetX="0" OffsetY="0" Scale="0.8">
+    <ref Id="Objects.Services_objects.BufferService.IOS_View._PLC_View" Left="66" Top="26" Width="313.27333333333331" Height="98.63">
+      <Socket Name="Out" IsExpanded="true" />
+    </ref>
+    <socket Id="Objects.Services_objects.BufferService.IOS_View.Out" Left="588.94" Top="26" Width="299.06" Height="74.59" IsExpanded="true" />
+  </type>
+  <ClassView Id="4c9e0941-d535-47be-9585-730540fe96fc" OffsetX="0" OffsetY="0" Scale="0.8">
+    <ClassParameter Id="Objects.Services_objects.SQL_Messages.PLC_View.NewMessage" Left="848.38333333333333" Top="26" Width="120.61666666666667" Height="22" />
+    <ClassSocket Id="Objects.Services_objects.SQL_Messages.PLC_View.Events" Left="665.52" Top="53" Width="303.48" Height="40.59" />
+    <ClassParameter Id="Objects.Services_objects.SQL_Messages.PLC_View.LastIDForQuery" Left="24" Top="52" Width="131.68" Height="22" />
+  </ClassView>
+  <Namespace Id="b7ac1ff2-d4b1-45b5-bbab-9b59297c39f6" OffsetX="0" OffsetY="0" Scale="1">
+    <Type Id="Objects.Services_objects.SQL Connector Module" Left="40" Top="40" Width="175.62" Height="98" />
+    <Type Id="Objects.Services_objects.SnapshotModule" Left="256.62" Top="40" Width="142.15" Height="74" />
+    <Type Id="Objects.Services_objects.BufferService" Left="439.77" Top="40" Width="142.93" Height="96" />
+    <Type Id="Objects.Services_objects.PLC_SQL Connector Module" Left="47" Top="158" Width="237.62" Height="235" />
+  </Namespace>
+  <ClassView Id="ec45dba4-33fb-454f-bced-1865c230bf89" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.Services_objects.SnapshotModule.IOS_SnapShot.Control" Left="24" Top="26" Width="319.72333333333336" Height="170.59" IsExpanded="true" />
+  </ClassView>
+  <socket-type Id="4b7cec33-d66f-49a7-9473-7db6038d9029" OffsetX="0" OffsetY="0" Scale="1">
+    <socket-parameter Id="Objects.Services_objects.BufferService.Params.isRead" Left="24" Top="2" Width="82.276666666666671" Height="24" />
+  </socket-type>
+  <ClassSocket Id="a08f51c9-9817-4f14-a116-889a9a5a6f8d" OffsetX="0" OffsetY="0" Scale="0.8" />
+  <ClassSocket Id="c38234f2-72fe-4310-9e41-67ebc76f8f2b" OffsetX="0" OffsetY="0" Scale="0.8" />
+  <Type Id="1b7281bc-c151-4310-921f-afc0639f6418" OffsetX="0" OffsetY="0" Scale="1">
+    <Socket Id="Objects.Services_objects.SQL Connector Module.IOS_View.QueryOut" Left="882.9133333333333" Top="26" Width="347.12666666666667" Height="40.59" />
+    <Parameter Id="Objects.Services_objects.SQL Connector Module.IOS_View.Active" Left="1120.76" Top="71.59" Width="109.28" Height="22" />
+    <Socket Id="Objects.Services_objects.SQL Connector Module.IOS_View.Query" Left="24" Top="52" Width="376.09333333333336" Height="40.59" />
+  </Type>
+  <Type Id="c71695fd-9b9c-4426-a2de-bbc219e659ad" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.Services_objects.SQL Connector Module.Запрос" Left="66" Top="26" Width="91.14" Height="36" />
+    <Type Id="Objects.Services_objects.SQL Connector Module.IOS_View" Left="229.95" Top="26" Width="335.05333333333334" Height="94.63" />
+    <SocketType Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD" Left="586.00333333333333" Top="26" Width="184.23333333333335" Height="1556" />
+  </Type>
+  <SocketType Id="a68821cb-63a7-42f3-94b2-674f0676ff0f" OffsetX="0" OffsetY="0" Scale="1" />
+  <ClassSocket Id="06ecd690-55de-411b-a131-3aa28853ba10" OffsetX="0" OffsetY="0" Scale="0.52495562979984" />
+  <SocketType Id="c169a5b6-2545-49cc-8a2f-1cc84504c171" OffsetX="0" OffsetY="1521.0875" Scale="0.8">
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command1" Left="24" Top="2" Width="175.76333333333332" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command2" Left="24" Top="31" Width="175.76333333333332" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command3" Left="24" Top="60" Width="175.76333333333332" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command4" Left="24" Top="89" Width="175.76333333333332" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command5" Left="24" Top="118" Width="175.76333333333332" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command6" Left="24" Top="147" Width="175.76333333333332" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command7" Left="24" Top="176" Width="175.76333333333332" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command8" Left="24" Top="205" Width="175.76333333333332" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command9" Left="24" Top="234" Width="175.76333333333332" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command10" Left="24" Top="263" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command11" Left="24" Top="292" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command12" Left="24" Top="321" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command13" Left="24" Top="350" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command14" Left="24" Top="379" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command15" Left="24" Top="408" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command16" Left="24" Top="437" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command17" Left="24" Top="466" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command18" Left="24" Top="495" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command19" Left="24" Top="524" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command20" Left="24" Top="553" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command21" Left="24" Top="582" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command22" Left="24" Top="611" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command23" Left="24" Top="640" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command24" Left="24" Top="669" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command25" Left="24" Top="698" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command26" Left="24" Top="727" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command27" Left="24" Top="756" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command28" Left="24" Top="785" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command29" Left="24" Top="814" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command30" Left="24" Top="843" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command31" Left="24" Top="872" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command32" Left="24" Top="901" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command33" Left="24" Top="930" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command34" Left="24" Top="959" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command35" Left="24" Top="988" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command36" Left="24" Top="1017" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command37" Left="24" Top="1046" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command38" Left="24" Top="1075" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command39" Left="24" Top="1104" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command40" Left="24" Top="1133" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command41" Left="24" Top="1162" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command42" Left="24" Top="1191" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command43" Left="24" Top="1220" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command44" Left="24" Top="1249" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command45" Left="24" Top="1278" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command46" Left="24" Top="1307" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command47" Left="24" Top="1336" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command48" Left="24" Top="1365" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command49" Left="24" Top="1394" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command50" Left="24" Top="1423" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command51" Left="24" Top="1452" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command52" Left="24" Top="1481" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command53" Left="24" Top="1510" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command54" Left="24" Top="1539" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command55" Left="24" Top="1568" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command56" Left="24" Top="1597" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command57" Left="24" Top="1626" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command58" Left="24" Top="1655" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command59" Left="24" Top="1684" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command60" Left="24" Top="1713" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command61" Left="24" Top="1742" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command62" Left="24" Top="1771" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command63" Left="24" Top="1800" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command64" Left="24" Top="1829" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command65" Left="24" Top="1858" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command66" Left="24" Top="1887" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command67" Left="24" Top="1916" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command68" Left="24" Top="1945" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command69" Left="24" Top="1974" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command70" Left="24" Top="2003" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command71" Left="24" Top="2032" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command72" Left="24" Top="2061" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command73" Left="24" Top="2090" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command74" Left="24" Top="2119" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command75" Left="24" Top="2148" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command76" Left="24" Top="2177" Width="182.23333333333335" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.SQL Connector Module.Запрос_CMD.MakeQuery_Command78" Left="44" Top="2226" Width="182.23333333333335" Height="24" />
+  </SocketType>
+  <Type Id="8c1259d3-ed18-4c12-8435-6b788befbfad" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.Services_objects.PLC_SQL Connector Module.Запрос" Left="66" Top="26" Width="176.14" Height="299.00000000000006" />
+    <SocketType Id="Objects.Services_objects.PLC_SQL Connector Module.Запрос_CMD" Left="582.00333333333333" Top="27" Width="178.23333333333335" Height="254.00000000000011" />
+    <Type Id="Objects.Services_objects.PLC_SQL Connector Module.PLC_View" Left="272.95" Top="30" Width="292.05333333333334" Height="109.63" />
+  </Type>
+  <SocketType Id="a1885349-09bd-4b36-8850-c2391519f668" OffsetX="0" OffsetY="0" Scale="1" />
+  <SocketType Id="29cee999-be61-4321-8acf-2b40a34fb1bf" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.Services_objects.PLC_SQL Connector Module.Запрос_CMD.MakeQuery_Command1" Left="24" Top="2" Width="175.76333333333332" Height="24" />
+    <SocketParameter Id="Objects.Services_objects.PLC_SQL Connector Module.Запрос_CMD.MakeQuery_Command2" Left="24" Top="31" Width="175.76333333333332" Height="24" />
+  </SocketType>
+  <Type Id="96347042-5ba9-4ec1-9e81-b2b7b32b385b" OffsetX="0" OffsetY="0" Scale="1">
+    <Socket Id="Objects.Services_objects.PLC_SQL Connector Module.PLC_View.QueryOut" Left="24" Top="26" Width="398.80666666666667" Height="94.59" IsExpanded="true" />
+  </Type>
+  <type Id="30ae0ed2-53c3-47dc-8a45-7a98c719d355" OffsetX="0" OffsetY="0" Scale="0.8">
+    <socket Id="Objects.Services_objects.BufferService.PLC_View.Out" Left="424.61666666666662" Top="26" Width="296.42333333333335" Height="40.59" />
+  </type>
+</Diagrams>

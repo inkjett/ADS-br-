@@ -1,0 +1,823 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Diagrams>
+  <SocketType Id="e856d4e9-f079-42b9-a4af-7959a697143b" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_AI.st_Attributes.Name" Left="24" Top="2" Width="79.696666666666673" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AI.st_Attributes.Unit" Left="24" Top="31" Width="70.006666666666661" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AI.st_Attributes.Title" Left="24" Top="60" Width="70.443333333333328" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AI.st_Attributes.Unit2" Left="23" Top="90" Width="80.006666666666661" Height="25" />
+    <SocketParameter Id="Objects.PLC.cls_AI.st_Attributes.Connector" Left="27" Top="120" Width="103.13" Height="24" />
+  </SocketType>
+  <Type Id="e813896b-6acd-4101-9139-4169f2685295" OffsetX="0" OffsetY="0" Scale="1">
+    <Type Id="Objects.PLC.cls_PLC.ccv_PLC_VU" Left="66" Top="26" Width="212.69333333333333" Height="118.63" />
+    <Type Id="Objects.PLC.cls_PLC.ccv_PLC_SU" Left="68.65" Top="172.99196910858154" Width="213.94" Height="98.63">
+      <Socket Name="cs_iControl_Output" IsExpanded="true" />
+    </Type>
+    <SocketType Id="Objects.PLC.cls_PLC.st_iControl_Output" Left="376.65" Top="29.991969108581543" Width="192.67666666666668" Height="84" />
+  </Type>
+  <Type Id="94a3feb0-db48-47f2-bf18-4bec56ebad9a" OffsetX="0" OffsetY="0" Scale="0.355473064688617">
+    <Handler Id="Objects.PLC.cls_PLC.ccv_PLC_VU.On_Message" Left="66" Top="26" Width="143.39000000000001" Height="84" />
+    <Parameter Id="Objects.PLC.cls_PLC.ccv_PLC_VU.Message" Left="2159.5557117281646" Top="149.96" Width="96.69" Height="22" />
+    <Parameter Id="Objects.PLC.cls_PLC.ccv_PLC_VU.MessParameter1" Left="2118.7090450614978" Top="176.96" Width="137.53666666666669" Height="22" />
+    <Parameter Id="Objects.PLC.cls_PLC.ccv_PLC_VU.MessParameter2" Left="2094.299045061498" Top="26" Width="137.94666666666666" Height="22" />
+    <Reference Id="Objects.PLC.cls_PLC.ccv_PLC_VU._ccv_PLC_SU" Left="158.5" Top="207" Width="235.70666666666668" Height="98.63">
+      <Socket Name="cs_iControl_Output" IsExpanded="true" />
+    </Reference>
+    <Socket Id="Objects.PLC.cls_PLC.ccv_PLC_VU.cs_iControl_Output" Left="2081.299045061498" Top="222" Width="266.98333333333335" Height="70.59" IsExpanded="true" />
+    <Parameter Id="Objects.PLC.cls_PLC.ccv_PLC_VU.CRCtoHEX" Left="2202.2823783948315" Top="324.54999999999995" Width="130.86666666666667" Height="22" />
+    <Handler Id="Objects.PLC.cls_PLC.ccv_PLC_VU.on_CRCChange" Left="510.03666666666663" Top="343.46999999999991" Width="187.84" Height="85" />
+    <Parameter Id="Objects.PLC.cls_PLC.ccv_PLC_VU.CRCtoHEX_Etalon" Left="2153.2823783948315" Top="369.99196910858154" Width="172.45666666666668" Height="25" />
+    <Parameter Id="Objects.PLC.cls_PLC.ccv_PLC_VU.SaveCRC_ToEtalon" Left="2173.2823783948315" Top="430.99196910858154" Width="152.45666666666668" Height="23" />
+    <Handler Id="Objects.PLC.cls_PLC.ccv_PLC_VU.On_SaveCRC_ToEtalon" Left="424.39" Top="90" Width="195.28333333333336" Height="24" />
+    <Reference Id="Objects.PLC.cls_PLC.ccv_PLC_VU.Reference" Left="81" Top="319.48" Width="369.19666666666666" Height="202.63">
+      <Socket Name="Control" IsExpanded="true" />
+    </Reference>
+    <Handler Id="Objects.PLC.cls_PLC.ccv_PLC_VU.On_CRCtoHEX_Etalon" Left="658.6733333333334" Top="43" Width="225.39666666666668" Height="53" />
+    <Parameter Id="Objects.PLC.cls_PLC.ccv_PLC_VU.ChangeCRC" Left="2170.2823783948315" Top="470.54999999999995" Width="130.45666666666668" Height="22" />
+  </Type>
+  <type Id="6f88eeda-528e-4782-809b-8411ce096fc2" OffsetX="5" OffsetY="0" Scale="1">
+    <socket-type Id="Objects.PLC.cls_AI.st_Outputs" Left="66" Top="26" Width="164.33333333333334" Height="759" />
+    <type Id="Objects.PLC.cls_AI.ccv_AI_SU" Left="430.35" Top="759" Width="340.37" Height="175.63" />
+    <type Id="Objects.PLC.cls_AI.ccv_AI_VU" Left="82.350000000000023" Top="810.63" Width="286.78666666666669" Height="554.63" />
+    <socket-type Id="Objects.PLC.cls_AI.st_Attributes" Left="249.33333333333334" Top="27" Width="121.37333333333333" Height="136" />
+    <socket-type Id="Objects.PLC.cls_AI.st_Inputs" Left="389.70666666666671" Top="26" Width="199.81666666666666" Height="690" />
+    <type Id="Objects.PLC.cls_AI.SQL" Left="424" Top="971.17999999999984" Width="298" Height="167.99999999999977" />
+  </type>
+  <type Id="be5ed4b9-2dde-4274-9490-0e8499cf578b" OffsetX="0" OffsetY="0" Scale="0.815587527039437">
+    <socket Id="Objects.PLC.cls_AI.ccv_AI_VU.ClassSocket1" Left="1149.4746666666665" Top="26" Width="228.32333333333335" Height="154.55333333333334" IsExpanded="true" />
+    <ref Id="Objects.PLC.cls_AI.ccv_AI_VU._ccv_AI_SU" Left="637.37333333333333" Top="70" Width="295.18828891077953" Height="98.378309413496652" />
+    <socket Id="Objects.PLC.cls_AI.ccv_AI_VU.cs_AI_Input" Left="24" Top="112.63" Width="210.68666666666667" Height="908.5899999999998" IsExpanded="true" />
+    <socket Id="Objects.PLC.cls_AI.ccv_AI_VU.cs_AI_Output" Left="1183.0179999999998" Top="775.64" Width="219.78" Height="780.5899999999998" IsExpanded="true" />
+    <handler Id="Objects.PLC.cls_AI.ccv_AI_VU.Handler3" Left="276.68666666666667" Top="26" Width="104.31" Height="24" />
+    <ref Id="Objects.PLC.cls_AI.ccv_AI_VU._SQLConnector" Left="730.21466666666663" Top="1028" Width="377.26" Height="96.63" />
+  </type>
+  <namespace Id="d530be66-44cd-420b-8009-389e97b0be34" OffsetX="0" OffsetY="30.712" Scale="1">
+    <type Id="Objects.PLC.cls_Valve" Left="40" Top="40" Width="114.98" Height="118" />
+    <type Id="Objects.PLC.cls_AI" Left="195.98000000000002" Top="40" Width="110.37333333333333" Height="140" />
+    <type Id="Objects.PLC.cls_AO" Left="347.35333333333335" Top="40" Width="110.37333333333333" Height="140" />
+    <type Id="Objects.PLC.cls_Aux" Left="40" Top="200" Width="110.37333333333333" Height="140" />
+    <type Id="Objects.PLC.cls_DI" Left="191.37333333333333" Top="240" Width="110.37333333333333" Height="140" />
+    <type Id="Objects.PLC.cls_DO" Left="342.74666666666667" Top="240" Width="110.37333333333333" Height="140" />
+    <type Id="Objects.PLC.cls_AuxFC" Left="40" Top="440" Width="119.81666666666668" Height="118" />
+    <type Id="Objects.PLC.cls_Crate" Left="200.81666666666666" Top="440" Width="114.54333333333334" Height="96" />
+    <type Id="Objects.PLC.cls_Commands" Left="356.36" Top="440" Width="146.68" Height="96" />
+    <type Id="Objects.PLC.cls_Sampler" Left="200.81666666666666" Top="580" Width="124.17333333333333" Height="118" />
+    <type Id="Objects.PLC.cls_PLCModule" Left="365.99" Top="580" Width="147.13666666666666" Height="74" />
+    <type Id="Objects.PLC.cls_PLC" Left="757.98" Top="40" Width="143.26666666666668" Height="96" />
+    <type Id="Objects.PLC.cls_Link" Left="40" Top="700" Width="107.80000000000001" Height="52" />
+    <type Id="Objects.PLC.cls_Protect" Left="365.99" Top="700" Width="124.36666666666667" Height="74" />
+    <type Id="Objects.PLC.cls_Valve_MPSA" Left="539" Top="41" Width="177.98000000000002" Height="136" />
+    <type Id="Objects.PLC.cls_TankReagent" Left="553" Top="234.55000000000007" Width="176.63" Height="41" />
+    <type Id="Objects.PLC.cls_Scheduler" Left="566.99" Top="671" Width="124.36666666666667" Height="74" />
+    <type Id="Objects.PLC.cls_CrateLink" Left="568" Top="447.00000000000006" Width="118.80000000000001" Height="138.99999999999989" />
+    <type Id="Objects.PLC.BoolImitator" Left="861" Top="380.08" Width="150" Height="100" />
+  </namespace>
+  <Class Id="38fbfec1-ac9a-4742-a6be-b3f3994b4b5b" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassView Id="Objects.PLC.cls_iControl.ccv_iControl_SU" Left="66.000000000000014" Top="26" Width="241.94" Height="63.629999999999995" />
+    <ClassView Id="Objects.PLC.cls_iControl.ccv_iControl_VU" Left="69" Top="112" Width="242.94" Height="63.629999999999995" />
+    <SocketType Id="Objects.PLC.cls_iControl.st_Output" Left="418.35" Top="36.991969108581543" Width="161.67666666666668" Height="133" />
+  </Class>
+  <SocketType Id="190bd738-ff7d-420e-b697-c59b5ab2cd0c" OffsetX="0" OffsetY="0" Scale="1" />
+  <SocketType Id="8c9ecce2-097e-4d1b-8ee4-81401b281007" OffsetX="0.490000000000009" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_PLC.st_iControl_Output.CRC" Left="462" Top="80.991969108581543" Width="122.49000000000001" Height="24" />
+  </SocketType>
+  <ClassView Id="2fdec607-9a00-4635-9d4d-8daaccca8419" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.PLC.cls_PLC.ccv_PLC_SU.cs_iControl_Output" Left="772.11666666666667" Top="26" Width="227.88333333333333" Height="70.59" IsExpanded="true" />
+  </ClassView>
+  <Class Id="3a9da438-8188-4617-a1cf-ebf95f585e20" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.PLC.cls_Commands.st_Inputs" Left="66" Top="26" Width="142.12333333333333" Height="180" />
+    <ClassView Id="Objects.PLC.cls_Commands.ccv_Commands_SU" Left="162.8" Top="232" Width="251.3366666666667" Height="68.63" />
+    <ClassView Id="Objects.PLC.cls_Commands.ccv_Commands_VU" Left="162.8" Top="321.63" Width="253.49666666666667" Height="68.63" />
+  </Class>
+  <SocketType Id="b8275d1f-a239-4420-b958-edabfa9ed8d7" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_Commands.st_Inputs.ValveCommand" Left="24" Top="2" Width="131.58666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Commands.st_Inputs.AICommand" Left="24" Top="31" Width="114.03" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Commands.st_Inputs.DICommand" Left="24" Top="60" Width="114.70333333333333" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Commands.st_Inputs.AOCommand" Left="24" Top="89" Width="119.88333333333334" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Commands.st_Inputs.DOCommand" Left="24" Top="118" Width="120.55666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Commands.st_Inputs.AuxCommand" Left="24" Top="147" Width="123.13333333333334" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Commands.st_Inputs.AuxFCCommand" Left="24" Top="176" Width="136.42333333333335" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Commands.st_Inputs.SamplerCommand" Left="24" Top="205" Width="146.32333333333332" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Commands.st_Inputs.CRCUpdateCommand" Left="25" Top="235" Width="171.32333333333332" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Commands.st_Inputs.ProtectCommand" Left="27" Top="266" Width="171.32333333333332" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Commands.st_Inputs.STOPCommand" Left="29" Top="297" Width="171.32333333333332" Height="24" />
+  </SocketType>
+  <type Id="67be00d3-dcea-40cc-8778-355630762e77" OffsetX="270.66" OffsetY="0" Scale="1">
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.Imit" Left="924.19666666666694" Top="573" Width="70.50333333333333" Height="22" />
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.State" Left="917.19666666666694" Top="482" Width="76.50333333333333" Height="22" />
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.Crash" Left="910.10666666666691" Top="451" Width="79.593333333333334" Height="22" />
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.Error" Left="919.08000000000027" Top="425" Width="75.62" Height="22" />
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.MV" Left="939.47000000000025" Top="304" Width="68.23" Height="22" />
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.FlowControl" Left="898.80333333333363" Top="219" Width="113.89666666666668" Height="22" />
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.Flow" Left="937.23000000000025" Top="192" Width="74.47" Height="22" />
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.ModbusLink" Left="899.686666666667" Top="165.00000000000003" Width="117.01333333333334" Height="22" />
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.ModbusControl" Left="889.46333333333359" Top="139.00000000000003" Width="133.23666666666668" Height="22" />
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.StopMode" Left="907.41333333333364" Top="108" Width="105.28666666666666" Height="22" />
+    <ref Id="Objects.PLC.cls_Valve.ccv_Valve_VU._ccv_Valve_SU" Left="291.97333333333336" Top="26" Width="249.66000000000003" Height="72.63" />
+    <socket Id="Objects.PLC.cls_Valve.ccv_Valve_VU.cs_OutputsPLC" Left="583.63333333333355" Top="38" Width="235.06666666666669" Height="530.59" IsExpanded="true" />
+    <socket Id="Objects.PLC.cls_Valve.ccv_Valve_VU.ClassSocket1" Left="24" Top="26" Width="225.97333333333336" Height="458.59000000000003" IsExpanded="true" />
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.Message" Left="917.01000000000022" Top="26" Width="96.69" Height="22" />
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.MessParameter1" Left="882.16333333333364" Top="77" Width="137.53666666666669" Height="22" />
+    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.MessParameter2" Left="879.16333333333364" Top="45" Width="137.53666666666669" Height="22" />
+    <handler Id="Objects.PLC.cls_Valve.ccv_Valve_VU.On_Message" Left="338.97333333333336" Top="171" Width="143.01333333333335" Height="84" />
+  </type>
+  <Class Id="a463e755-ee87-4a63-8545-adc56ebd9e9b" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.PLC.cls_PLCModule.CalcFromCrate" Left="66" Top="26" Width="129.44" Height="58" />
+    <ClassView Id="Objects.PLC.cls_PLCModule.ccv_PLCModule_VU" Left="232.35" Top="26" Width="253.54000000000002" Height="144.63" />
+  </Class>
+  <Type Id="e6f8efbc-1501-4ff4-a0b9-a49298cd16d9" OffsetX="0" OffsetY="0" Scale="1">
+    <Socket Id="Objects.PLC.cls_PLCModule.ccv_PLCModule_VU.CalcFromCrate" Left="936.38666666666654" Top="166.41" Width="283.65333333333331" Height="72.59" IsExpanded="true" />
+    <Handler Id="Objects.PLC.cls_PLCModule.ccv_PLCModule_VU.On_Message" Left="260" Top="146" Width="143.01333333333335" Height="84" />
+    <Parameter Id="Objects.PLC.cls_PLCModule.ccv_PLCModule_VU.Message" Left="1133.35" Top="26" Width="96.69" Height="22" />
+    <Parameter Id="Objects.PLC.cls_PLCModule.ccv_PLCModule_VU.MessParameter1" Left="1092.5033333333331" Top="53" Width="137.53666666666669" Height="22" />
+    <Parameter Id="Objects.PLC.cls_PLCModule.ccv_PLCModule_VU.MessParameter2" Left="1092.5033333333331" Top="80" Width="137.53666666666669" Height="22" />
+  </Type>
+  <Class Id="41cb7c69-094e-44c2-81dc-dfaff9ff8984" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.PLC.cls_Crate.st_Output" Left="66" Top="26" Width="103.95333333333333" Height="80" />
+    <ClassView Id="Objects.PLC.cls_Crate.ccv_Crate_SU" Left="232.35" Top="26" Width="219.20000000000002" Height="72.63" />
+    <ClassView Id="Objects.PLC.cls_Crate.ccv_Crate_VU" Left="232.35" Top="119.63" Width="221.36" Height="840.63" />
+  </Class>
+  <Class Id="67932d9a-937c-43fb-abc9-34687f68b079" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.PLC.cls_Sampler.st_Outputs" Left="66" Top="26" Width="133.38" Height="344" />
+    <SocketType Id="Objects.PLC.cls_Sampler.st_Inputs" Left="220.38" Top="26" Width="133.38" Height="212" />
+    <ClassView Id="Objects.PLC.cls_Sampler.cv_Sampler_SU" Left="231.15" Top="259" Width="314.57333333333338" Height="72.63" />
+    <ClassView Id="Objects.PLC.cls_Sampler.cv_Sampler_VU" Left="231.15" Top="352.63" Width="314.57333333333338" Height="264.63" />
+    <SocketType Id="Objects.PLC.cls_Sampler.st_Attributes" Left="393.23" Top="31" Width="118.37333333333333" Height="80" />
+  </Class>
+  <SocketType Id="f3569871-4964-49fc-9e6a-d0d88c342234" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.State" Left="24" Top="2" Width="74.50333333333333" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.PercentToEnd" Left="24" Top="31" Width="119.47666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.VolumeTank" Left="24" Top="60" Width="111.83000000000001" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.VolumeDose" Left="24" Top="89" Width="114.84333333333333" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.TargetTime" Left="24" Top="118" Width="106.43666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.TargetVolume" Left="24" Top="147" Width="120.66000000000001" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.TargetMass" Left="24" Top="176" Width="107.7" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.WorkCycle" Left="24" Top="205" Width="103.87" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.ProbsDelayMin" Left="24" Top="234" Width="128.05333333333334" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.ProbsQuantity" Left="24" Top="263" Width="123.65" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.ProbsPast" Left="24" Top="292" Width="99.646666666666675" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.ProbsFuture" Left="24" Top="321" Width="112.02666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.ProbsDelay" Left="24" Top="350" Width="107.58000000000001" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Outputs.CoilDelayTime" Left="24" Top="379" Width="123.59" Height="24" />
+  </SocketType>
+  <ClassView Id="d34c6ea5-13b7-461f-9e3a-82517f85f00f" OffsetX="0" OffsetY="0" Scale="1">
+    <ThisReference Id="Objects.PLC.cls_Sampler.cv_Sampler_VU._cv_Sampler_SU" Left="306.28333333333319" Top="26" Width="314.57333333333338" Height="72.63" />
+    <ClassSocket Id="Objects.PLC.cls_Sampler.cv_Sampler_VU.cs_Sampler_Inputs" Left="24" Top="97.63" Width="240.28333333333333" Height="40.59" />
+    <ClassSocket Id="Objects.PLC.cls_Sampler.cv_Sampler_VU.cs_Sampler_Outputs" Left="826.86999999999989" Top="26" Width="249.37666666666667" Height="40.59" />
+    <ClassParameter Id="Objects.PLC.cls_Sampler.cv_Sampler_VU.Mode" Left="995.09666666666681" Top="71.59" Width="81.15" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Sampler.cv_Sampler_VU.BitWork" Left="984.48666666666668" Top="98.59" Width="91.76" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Sampler.cv_Sampler_VU.BitWork1" Left="978.01666666666665" Top="125.59" Width="98.23" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Sampler.cv_Sampler_VU.BitBlok" Left="989.61333333333323" Top="152.59" Width="86.633333333333326" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Sampler.cv_Sampler_VU.Percent" Left="986.84333333333325" Top="179.59" Width="89.403333333333336" Height="22" />
+    <Handler Id="Objects.PLC.cls_Sampler.cv_Sampler_VU.On_Message" Left="641.85666666666657" Top="26" Width="143.01333333333335" Height="84" />
+    <ClassParameter Id="Objects.PLC.cls_Sampler.cv_Sampler_VU.Message" Left="979.55666666666662" Top="206.59" Width="96.69" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Sampler.cv_Sampler_VU.MessParameter1" Left="938.71" Top="233.59000000000003" Width="137.53666666666669" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Sampler.cv_Sampler_VU.MessParameter2" Left="938.71" Top="260.59000000000003" Width="137.53666666666669" Height="22" />
+    <ClassSocket Id="Objects.PLC.cls_Sampler.cv_Sampler_VU.cs_Attributes" Left="829.86999999999989" Top="293.59" Width="236.67333333333335" Height="40.59" />
+  </ClassView>
+  <Class Id="31363094-8aaa-4bfc-a370-5be12b58e6ee" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassView Id="Objects.PLC.cls_Protect.ccv_Protect_VU" Left="66.000000000000014" Top="26" Width="231.18333333333334" Height="106.63" />
+    <ClassView Id="Objects.PLC.cls_Protect.ccv_Protect_SU" Left="66.000000000000014" Top="153.63" Width="229.02333333333337" Height="44.63" />
+    <SocketType Id="Objects.PLC.cls_Protect.st_Output" Left="398.6" Top="29.991969108581543" Width="142.67666666666668" Height="88" />
+    <SocketType Id="Objects.PLC.cls_Protect.st_Calc" Left="404" Top="146.99196910858154" Width="172.67666666666668" Height="171" />
+    <SocketType Id="Objects.PLC.cls_Protect.st_Info" Left="148" Top="219.91196910858156" Width="143.67666666666668" Height="56" />
+    <SocketType Id="Objects.PLC.cls_Protect.st_Common" Left="632" Top="47.039999999999964" Width="151.01666666666668" Height="182.76000000000028" />
+    <SocketType Id="Objects.PLC.cls_Protect.st_Input" Left="799.6" Top="33.991969108581543" Width="197.67666666666668" Height="112" />
+  </Class>
+  <ClassView Id="b37ff76d-b585-479f-969b-f9ff16b1d098" OffsetX="0" OffsetY="0" Scale="1" />
+  <ClassView Id="2bc553f6-47fc-41b4-803f-72b240dc591a" OffsetX="0" OffsetY="0" Scale="1">
+    <Handler Id="Objects.PLC.cls_Protect.ccv_Protect_VU.On_Message" Left="66" Top="26" Width="143.01333333333335" Height="84" />
+    <ClassParameter Id="Objects.PLC.cls_Protect.ccv_Protect_VU.Message" Left="978.31" Top="34" Width="96.69" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Protect.ccv_Protect_VU.MessParameter1" Left="937.46333333333337" Top="61" Width="137.53666666666669" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Protect.ccv_Protect_VU.MessParameter2" Left="937.46333333333337" Top="88" Width="137.53666666666669" Height="22" />
+  </ClassView>
+  <ClassView Id="d21f1387-2446-42f6-a892-b652c24321cc" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.PLC.cls_Protect.ccv_Protect_SU.cs_Output" Left="605.84" Top="26" Width="241.16000000000003" Height="98.59" IsExpanded="true" />
+    <ClassSocket Id="Objects.PLC.cls_Protect.ccv_Protect_SU.cs_Input" Left="24" Top="31.039999999999992" Width="185.88333333333333" Height="74.59" IsExpanded="true" />
+  </ClassView>
+  <SocketType Id="300b6edb-2749-449c-b1ea-a27806d78dee" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Calc.ValueInput" Left="24" Top="2" Width="104.54666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Calc.isActive" Left="24" Top="2" Width="88.28" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Calc.ProtectInput" Left="24" Top="2" Width="113.77000000000001" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Calc.ProtectOutput" Left="24" Top="2" Width="123.69000000000001" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Calc.Mask" Left="24" Top="2" Width="75.94" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Calc.Block" Left="24" Top="2" Width="76.323333333333338" Height="24" />
+  </SocketType>
+  <SocketType Id="10a50561-a673-4ed8-81df-e1932929937c" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Common.ValueInput" Left="44" Top="22" Width="104.54666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Common.isActive" Left="44" Top="51" Width="88.28" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Common.ProtectInput" Left="44" Top="80" Width="113.77000000000001" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Common.ProtectOutput" Left="44" Top="109" Width="123.69000000000001" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Common.Mask" Left="44" Top="138" Width="75.94" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Common.Block" Left="44" Top="167" Width="76.323333333333338" Height="24" />
+  </SocketType>
+  <type Id="83ee876a-9ef3-4694-b000-566c404cf02c" OffsetX="0" OffsetY="0" Scale="1">
+    <socket-type Id="Objects.PLC.cls_Valve.st_Outputs" Left="66" Top="26" Width="111.21333333333334" Height="454" />
+    <type Id="Objects.PLC.cls_Valve.ccv_Valve_SU" Left="232.35" Top="26" Width="247.37" Height="72.63" />
+    <type Id="Objects.PLC.cls_Valve.ccv_Valve_VU" Left="232.35" Top="119.63" Width="265.87333333333333" Height="576.63" />
+    <socket-type Id="Objects.PLC.cls_Valve.st_Inputs" Left="519.22333333333336" Top="26" Width="142.02" Height="410" />
+    <socket-type Id="Objects.PLC.cls_Valve.Temp" Left="696.24333333333334" Top="108.08" Width="150" Height="100" />
+  </type>
+  <ClassView Id="76ad85fb-f7e3-402e-9b4d-0b349d393a93" OffsetX="0" OffsetY="0" Scale="0.616323458443762">
+    <Handler Id="Objects.PLC.cls_Protect.ccv_Protect_VU.On_Message" Left="296.71333333333337" Top="222.49009857599793" Width="143.01333333333335" Height="84" />
+    <ClassParameter Id="Objects.PLC.cls_Protect.ccv_Protect_VU.Message" Left="1190.1772314733666" Top="26" Width="96.69" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Protect.ccv_Protect_VU.MessParameter1" Left="1149.3305648067" Top="53" Width="137.53666666666669" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Protect.ccv_Protect_VU.MessParameter2" Left="1149.3305648067" Top="80" Width="137.53666666666669" Height="22" />
+    <ThisReference Id="Objects.PLC.cls_Protect.ccv_Protect_VU._ccv_Protect_SU" Left="602.62767067724383" Top="26" Width="268.47333333333336" Height="72.63" />
+    <ClassSocket Id="Objects.PLC.cls_Protect.ccv_Protect_VU.s_Output" Left="1045.7072314733666" Top="107" Width="241.16000000000003" Height="98.59" IsExpanded="true" />
+    <ClassSocket Id="Objects.PLC.cls_Protect.ccv_Protect_VU.s_Calc" Left="1051.2238981400333" Top="219.59" Width="226.64333333333335" Height="194.59" IsExpanded="true" />
+    <ClassSocket Id="Objects.PLC.cls_Protect.ccv_Protect_VU.st_Info" Left="1053.3305648067" Top="428.17999999999995" Width="225.53666666666669" Height="74.59" IsExpanded="true" />
+    <ClassSocket Id="Objects.PLC.cls_Protect.ccv_Protect_VU.cs_Input" Left="24" Top="125.17999999999995" Width="230.71333333333334" Height="94.59" IsExpanded="true" />
+    <Handler Id="Objects.PLC.cls_Protect.ccv_Protect_VU.On_cs_Input_DebounceTimeWrite" Left="460.72666666666669" Top="170" Width="233.92000000000002" Height="264" />
+    <Reference Id="Objects.PLC.cls_Protect.ccv_Protect_VU._SQLConnector" Left="626.44723147336674" Top="464.08418401612005" Width="377.26" Height="1262.63">
+      <Socket Name="Query" IsExpanded="true" />
+    </Reference>
+  </ClassView>
+  <socket-type Id="c7604b6a-aa62-4cbc-8207-8f120ee465a6" OffsetX="0" OffsetY="0" Scale="1">
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.State1" Left="24" Top="2" Width="80.973333333333329" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.State2" Left="24" Top="31" Width="80.973333333333329" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.WorkCycle" Left="24" Top="60" Width="103.87" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer1" Left="24" Top="89" Width="84.45" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer2" Left="24" Top="118" Width="84.45" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer3" Left="24" Top="147" Width="84.45" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer4" Left="24" Top="176" Width="84.45" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer5" Left="24" Top="205" Width="84.45" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer6" Left="24" Top="234" Width="84.45" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer7" Left="24" Top="263" Width="84.45" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer8" Left="24" Top="292" Width="84.45" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer9" Left="24" Top="321" Width="84.45" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer10" Left="24" Top="350" Width="90.92" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer11" Left="24" Top="379" Width="90.92" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer12" Left="24" Top="408" Width="90.92" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer13" Left="24" Top="437" Width="90.92" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer14" Left="24" Top="466" Width="90.92" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer15" Left="24" Top="495" Width="90.92" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Timer16" Left="24" Top="524" Width="90.92" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Percent" Left="29" Top="-30" Width="103.87" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.CmdFull" Left="150.26571404695073" Top="95.971359659005429" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.KVO" Left="236.86906917814781" Top="363.68696849406854" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.KVZ" Left="238.86906917814781" Top="392.68696849406848" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.vbState" Left="161.61089747069235" Top="125.02000266182279" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.MPO" Left="252.86906917814781" Top="427.68696849406848" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.MPZ" Left="251.86906917814781" Top="458.68696849406848" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Dist" Left="252.86906917814781" Top="495.68696849406848" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.U" Left="407.86906917814781" Top="496.68696849406854" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.MVO" Left="452.86906917814781" Top="361.68696849406837" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.MVZ" Left="458.86906917814781" Top="392.68696849406837" Width="137.49" Height="24" />
+  </socket-type>
+  <Type Id="58001d2d-97e9-4e0e-a46f-e719910c9475" OffsetX="0" OffsetY="181.763" Scale="1">
+    <SocketType Id="Objects.PLC.cls_Aux.st_Outputs" Left="66" Top="26" Width="112.23" Height="388" />
+    <Type Id="Objects.PLC.cls_Aux.ccv_Aux_SU" Left="193.05" Top="435" Width="272.08000000000004" Height="72.63" />
+    <Type Id="Objects.PLC.cls_Aux.ccv_Aux_VU" Left="193.05" Top="528.63" Width="272.08000000000004" Height="290.63" />
+    <SocketType Id="Objects.PLC.cls_Aux.st_Attributes" Left="199.23000000000002" Top="26" Width="118.37333333333333" Height="80" />
+    <SocketType Id="Objects.PLC.cls_Aux.st_Inputs" Left="338.60333333333335" Top="26" Width="140.71333333333334" Height="256" />
+  </Type>
+  <Type Id="f381fbe6-c6e3-477e-a7eb-f109df177acc" OffsetX="0" OffsetY="0" Scale="0.7987857882222">
+    <Parameter Id="Objects.PLC.cls_Aux.ccv_Aux_VU.U" Left="1292.5651809447006" Top="26" Width="58.243333333333332" Height="22" />
+    <Parameter Id="Objects.PLC.cls_Aux.ccv_Aux_VU.MP" Left="1283.3118476113673" Top="53" Width="67.49666666666667" Height="22" />
+    <Parameter Id="Objects.PLC.cls_Aux.ccv_Aux_VU.Error" Left="1275.1885142780338" Top="80" Width="75.62" Height="22" />
+    <Parameter Id="Objects.PLC.cls_Aux.ccv_Aux_VU.WorkState" Left="1246.3985142780339" Top="107" Width="104.41" Height="22" />
+    <Parameter Id="Objects.PLC.cls_Aux.ccv_Aux_VU.WorkMode" Left="1241.7518476113673" Top="134" Width="109.05666666666667" Height="22" />
+    <Reference Id="Objects.PLC.cls_Aux.ccv_Aux_VU._ccv_Aux_SU" Left="452.95957483774492" Top="26" Width="325.08000000000004" Height="416.63">
+      <Socket Name="cs_Aux_Inputs" IsExpanded="true" />
+      <Socket Name="cs_Aux_Outputs" IsExpanded="true" />
+    </Reference>
+    <Socket Id="Objects.PLC.cls_Aux.ccv_Aux_VU.cs_Aux_Outputs" Left="1136.6785142780341" Top="394" Width="228.13000000000002" Height="473.59000000000003" IsExpanded="true" />
+    <Socket Id="Objects.PLC.cls_Aux.ccv_Aux_VU.cs_Aux_Inputs" Left="24" Top="97.63" Width="219.03666666666669" Height="292.59000000000003" IsExpanded="true" />
+    <Socket Id="Objects.PLC.cls_Aux.ccv_Aux_VU.cs_Attributes" Left="1116.1351809447006" Top="169.59000000000006" Width="236.67333333333335" Height="94.59" IsExpanded="true" />
+    <Handler Id="Objects.PLC.cls_Aux.ccv_Aux_VU.On_Message" Left="660.039574837745" Top="553" Width="143.01333333333335" Height="84" />
+    <Parameter Id="Objects.PLC.cls_Aux.ccv_Aux_VU.Message" Left="1238.5919130209447" Top="267.67619982041589" Width="96.69" Height="22" />
+    <Parameter Id="Objects.PLC.cls_Aux.ccv_Aux_VU.MessParameter1" Left="1215.2718476113673" Top="297.18" Width="137.53666666666669" Height="22" />
+    <Parameter Id="Objects.PLC.cls_Aux.ccv_Aux_VU.MessParameter2" Left="1215.2718476113673" Top="324.18" Width="137.53666666666669" Height="22" />
+    <Handler Id="Objects.PLC.cls_Aux.ccv_Aux_VU.On_cs_Aux_Outputs_UstAsJSONString" Left="285.03666666666669" Top="660.66449595935694" Width="277.63" Height="302.99999999999989" />
+    <Handler Id="Objects.PLC.cls_Aux.ccv_Aux_VU.On_cs_Aux_Inputs_Timer1_write" Left="322.95957483774492" Top="498" Width="244.94333333333336" Height="24" />
+    <Reference Id="Objects.PLC.cls_Aux.ccv_Aux_VU._SQLConnector" Left="696.87518094470056" Top="755.74650350099876" Width="377.26" Height="1262.63">
+      <Socket Name="Query" IsExpanded="true" />
+    </Reference>
+  </Type>
+  <Type Id="307c579d-61e0-4589-9251-a9ebdd181981" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.PLC.cls_AO.st_Outputs" Left="66" Top="26" Width="111.35666666666667" Height="124" />
+    <Type Id="Objects.PLC.cls_AO.ccv_AO_SU" Left="174.3" Top="171" Width="247.37" Height="72.63" />
+    <Type Id="Objects.PLC.cls_AO.ccv_AO_VU" Left="174.3" Top="264.63" Width="253.3" Height="98.63" />
+    <SocketType Id="Objects.PLC.cls_AO.st_Attributes" Left="198.35666666666668" Top="26" Width="118.37333333333333" Height="80" />
+    <SocketType Id="Objects.PLC.cls_AO.st_Inputs" Left="337.73" Top="26" Width="142.16333333333336" Height="80" />
+  </Type>
+  <Type Id="f4ac8dad-0b20-400d-afa4-2168577770e1" OffsetX="0" OffsetY="0" Scale="1">
+    <Socket Id="Objects.PLC.cls_AO.ccv_AO_VU.ClassSocket1" Left="996.56666666666661" Top="26" Width="233.47333333333336" Height="40.59" />
+    <Reference Id="Objects.PLC.cls_AO.ccv_AO_VU.ccv_AO_SU" Left="281.8366666666667" Top="26" Width="247.37" Height="72.63" />
+    <Socket Id="Objects.PLC.cls_AO.ccv_AO_VU.ClassSocket" Left="1005.1099999999999" Top="71.59" Width="224.93" Height="40.59" />
+    <Socket Id="Objects.PLC.cls_AO.ccv_AO_VU.ClassSocket2" Left="24" Top="71.59" Width="215.83666666666667" Height="40.59" />
+  </Type>
+  <ClassView Id="2c638ec7-56ee-4f88-a0ca-7bd2eecaba88" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul1" Left="856.96" Top="26" Width="91.039999999999992" Height="22" />
+    <ThisReference Id="Objects.PLC.cls_Crate.ccv_Crate_VU._ccv_CrateErrors_SU" Left="118.3" Top="26" Width="250.46" Height="72.63" />
+    <ClassSocket Id="Objects.PLC.cls_Crate.ccv_Crate_VU.cs_CrateErrors_VU" Left="717.2" Top="53" Width="230.8" Height="40.59" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul2" Left="856.96" Top="98.59" Width="91.039999999999992" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul3" Left="856.96" Top="125.59" Width="91.039999999999992" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul4" Left="856.96" Top="152.59" Width="91.039999999999992" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul5" Left="856.96" Top="179.59" Width="91.039999999999992" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul6" Left="856.96" Top="206.59" Width="91.039999999999992" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul7" Left="856.96" Top="233.59000000000003" Width="91.039999999999992" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul8" Left="856.96" Top="260.59000000000003" Width="91.039999999999992" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul9" Left="856.96" Top="287.59000000000003" Width="91.039999999999992" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul10" Left="850.49" Top="314.59000000000003" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul11" Left="850.49" Top="341.59000000000003" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul12" Left="850.49" Top="368.59000000000003" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul13" Left="850.49" Top="395.59000000000003" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul14" Left="850.49" Top="422.59000000000003" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul15" Left="850.49" Top="449.59000000000003" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul16" Left="850.49" Top="476.59000000000003" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul17" Left="850.49" Top="503.59000000000003" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul18" Left="850.49" Top="530.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul19" Left="850.49" Top="557.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul20" Left="850.49" Top="584.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul21" Left="850.49" Top="611.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul22" Left="850.49" Top="638.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul23" Left="850.49" Top="665.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul24" Left="850.49" Top="692.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul25" Left="850.49" Top="719.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul26" Left="850.49" Top="746.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul27" Left="850.49" Top="773.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul28" Left="850.49" Top="800.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul29" Left="850.49" Top="827.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul30" Left="850.49" Top="854.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul31" Left="850.49" Top="881.59" Width="97.51" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Crate.ccv_Crate_VU.Modul32" Left="850.49" Top="908.59" Width="97.51" Height="22" />
+  </ClassView>
+  <Class Id="f375bf95-1102-49f7-a301-9f1983238342" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.PLC.cls_DI.st_Output" Left="66" Top="26" Width="133.32" Height="80" />
+    <ClassView Id="Objects.PLC.cls_DI.ccv_DI_SU" Left="174.3" Top="127" Width="247.37" Height="72.63" />
+    <SocketType Id="Objects.PLC.cls_DI.st_Input" Left="220.32" Top="26" Width="161.80333333333334" Height="58" />
+    <ClassView Id="Objects.PLC.cls_DI.ccv_DI_VU" Left="174.3" Top="220.63" Width="265.87333333333333" Height="218.63" />
+    <SocketType Id="Objects.PLC.cls_DI.st_Attributes" Left="403.12333333333333" Top="26" Width="118.37333333333333" Height="80" />
+  </Class>
+  <Type Id="60eef35a-b7aa-4ce7-946a-c10a0ef4ebb6" OffsetX="0" OffsetY="0" Scale="1">
+    <Reference Id="Objects.PLC.cls_DI.ccv_DI_VU._ccv_DI_SU" Left="272.63666666666671" Top="26" Width="247.37" Height="72.63" />
+    <Socket Id="Objects.PLC.cls_DI.ccv_DI_VU.cs_DI_Output" Left="847.85333333333324" Top="26" Width="215.73000000000002" Height="98.59" IsExpanded="true" />
+    <Socket Id="Objects.PLC.cls_DI.ccv_DI_VU.ClassSocket1" Left="24" Top="97.63" Width="206.63666666666668" Height="40.59" />
+    <Parameter Id="Objects.PLC.cls_DI.ccv_DI_VU.Value" Left="979.92999999999984" Top="82.59" Width="78.653333333333336" Height="22" />
+    <Parameter Id="Objects.PLC.cls_DI.ccv_DI_VU.Invalid" Left="973.86666666666656" Top="109.59" Width="84.716666666666669" Height="22" />
+    <Socket Id="Objects.PLC.cls_DI.ccv_DI_VU.ClassSocket" Left="829.6433333333332" Top="136.59" Width="228.94" Height="40.59" />
+    <Handler Id="Objects.PLC.cls_DI.ccv_DI_VU.On_Message" Left="358.97333333333336" Top="159" Width="143.01333333333335" Height="84" />
+    <Parameter Id="Objects.PLC.cls_DI.ccv_DI_VU.Message" Left="961.8933333333332" Top="182.18" Width="96.69" Height="22" />
+    <Parameter Id="Objects.PLC.cls_DI.ccv_DI_VU.MessParameter1" Left="921.04666666666662" Top="209.18" Width="137.53666666666669" Height="22" />
+    <Parameter Id="Objects.PLC.cls_DI.ccv_DI_VU.MessParameter2" Left="921.04666666666662" Top="236.18" Width="137.53666666666669" Height="22" />
+    <Parameter Id="Objects.PLC.cls_DI.ccv_DI_VU.ActiveState" Left="933.58333333333326" Top="348.03999999999996" Width="130.45666666666668" Height="22" />
+    <Parameter Id="Objects.PLC.cls_DI.ccv_DI_VU.TempMessage" Left="929.04" Top="286.03999999999996" Width="130.45666666666668" Height="22" />
+    <Parameter Id="Objects.PLC.cls_DI.ccv_DI_VU.ColorType" Left="937.58333333333326" Top="379.03999999999996" Width="130.45666666666668" Height="22" />
+  </Type>
+  <Class Id="f43f8697-4eea-46f4-8b8e-30522d559120" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.PLC.cls_DO.st_Output" Left="66" Top="26" Width="122.13666666666667" Height="102" />
+    <ClassView Id="Objects.PLC.cls_DO.ccv_DO_SU" Left="174.3" Top="149" Width="247.37" Height="72.63" />
+    <SocketType Id="Objects.PLC.cls_DO.st_Input" Left="209.13666666666666" Top="26" Width="150.62" Height="58" />
+    <ClassView Id="Objects.PLC.cls_DO.ccv_DO_VU" Left="174.3" Top="242.63" Width="265.87333333333333" Height="218.63" />
+    <SocketType Id="Objects.PLC.cls_DO.st_Attributes" Left="380.75666666666666" Top="26" Width="118.37333333333333" Height="80" />
+  </Class>
+  <ClassView Id="3f7ae48d-9d37-4d96-bcf3-4e92feb4ff40" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassParameter Id="Objects.PLC.cls_DO.ccv_DO_VU.Value" Left="921.34666666666669" Top="26" Width="78.653333333333336" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_DO.ccv_DO_VU.ValueOut" Left="901.44333333333327" Top="53" Width="98.556666666666672" Height="22" />
+    <ThisReference Id="Objects.PLC.cls_DO.ccv_DO_VU._ccv_DO_SU" Left="278.00333333333333" Top="26" Width="247.37" Height="72.63" />
+    <ClassSocket Id="Objects.PLC.cls_DO.ccv_DO_VU.cs_DO_Output" Left="778.90333333333331" Top="80" Width="221.09666666666666" Height="40.59" />
+    <ClassSocket Id="Objects.PLC.cls_DO.ccv_DO_VU.ClassSocket1" Left="24" Top="97.63" Width="212.00333333333333" Height="40.59" />
+    <ClassSocket Id="Objects.PLC.cls_DO.ccv_DO_VU.ClassSocket" Left="765.69333333333327" Top="125.59" Width="234.30666666666667" Height="40.59" />
+    <Handler Id="Objects.PLC.cls_DO.ccv_DO_VU.On_Message" Left="416.70666666666665" Top="126" Width="143.01333333333335" Height="84" />
+    <ClassParameter Id="Objects.PLC.cls_DO.ccv_DO_VU.Message" Left="903.30999999999983" Top="171.18" Width="96.69" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_DO.ccv_DO_VU.MessParameter1" Left="862.46333333333325" Top="198.18" Width="137.53666666666669" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_DO.ccv_DO_VU.MessParameter2" Left="862.46333333333325" Top="225.18" Width="137.53666666666669" Height="22" />
+  </ClassView>
+  <Class Id="765f0e22-3b1f-4ad3-bf6e-c481d3e958da" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassView Id="Objects.PLC.cls_Link.ccv_Link_VU" Left="118.3" Top="26" Width="214.61666666666667" Height="118.63" />
+  </Class>
+  <ClassView Id="4ebe6282-9bc6-4116-b174-f048d6f926b3" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassParameter Id="Objects.PLC.cls_Link.ccv_Link_VU.Message" Left="969.31" Top="34" Width="96.69" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Link.ccv_Link_VU.MessParameter1" Left="928.46333333333337" Top="61" Width="137.53666666666669" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Link.ccv_Link_VU.MessParameter2" Left="928.46333333333337" Top="88" Width="137.53666666666669" Height="22" />
+    <Handler Id="Objects.PLC.cls_Link.ccv_Link_VU.On_Message" Left="66" Top="26" Width="143.01333333333335" Height="84" />
+  </ClassView>
+  <Type Id="91f24f23-56f9-4839-a4fa-e8382f021051" OffsetX="0" OffsetY="0" Scale="1">
+    <Socket Id="Objects.PLC.cls_Aux.ccv_Aux_SU.cs_Aux_Outputs" Left="794.87" Top="26" Width="228.13000000000002" Height="40.59" />
+    <Socket Id="Objects.PLC.cls_Aux.ccv_Aux_SU.cs_Aux_Inputs" Left="24" Top="26" Width="219.03666666666669" Height="40.59" />
+  </Type>
+  <ClassView Id="63507fa3-e9b9-4209-b949-c5de8b6faaa1" OffsetX="0" OffsetY="0" Scale="1" />
+  <Class Id="83631e54-7b3d-405d-ad90-05bd7ec31ff5" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.PLC.cls_Valve_MPSA.st_Outputs" Left="66" Top="26" Width="111.21333333333334" Height="476" />
+    <ClassView Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_SU" Left="215.85" Top="26" Width="247.37" Height="72.63" />
+    <ClassView Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU" Left="215.85" Top="119.63" Width="268.8366666666667" Height="576.63" />
+  </Class>
+  <SocketType Id="65bad2f8-1381-4df0-aa47-35441cf1f765" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_Valve_MPSA.st_Outputs.State1" Left="24" Top="2" Width="80.973333333333329" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Valve_MPSA.st_Outputs.State2" Left="24" Top="31" Width="80.973333333333329" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Valve_MPSA.st_Outputs.Percent" Left="22" Top="61" Width="87.403333333333336" Height="24" />
+  </SocketType>
+  <ClassView Id="5d8df92e-5434-4221-987f-f7996008621d" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_SU.ClassSocket" Left="695.93333333333328" Top="26" Width="235.06666666666669" Height="122.59" IsExpanded="true" />
+  </ClassView>
+  <ClassView Id="7b6d829b-9709-4a6e-ad3c-d1c2825773c7" OffsetX="0" OffsetY="331.013079340141" Scale="1">
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.U" Left="862.75666666666666" Top="26" Width="58.243333333333332" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.Imit" Left="850.49666666666667" Top="53" Width="70.50333333333333" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.KVO" Left="847.59666666666669" Top="80" Width="73.403333333333336" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.KVZ" Left="849.50666666666666" Top="107" Width="71.493333333333339" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.State" Left="844.49666666666667" Top="134" Width="76.50333333333333" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.Crash" Left="841.40666666666664" Top="161" Width="79.593333333333334" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.Error" Left="845.38" Top="188" Width="75.62" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.Dist" Left="850.52" Top="215" Width="70.48" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.MVO" Left="844.01666666666665" Top="242" Width="76.983333333333334" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.MVZ" Left="845.92666666666662" Top="269" Width="75.073333333333338" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.MV" Left="852.77" Top="296" Width="68.23" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.MPO" Left="844.45666666666671" Top="323" Width="76.543333333333337" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.MPZ" Left="846.66" Top="350" Width="74.34" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.FlowControl" Left="807.10333333333335" Top="377" Width="113.89666666666668" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.Flow" Left="846.53" Top="404" Width="74.47" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.ModbusLink" Left="803.98666666666668" Top="431" Width="117.01333333333334" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.ModbusControl" Left="787.76333333333332" Top="458" Width="133.23666666666668" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.StopMode" Left="815.71333333333337" Top="485" Width="105.28666666666666" Height="22" />
+    <ThisReference Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU._ccv_Valve_SU" Left="101.27333333333326" Top="26" Width="332.66" Height="74.63" />
+    <ClassSocket Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.cs_OutputsPLC" Left="542.93333333333328" Top="35.999999999999943" Width="235.06666666666669" Height="122.59" IsExpanded="true" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.Message" Left="824.31" Top="557.59" Width="96.69" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.MessParameter1" Left="783.46333333333337" Top="584.59" Width="137.53666666666669" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.MessParameter2" Left="783.46333333333337" Top="611.59" Width="137.53666666666669" Height="22" />
+    <Handler Id="Objects.PLC.cls_Valve_MPSA.ccv_Valve_VU.On_Message" Left="260.93333333333322" Top="215" Width="143.01333333333335" Height="84" />
+  </ClassView>
+  <SocketType Id="e5d6978a-db5e-41bd-a8b3-f4c953ce76a6" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_DI.st_Attributes.Name" Left="24" Top="2" Width="79.696666666666673" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_DI.st_Attributes.Connector" Left="24" Top="31" Width="103.13" Height="24" />
+  </SocketType>
+  <type Id="7bdfbe5c-8ff7-4f7b-8d71-d7c78484b19b" OffsetX="0" OffsetY="0" Scale="1">
+    <socket Id="Objects.PLC.cls_Valve.ccv_Valve_SU.ClassSocket" Left="786.93333333333328" Top="26" Width="235.06666666666669" Height="530.59" IsExpanded="true" />
+    <socket Id="Objects.PLC.cls_Valve.ccv_Valve_SU.ClassSocket1" Left="24" Top="26" Width="225.97333333333336" Height="40.59" />
+  </type>
+  <ClassSocket Id="f0192105-786e-4729-bfcc-b3696b41451c" OffsetX="0" OffsetY="0" Scale="1" />
+  <socket-type Id="134bd93f-39a1-423a-90b6-1c991c742b6e" OffsetX="0" OffsetY="0" Scale="0.8160554241">
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.State" Left="24" Top="2" Width="74.50333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Value_TechIn" Left="24" Top="31" Width="115.34333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Value_TechOut" Left="24" Top="60" Width="125.26333333333334" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Value_Imit" Left="24" Top="89" Width="102.13666666666667" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Value_Electr" Left="24" Top="118" Width="110.67" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Max3" Left="24" Top="147" Width="99.243333333333339" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Max2" Left="24" Top="176" Width="99.243333333333339" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Max1" Left="24" Top="205" Width="99.243333333333339" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Min1" Left="24" Top="234" Width="97.326666666666668" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Min2" Left="24" Top="263" Width="97.326666666666668" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Min3" Left="24" Top="292" Width="97.326666666666668" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Range_ElectrMin" Left="24" Top="379" Width="135.90666666666667" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Range_ElectrMax" Left="24" Top="408" Width="137.82333333333332" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Range_ValidMin" Left="24" Top="437" Width="132.43" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Range_ValidMax" Left="24" Top="466" Width="134.34666666666669" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Range_TechMin" Left="24" Top="495" Width="130.59666666666669" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Range_TechMax" Left="24" Top="524" Width="132.51333333333332" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Gist" Left="24" Top="553" Width="68.3" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Enable_Ust" Left="24" Top="611" Width="105.58666666666667" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Enable_Msg" Left="24" Top="640" Width="111.12" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Max4" Left="24" Top="669" Width="99.243333333333339" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Max5" Left="24" Top="698" Width="99.243333333333339" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Max6" Left="24" Top="727" Width="99.243333333333339" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Min4" Left="24" Top="756" Width="97.326666666666668" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Min5" Left="24" Top="785" Width="97.326666666666668" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Min6" Left="24" Top="814" Width="97.326666666666668" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.ElAllowedRange_Bottom" Left="298" Top="30" Width="197.34333333333333" Height="25" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.ElAllowedRange_Top" Left="306" Top="56" Width="197.34333333333333" Height="25" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.ImRange_Bottom" Left="326" Top="205" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.ImRange_Top" Left="333" Top="240" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.CmdIn" Left="333" Top="269" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.EnableFiltering" Left="340" Top="303" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.K" Left="343" Top="337" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.NeedNormMsg" Left="351" Top="371" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.ImitIn" Left="356" Top="404" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.OutSignal_Value" Left="586.17976501554642" Top="201.7172676770644" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.StateImit" Left="24" Top="321" Width="95.393333333333345" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.WorkOutMin1" Left="360.06970946325464" Top="469.34005768150621" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.WorkOutMin2" Left="380.06970946325464" Top="489.34005768150621" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.WorkOutMin3" Left="400.06970946325464" Top="509.34005768150621" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.WorkOutMax1" Left="394.774593035635" Top="603.30290536745429" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.WorkOutMax2" Left="414.774593035635" Top="623.30290536745429" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.WorkOutMax3" Left="434.774593035635" Top="643.30290536745429" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.OutSignal_Ext" Left="402.08209356793873" Top="675.55697501110456" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.OutSignal_Ndv" Left="403.70098910246315" Top="707.81104465475494" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.OutSignal_MTMax" Left="406.5452916013528" Top="743.74133519150041" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.OutSignal_LTMin" Left="406.93878017151224" Top="777.22081179951579" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Max1_param" Left="189.82342875943885" Top="616.59310109755552" Width="154.38664672976006" Height="27.676220893095149" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Max2_param" Left="190.21691732959829" Top="650.07257770557078" Width="154.38664672976006" Height="27.676220893095149" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Max3_param" Left="193.06121982848782" Top="686.00286824231614" Width="154.38664672976006" Height="27.676220893095149" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Min1_param" Left="190.21691732959829" Top="726.04780949620283" Width="154.38664672976006" Height="27.676220893095149" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Min2_param" Left="190.61040589975772" Top="759.52728610421809" Width="154.38664672976006" Height="27.676220893095149" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Outputs.Ust_Min3_param" Left="193.45470839864726" Top="795.45757664096345" Width="154.38664672976006" Height="27.676220893095149" />
+  </socket-type>
+  <SocketType Id="68ac31db-3640-430b-8af1-9be6f616b12d" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_AO.st_Attributes.Name" Left="24" Top="2" Width="79.696666666666673" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AO.st_Attributes.Connector" Left="24" Top="31" Width="103.13" Height="24" />
+  </SocketType>
+  <SocketType Id="4762ab01-e2fe-4332-a080-2de3f9bfeca7" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Output.State" Left="24" Top="2" Width="74.50333333333333" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Output.DebounceTime" Left="24" Top="31" Width="127.98" Height="24" />
+  </SocketType>
+  <SocketType Id="af26d326-e393-443a-85e8-bf3fc0fe5971" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Input.DebounceTimeWrite" Left="24" Top="31" Width="173.98000000000002" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Protect.st_Input.DebounceTimeWrite_SQL" Left="24" Top="62" Width="186.98000000000002" Height="26" />
+  </SocketType>
+  <SocketType Id="18a3a545-ccfe-426f-91ae-dd6a2aef0a64" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.State" Left="24" Top="2" Width="74.50333333333333" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.TimeOfJob" Left="24" Top="31" Width="104.97666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.WorkCycle" Left="24" Top="60" Width="103.87" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Rezerv1" Left="24" Top="89" Width="89.196666666666673" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Rezerv2" Left="24" Top="118" Width="89.196666666666673" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Rezerv3" Left="24" Top="147" Width="89.196666666666673" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Rezerv4" Left="24" Top="176" Width="89.196666666666673" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Rezerv5" Left="24" Top="205" Width="89.196666666666673" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Timer1" Left="24" Top="234" Width="84.45" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Timer2" Left="24" Top="263" Width="84.45" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Timer3" Left="24" Top="292" Width="84.45" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Timer4" Left="24" Top="321" Width="84.45" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Timer5" Left="24" Top="350" Width="84.45" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Timer6" Left="24" Top="379" Width="84.45" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Timer7" Left="24" Top="408" Width="84.45" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.Timer8" Left="24" Top="437" Width="84.45" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Outputs.UstAsJSONString" Left="20" Top="486" Width="138.29333333333335" Height="24" />
+  </SocketType>
+  <SocketType Id="f4aca671-f8f3-4447-b021-444e9a96f18a" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Attributes.Name" Left="24" Top="2" Width="79.696666666666673" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Sampler.st_Attributes.Title" Left="24" Top="31" Width="70.443333333333328" Height="24" />
+  </SocketType>
+  <SocketType Id="2f858e0f-5f0b-425d-a72e-f19a8f1dac64" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_DO.st_Attributes.Name" Left="24" Top="2" Width="79.696666666666673" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_DO.st_Attributes.Connector" Left="24" Top="31" Width="103.13" Height="24" />
+  </SocketType>
+  <Type Id="1e6b5448-775c-4a13-b057-dfd912f9fc63" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.PLC.cls_AuxFC.st_Outputs" Left="66" Top="26" Width="115.17333333333335" Height="344" />
+    <Type Id="Objects.PLC.cls_AuxFC.ccv_AuxFC_SU" Left="221.1" Top="26" Width="226.20000000000002" Height="72.63" />
+    <Type Id="Objects.PLC.cls_AuxFC.ccv_AuxFC_VU" Left="221.1" Top="119.63" Width="274.55333333333334" Height="147.63" />
+    <SocketType Id="Objects.PLC.cls_AuxFC.st_Inputs" Left="516.65333333333331" Top="26" Width="145.98000000000002" Height="322" />
+    <SocketType Id="Objects.PLC.cls_AuxFC.st_Attributes" Left="766.23" Top="39" Width="118.37333333333333" Height="80" />
+  </Type>
+  <Type Id="b6b9804c-95ae-4912-9680-09aec2c092ca" OffsetX="158.318" OffsetY="0" Scale="1">
+    <Reference Id="Objects.PLC.cls_AuxFC.ccv_AuxFC_VU._ccv_AuxFC_SU" Left="298.2166666666667" Top="26" Width="260.14666666666665" Height="66.63" />
+    <Socket Id="Objects.PLC.cls_AuxFC.ccv_AuxFC_VU.cs_Outputs" Left="1131.4746666666667" Top="26" Width="240.31" Height="434.58999999999992" IsExpanded="true" />
+    <Socket Id="Objects.PLC.cls_AuxFC.ccv_AuxFC_VU.cs_Inputs" Left="24" Top="26" Width="232.21666666666667" Height="621.59000000000015" IsExpanded="true" />
+    <Parameter Id="Objects.PLC.cls_AuxFC.ccv_AuxFC_VU.MessKode" Left="1248.5046666666665" Top="499.59000000000003" Width="104.28" Height="22" />
+    <Socket Id="Objects.PLC.cls_AuxFC.ccv_AuxFC_VU.Attributes" Left="1255.4746666666667" Top="609" Width="119.88333333333334" Height="98.59" IsExpanded="true" />
+    <Handler Id="Objects.PLC.cls_AuxFC.ccv_AuxFC_VU.On_cs_Inputs_SIKN_C_Write" Left="387.2166666666667" Top="554" Width="223.92666666666668" Height="588" />
+    <Reference Id="Objects.PLC.cls_AuxFC.ccv_AuxFC_VU._SQLConnector" Left="712.21466666666674" Top="884" Width="377.26" Height="96.63" />
+  </Type>
+  <socket-type Id="40b63693-a563-4f65-a865-023dad0847bf" OffsetX="0" OffsetY="0" Scale="0.790882268955">
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Max3_write" Left="24" Top="2" Width="130.32" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Max2_write" Left="24" Top="31" Width="130.32" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Max1_write" Left="24" Top="60" Width="130.32" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Min1_write" Left="24" Top="89" Width="128.40333333333334" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Min2_write" Left="24" Top="118" Width="128.40333333333334" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Min3_write" Left="24" Top="147" Width="128.40333333333334" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Value_Imit_write" Left="24" Top="176" Width="134.09333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.ProcessTime_write" Left="24" Top="205" Width="144.81333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Range_ElectrMin_write" Left="24" Top="234" Width="166.98333333333335" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Range_ElectrMax_write" Left="24" Top="263" Width="168.9" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Range_ValidMin_write" Left="24" Top="292" Width="164.38666666666666" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Range_ValidMax_write" Left="24" Top="321" Width="166.30333333333334" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Range_TechMin_write" Left="24" Top="350" Width="162.84333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Range_TechMax_write" Left="24" Top="379" Width="164.76" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Gist_write" Left="24" Top="408" Width="99.376666666666665" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.K_Filt_write" Left="24" Top="437" Width="106.75666666666666" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Enable_Ust_write" Left="24" Top="466" Width="136.66333333333336" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Enable_Msg_write" Left="24" Top="495" Width="142.19666666666666" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Max4_write" Left="24" Top="524" Width="130.32" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Max5_write" Left="24" Top="553" Width="130.32" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Max6_write" Left="24" Top="582" Width="130.32" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Min4_write" Left="24" Top="611" Width="128.40333333333334" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Min5_write" Left="24" Top="640" Width="128.40333333333334" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Min6_write" Left="24" Top="669" Width="128.40333333333334" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.K_Filt_write_SQL" Left="24" Top="727" Width="132.80666666666667" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Range_TechMin_write_SQL" Left="202" Top="350" Width="205.84333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Range_TechMax_write_SQL" Left="202" Top="379" Width="207.76" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Range_ValidMin_write_SQL" Left="210" Top="284" Width="249.38666666666666" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Range_ValidMax_write_SQL" Left="210" Top="313" Width="254.30333333333334" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Gist_write_SQL" Left="193" Top="414" Width="190.37666666666667" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.ElAllowedRange_Bottom_write" Left="622.72297769228749" Top="15.860911212897292" Width="197.34333333333333" Height="25" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.ElAllowedRange_Top_write" Left="630.72297769228749" Top="41.860911212897292" Width="197.34333333333333" Height="25" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.ImRange_Bottom_write" Left="650.72297769228749" Top="190.86091121289729" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.ImRange_Top_write" Left="657.72297769228749" Top="225.86091121289729" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.CmdIn_write" Left="657.72297769228749" Top="254.86091121289729" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.EnableFiltering_write" Left="664.72297769228749" Top="288.86091121289729" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.K_write" Left="667.72297769228749" Top="322.86091121289729" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.NeedNormMsg_write" Left="675.72297769228749" Top="356.86091121289729" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.ImitIn_write" Left="680.72297769228749" Top="389.86091121289729" Width="194.34333333333336" Height="29.999999999999943" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Value_TechIn_write" Left="337.34328142991967" Top="76.288213916372371" Width="115.34333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Max1_param_write" Left="285.688070508556" Top="503.82997803660044" Width="154.38664672976006" Height="27.676220893095149" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Max2_param_write" Left="286.08155907871543" Top="537.3094546446157" Width="154.38664672976006" Height="27.676220893095149" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Max3_param_write" Left="288.92586157760496" Top="573.23974518136106" Width="154.38664672976006" Height="27.676220893095149" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Min1_param_write" Left="286.08155907871543" Top="613.28468643524775" Width="154.38664672976006" Height="27.676220893095149" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Min2_param_write" Left="286.47504764887486" Top="646.764163043263" Width="154.38664672976006" Height="27.676220893095149" />
+    <socket-parameter Id="Objects.PLC.cls_AI.st_Inputs.Ust_Min3_param_write" Left="289.3193501477644" Top="682.69445358000837" Width="154.38664672976006" Height="27.676220893095149" />
+  </socket-type>
+  <ClassSocket Id="01c63be8-adb3-461d-ad50-caf52ad6459d" OffsetX="0" OffsetY="0" Scale="1" />
+  <SocketType Id="3194e06a-f841-42d0-8612-4780b6c7b9d6" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.WorkCycle_Write" Left="24" Top="2" Width="137.95333333333332" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.UstSpeed_Write" Left="24" Top="31" Width="132.06333333333333" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.UstFlow_Write" Left="24" Top="60" Width="123.48666666666666" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.K1_Write" Left="24" Top="89" Width="119.52666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.K2_Write" Left="24" Top="118" Width="111.05666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.Limit_Min_Write" Left="24" Top="147" Width="132.93333333333334" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.Limit_Max_Write" Left="24" Top="176" Width="134.85000000000002" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.P_C_Write" Left="24" Top="205" Width="100.74333333333334" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.I_C_Write" Left="24" Top="234" Width="97.216666666666669" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.D_C_Write" Left="24" Top="263" Width="102.43666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.I_Max_Out_Write" Left="24" Top="292" Width="137.06" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.I_Min_Out_Write" Left="24" Top="321" Width="135.14333333333335" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.P_Off_Zone_Write" Left="24" Top="350" Width="141.79333333333335" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.K1_Write_SQL" Left="172" Top="89" Width="209.52666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.K2_Write_SQL" Left="171" Top="122" Width="154.05666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.Limit_Min_Write_SQL" Left="169" Top="152" Width="175.93333333333334" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.Limit_Max_Write_SQL" Left="169" Top="181" Width="177.85000000000002" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.P_C_Write_SQL" Left="174" Top="212" Width="143.74333333333334" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.I_C_Write_SQL" Left="174" Top="245" Width="140.21666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.D_C_Write_SQL" Left="182" Top="277" Width="145.43666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.P_Off_Zone_Write_SQL" Left="191" Top="315" Width="184.79333333333335" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.UstFlow_Write_SQL" Left="181" Top="56" Width="176.48666666666668" Height="25" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Inputs.UstSpeed_Write_SQL" Left="181" Top="27" Width="185.06333333333333" Height="25" />
+  </SocketType>
+  <SocketType Id="939daa47-1201-4cbc-a3ad-0020c0b452d7" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Inputs.TimeOfJob_write" Left="24" Top="2" Width="136.05333333333334" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Inputs.WorkCycle_write" Left="24" Top="31" Width="135.41666666666669" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Inputs.Timer1_write" Left="24" Top="60" Width="115.52666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Inputs.Timer2_write" Left="24" Top="89" Width="115.52666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Inputs.Timer3_write" Left="24" Top="118" Width="115.52666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Inputs.Timer4_write" Left="24" Top="147" Width="115.52666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Inputs.Timer5_write" Left="24" Top="176" Width="115.52666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Inputs.Timer6_write" Left="24" Top="205" Width="115.52666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Inputs.Timer7_write" Left="24" Top="234" Width="115.52666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Inputs.Timer8_write" Left="24" Top="263" Width="115.52666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Aux.st_Inputs.WriteUstAsJSONString" Left="35" Top="303" Width="166.92666666666668" Height="24" />
+  </SocketType>
+  <ClassSocket Id="a649b99a-260f-4bdf-8f47-040461653e39" OffsetX="0" OffsetY="0" Scale="1" />
+  <ClassSocket Id="519ba956-cf9e-427a-b843-ab0548064f88" OffsetX="0" OffsetY="344.26654007505" Scale="0.935393618232245" />
+  <type Id="e8bd7bfb-5357-4491-8fa2-f2a336a1dacb" OffsetX="62.5238695632433" OffsetY="0" Scale="0.837227455624351">
+    <socket Id="Objects.PLC.cls_AI.ccv_AI_SU.ClassSocket1" Left="24" Top="26" Width="211.06" Height="776.59" IsExpanded="true" />
+    <socket Id="Objects.PLC.cls_AI.ccv_AI_SU.cs_AI_Output" Left="971.65002449886265" Top="26" Width="220.15333333333334" Height="754.59" IsExpanded="true" />
+    <ref Id="Objects.PLC.cls_AI.ccv_AI_SU.Imitator" Left="598.56415896099986" Top="26" Width="218.54666666666668" Height="141.63" />
+    <ref Id="Objects.PLC.cls_AI.ccv_AI_SU.Reference" Left="277.06" Top="37.900202584540892" Width="254.34945106079061" Height="101.57325310401603" />
+    <ref Id="Objects.PLC.cls_AI.ccv_AI_SU.MSG_SQL" Left="588.43159868678072" Top="232.65966491844551" Width="232.1534059630433" Height="72.63" />
+    <parameter Id="Objects.PLC.cls_AI.ccv_AI_SU.AI_Name" Left="977.62211722756" Top="820.88600037998049" Width="138.23666666666668" Height="22" />
+    <parameter Id="Objects.PLC.cls_AI.ccv_AI_SU.Start_number" Left="966.49941812915836" Top="794.29456219855012" Width="138.23666666666668" Height="22" />
+    <ref Id="Objects.PLC.cls_AI.ccv_AI_SU.SQLConnector" Left="672.0408968885439" Top="640.21456979815753" Width="252.45852124061449" Height="118.63" />
+    <ref Id="Objects.PLC.cls_AI.ccv_AI_SU.SQL_Message" Left="302.96556625504553" Top="740.54572764027364" Width="314.56828561906741" Height="106.57418545739461" />
+  </type>
+  <Class Id="d5aab7bc-dad8-4ad8-9217-7c594c38c710" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketType Id="Objects.PLC.cls_TankReagent.st_Inputs" Left="801" Top="26" Width="112.01666666666668" Height="36" />
+    <SocketType Id="Objects.PLC.cls_TankReagent.st_Outputs" Left="665" Top="26.960000000000008" Width="112.01666666666668" Height="36" />
+    <ClassView Id="Objects.PLC.cls_TankReagent.cv_PLC" Left="73" Top="80.039999999999992" Width="236.94" Height="92.63" />
+    <ClassView Id="Objects.PLC.cls_TankReagent.cv_Server" Left="622" Top="123.03999999999999" Width="294.94" Height="148.63000000000005" />
+  </Class>
+  <SocketType Id="5d13162a-6258-4c04-814a-24ab950dadb6" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_TankReagent.st_Output.State" Left="155" Top="97.039999999999992" Width="137.08" Height="24" />
+  </SocketType>
+  <SocketType Id="25c709e8-0fdf-4aff-8a7e-714eb54c8781" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_TankReagent.st_Inputs.State_write" Left="132" Top="73.039999999999992" Width="137.08" Height="24" />
+  </SocketType>
+  <ClassView Id="45417257-7846-4872-af6c-5c3060e91b05" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.PLC.cls_TankReagent.cv_PLC.cs_Outputs" Left="873.99999999999989" Top="26" Width="119.88333333333334" Height="40.59" />
+    <ClassSocket Id="Objects.PLC.cls_TankReagent.cv_PLC.cs_Inputs" Left="24" Top="26" Width="119.88333333333334" Height="40.59" />
+  </ClassView>
+  <ClassSocket Id="abd61d98-7a08-47cf-8fe5-3acb86d05fbb" OffsetX="0" OffsetY="0" Scale="1" />
+  <ClassView Id="c4fa021e-e8dc-4ea6-80a3-9e6766f924e4" OffsetX="309" OffsetY="0" Scale="1">
+    <ThisReference Id="Objects.PLC.cls_TankReagent.cv_Server._cv_PLC" Left="328.26999999999987" Top="26" Width="255.37333333333333" Height="98.63">
+      <Socket Name="cs_Inputs" IsExpanded="true" />
+      <Socket Name="cs_Outputs" IsExpanded="true" />
+    </ThisReference>
+    <ClassSocket Id="Objects.PLC.cls_TankReagent.cv_Server.cs_Outputs" Left="771.42666666666662" Top="26" Width="271.36333333333334" Height="74.59" IsExpanded="true" />
+    <ClassSocket Id="Objects.PLC.cls_TankReagent.cv_Server.cs_Inputs" Left="24" Top="58.039999999999992" Width="262.27" Height="74.59" IsExpanded="true" />
+    <ClassParameter Id="Objects.PLC.cls_TankReagent.cv_Server.InWork" Left="868.78999999999985" Top="199.04" Width="130.45666666666668" Height="22" />
+    <ClassParameter Id="Objects.PLC.cls_TankReagent.cv_Server.InWork_write" Left="869.42666666666662" Top="237.04" Width="130.45666666666668" Height="22" />
+    <Handler Id="Objects.PLC.cls_TankReagent.cv_Server.On_InWork_write" Left="561.6433333333332" Top="322" Width="167.78333333333336" Height="24" />
+  </ClassView>
+  <Class Id="dfecf434-35de-4462-8744-67d46d8152ca" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassView Id="Objects.PLC.cls_Scheduler.ccv_Protect_VU" Left="155.54333333333324" Top="26" Width="279.10333333333335" Height="190.63" />
+    <ClassView Id="Objects.PLC.cls_Scheduler.ccv_Protect_SU" Left="155.54333333333324" Top="237.63" Width="229.02333333333337" Height="72.63" />
+    <SocketType Id="Objects.PLC.cls_Scheduler.st_Output" Left="455.64666666666659" Top="26" Width="129.98000000000002" Height="76" />
+    <SocketType Id="Objects.PLC.cls_Scheduler.st_Input" Left="602.33666666666659" Top="206" Width="184.66333333333336" Height="76" />
+  </Class>
+  <ClassView Id="b9a19dea-0cf0-43d5-9006-f7d603e029c3" OffsetX="0" OffsetY="0" Scale="1">
+    <ThisReference Id="Objects.PLC.cls_Scheduler.ccv_Protect_VU._ccv_Protect_SU" Left="302.0866666666667" Top="26" Width="268.84666666666669" Height="72.63" />
+    <ClassSocket Id="Objects.PLC.cls_Scheduler.ccv_Protect_VU.s_Output" Left="716.34666666666669" Top="133" Width="240.18" Height="40.59" />
+    <ClassSocket Id="Objects.PLC.cls_Scheduler.ccv_Protect_VU.cs_Input" Left="24" Top="202.63" Width="231.08666666666667" Height="138.59" IsExpanded="true" />
+    <Handler Id="Objects.PLC.cls_Scheduler.ccv_Protect_VU.On_cs_Input_DebounceTimeWrite" Left="327.72333333333341" Top="188.99999999999997" Width="243" Height="264" />
+    <Reference Id="Objects.PLC.cls_Scheduler.ccv_Protect_VU._SQLConnector" Left="297.0866666666667" Top="500" Width="377.26" Height="94.63" />
+  </ClassView>
+  <ClassView Id="5ee2a7b9-6a5e-4b77-9391-b5315a7687dd" OffsetX="0" OffsetY="0" Scale="1">
+    <ClassSocket Id="Objects.PLC.cls_Scheduler.ccv_Protect_SU.cs_Output" Left="588.81999999999994" Top="26" Width="240.18" Height="40.59" />
+    <ClassSocket Id="Objects.PLC.cls_Scheduler.ccv_Protect_SU.cs_Input" Left="24" Top="26" Width="231.08666666666667" Height="40.59" />
+  </ClassView>
+  <SocketType Id="6d8c8132-8685-4f0d-bd18-ae7bb70954b9" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_Scheduler.st_Output.StartMinute" Left="24" Top="31" Width="127.98" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Scheduler.st_Output.StopMinute" Left="27" Top="69" Width="127.98" Height="24" />
+  </SocketType>
+  <SocketType Id="b7ad4465-5634-464a-8566-49fa3639136b" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_Scheduler.st_Input.StartMinuteWrite" Left="24" Top="2" Width="156.61333333333334" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Scheduler.st_Input.StartMinuteWrite_SQL" Left="24" Top="31" Width="182.66333333333336" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Scheduler.st_Input.StopMinuteWrite" Left="28" Top="68" Width="156.61333333333334" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_Scheduler.st_Input.StopMinuteWrite_SQL" Left="28" Top="97" Width="182.66333333333336" Height="24" />
+  </SocketType>
+  <SocketType Id="0775e0e9-399e-4dbd-8aa9-a092cddb7150" OffsetX="0" OffsetY="0" Scale="1">
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.Mode" Left="24" Top="2" Width="79.15" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.WorkCycle" Left="24" Top="31" Width="103.87" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.UstSpeed" Left="24" Top="60" Width="98.45" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.UstFlow" Left="24" Top="89" Width="89.873333333333335" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.K1" Left="24" Top="118" Width="85.913333333333327" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.K2" Left="24" Top="147" Width="77.443333333333328" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.Limit_Min" Left="24" Top="176" Width="99.32" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.Limit_Max" Left="24" Top="205" Width="101.23666666666668" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.P_C" Left="24" Top="234" Width="67.13" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.I_C" Left="24" Top="263" Width="63.603333333333332" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.D_C" Left="24" Top="292" Width="68.823333333333338" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.I_Max_Out" Left="24" Top="321" Width="103.44666666666667" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.I_Min_Out" Left="24" Top="350" Width="101.53" Height="24" />
+    <SocketParameter Id="Objects.PLC.cls_AuxFC.st_Outputs.P_Off_Zone" Left="24" Top="379" Width="108.18" Height="24" />
+  </SocketType>
+  <ClassSocket Id="1ef9233f-e1a7-4f3e-8719-6fa0a8463f5a" OffsetX="0" OffsetY="0" Scale="1" />
+  <ClassSocket Id="f977ff89-14b3-4288-8885-567bf2375b73" OffsetX="0" OffsetY="0" Scale="1" />
+  <Type Id="2b37c3f3-806e-4292-9114-5e785685565a" OffsetX="250.88" OffsetY="0" Scale="1">
+    <Socket Id="Objects.PLC.cls_AuxFC.ccv_AuxFC_SU.cs_Outputs" Left="632.45333333333338" Top="26" Width="248.15" Height="352.55333333333334" IsExpanded="true" />
+    <Socket Id="Objects.PLC.cls_AuxFC.ccv_AuxFC_SU.cs_Inputs" Left="24" Top="26" Width="240.79000000000002" Height="550.55333333333328" IsExpanded="true" />
+  </Type>
+  <Type Id="836a70ce-74b5-4812-a282-1599a71cbb87" OffsetX="0" OffsetY="105.314" Scale="1">
+    <Socket Id="Objects.PLC.cls_AI.ccv_AI_SU_Imitator.ClassSocket" Left="956.84666666666658" Top="26" Width="220.15333333333334" Height="754.59" IsExpanded="true" />
+  </Type>
+  <Type Id="603d7aaf-d502-4e7f-a745-70c6ca8e7427" OffsetX="0" OffsetY="0" Scale="1">
+    <Socket Id="Objects.PLC.cls_AI.ccv_AI_VU_Imitator.ClassSocket1" Left="963.31666666666661" Top="26" Width="225.68333333333334" Height="40.59" />
+    <Reference Id="Objects.PLC.cls_AI.ccv_AI_VU_Imitator._ccv_AI_SU" Left="193.45" Top="26" Width="238.23666666666668" Height="72.63" />
+    <Socket Id="Objects.PLC.cls_AI.ccv_AI_VU_Imitator.cs_AI_Output" Left="971.86" Top="71.59" Width="217.14000000000001" Height="40.59" />
+  </Type>
+  <Type Id="eb17bc83-d75a-403e-bc6d-fc4d0fc7af1b" OffsetX="0" OffsetY="0" Scale="1">
+    <Type Id="Objects.PLC.BoolImitator.PLC_View" Left="457" Top="26" Width="306" Height="186.00000000000006" />
+  </Type>
+  <Type Id="dba7acae-a33a-4c93-b926-a6c8ad869317" OffsetX="0" OffsetY="0" Scale="1">
+    <Parameter Id="Objects.PLC.BoolImitator.AS_Imitation.ImitatiobOn" Left="1057.7633333333333" Top="26" Width="131.23666666666668" Height="22" />
+  </Type>
+  <Type Id="6db3a4dc-b91f-46b7-934c-563698021f1f" OffsetX="0" OffsetY="0" Scale="1">
+    <Parameter Id="Objects.PLC.BoolImitator.PLC_View.ImitationOn" Left="896.8" Top="26" Width="140.24" Height="22" />
+    <Parameter Id="Objects.PLC.BoolImitator.PLC_View.ReadMSGNoGeneration" Left="883.8" Top="66" Width="168.24" Height="31" />
+  </Type>
+  <Type Id="a3cf368a-ae04-4f3a-b8f9-35b8b1962100" OffsetX="0" OffsetY="0" Scale="1" />
+  <Type Id="752568a9-ff24-44bf-b46e-63404bbb5b6d" OffsetX="0" OffsetY="0" Scale="1">
+    <Parameter Id="Objects.PLC.cls_AI.SQL.UstAsJSONString" Left="1016.7633333333333" Top="26" Width="138.23666666666668" Height="22" />
+  </Type>
+  <Socket Id="d7b4bf81-d4ff-4923-9009-19fcd495089d" OffsetX="0" OffsetY="0" Scale="0.837227455624351" />
+  <socket-type Id="4b2c76bc-5234-4caa-bdf6-d780829a7c41" OffsetX="0" OffsetY="0" Scale="0.862309759191418">
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.WorkCycle_Write" Left="24" Top="2" Width="137.95333333333332" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer1_Write" Left="24" Top="31" Width="118.06333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer2_Write" Left="24" Top="60" Width="118.06333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer3_Write" Left="24" Top="89" Width="118.06333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer4_Write" Left="24" Top="118" Width="118.06333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer5_Write" Left="24" Top="147" Width="118.06333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer6_Write" Left="24" Top="176" Width="118.06333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer7_Write" Left="24" Top="205" Width="118.06333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer8_Write" Left="24" Top="234" Width="118.06333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer9_Write" Left="24" Top="263" Width="118.06333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer10_Write" Left="24" Top="292" Width="124.53333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer11_Write" Left="24" Top="321" Width="124.53333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer12_Write" Left="24" Top="350" Width="124.53333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer13_Write" Left="24" Top="379" Width="124.53333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer14_Write" Left="24" Top="408" Width="124.53333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer15_Write" Left="24" Top="437" Width="124.53333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.Timer16_Write" Left="24" Top="470.63870431404007" Width="124.53333333333333" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Inputs.CmdFull_Write" Left="26.265714046950734" Top="503.97135965900543" Width="137.49" Height="24" />
+  </socket-type>
+  <socket-type Id="cf6affe8-9530-44a9-823f-35ad377d0eaa" OffsetX="0" OffsetY="308.912354479942" Scale="1">
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.ObjectId" Left="290.86906917814781" Top="36.686968494068523" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.NU" Left="346.86906917814781" Top="229.68696849406851" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.MCOz" Left="347.86906917814781" Top="260.68696849406854" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.MCCz" Left="351.86906917814781" Top="288.68696849406854" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.Mufta" Left="351.86906917814781" Top="325.98669211651429" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.ibCloseBRU" Left="351.86906917814781" Top="349.98669211651429" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.ZD_EC_KTP" Left="351.86906917814781" Top="373.98669211651429" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.ibStopBRU" Left="351.86906917814781" Top="397.98669211651429" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.CorrCO" Left="351.86906917814781" Top="421.98669211651429" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.CorrCZ" Left="352.72968653549185" Top="460.617187191364" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.ErrBUR" Left="354.98834918755574" Top="488.49431877063694" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.nlTUOpen" Left="354.98834918755574" Top="512.49431877063694" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.nlTUStop" Left="354.98834918755574" Top="536.49431877063694" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.nlTUClose" Left="354.98834918755574" Top="560.49431877063694" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.nlOpen" Left="354.98834918755574" Top="584.49431877063694" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.nlStop" Left="354.98834918755574" Top="608.49431877063694" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.nlClose" Left="354.98834918755574" Top="632.49431877063694" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.nlCSPAOpen" Left="354.98834918755574" Top="656.49431877063694" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.nlCSPAClose" Left="354.98834918755574" Top="680.49431877063694" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.nlCSPAStop" Left="354.98834918755574" Top="704.49431877063694" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.nlBRUStop" Left="354.98834918755574" Top="728.49431877063694" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.nlSetNoOpen" Left="363.76183713346393" Top="754.53936372284022" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.nlSetNoClose" Left="370.8081693787426" Top="781.44798652535826" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wRTime" Left="362.31951870018077" Top="813.35015496207086" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wPCent" Left="371.31951870018077" Top="840.35015496207086" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wCtrl_slDis" Left="374.98834918755563" Top="872.81622437217459" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wCtrl_slNoMP" Left="374.98834918755563" Top="896.81622437217459" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wCtrl_slInvKB" Left="374.98834918755563" Top="920.81622437217459" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wCtrl_sl2Stop" Left="374.98834918755563" Top="944.81622437217459" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wCtrl_slBUR" Left="374.98834918755563" Top="968.81622437217459" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wCtrl_sl2Muft" Left="374.98834918755563" Top="992.81622437217459" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wCtrl_RS_OFF" Left="374.98834918755563" Top="1016.8162243721746" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wCtrl_Got_TU" Left="374.98834918755563" Top="1040.8162243721745" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wCtrl_slYesEC" Left="380.38571075202287" Top="1064.8162243721745" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.bUseRS" Left="379.51864494832944" Top="1092.5403723953038" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.vErr" Left="381.44568044410335" Top="1120.2859286114008" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.iwModNPS" Left="389.397037441286" Top="1155.7770410435944" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.ZD_EmulState_In" Left="386.62260548690131" Top="1188.8153583853709" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.ZD_ERR_In" Left="393.04530765174809" Top="1218.8079089107994" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.ZD_FAULT_In" Left="391.52987371814561" Top="1243.9716130548641" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.ZD_EMUL_In" Left="388.29320506985493" Top="1273.4384039856493" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.AlarmTM_In" Left="390.27087569736341" Top="1307.7863544799422" Width="137.49" Height="24" />
+  </socket-type>
+</Diagrams>

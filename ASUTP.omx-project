@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Id="2232d751-c238-4a21-9eaf-2ce09b406d1b" Version="44" OutputPath="bin\" Comments="" UpgradeVersion="5">
+  <Files>
+    <SourceFile Name="Diagnostic.omx" />
+    <SourceFile Name="Domain.omx" />
+    <SourceFile Name="IVK.omx" />
+    <SourceFile Name="Messages.omx" />
+    <AddressFile Name="ModbusTable_IVK.xml" />
+    <AddressFile Name="ModbusTable_PLC.xml" />
+    <AddressFile Name="OPCDATable_IVK.xml" />
+    <AddressFile Name="OPCUA.xml" />
+    <SourceFile Name="PLC.omx" />
+    <SourceFile Name="Services.omx" />
+    <AddressFile Name="SNMPTable_ARM.xml" />
+    <AddressFile Name="SNMPTable_Switch.xml" />
+    <AddressFile Name="SQLTable_IVK.xml" />
+    <AddressFile Name="SQLTable2.xml" />
+  </Files>
+</Project>

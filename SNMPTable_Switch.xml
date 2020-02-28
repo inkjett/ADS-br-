@@ -1,0 +1,52 @@
+﻿<root>
+  <item Binding="Introduced">
+    <node-path>ASUTP.Switch.1.Ports.StatePort_1</node-path>
+    <oid>.1.3.6.1.4.1.6603.1.11.1.3.1.1.2.1000001</oid>
+    <receive-mode>Poll</receive-mode>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.Switch.1.Ports.StatePort_2</node-path>
+    <oid>.1.3.6.1.4.1.6603.1.11.1.3.1.1.2.1000002</oid>
+    <receive-mode>Poll</receive-mode>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.Switch.1.Ports.StatePort_3</node-path>
+    <oid>.1.3.6.1.4.1.6603.1.11.1.3.1.1.2.1000003</oid>
+    <receive-mode>Poll</receive-mode>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.Switch.1.Ports.StatePort_4</node-path>
+    <oid>.1.3.6.1.4.1.6603.1.11.1.3.1.1.2.1000004</oid>
+    <receive-mode>Poll</receive-mode>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.Switch.1.Ports.StatePort_5</node-path>
+    <oid>.1.3.6.1.4.1.6603.1.11.1.3.1.1.2.1000005</oid>
+    <receive-mode>Poll</receive-mode>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.Switch.1.Ports.StatePort_6</node-path>
+    <oid>.1.3.6.1.4.1.6603.1.11.1.3.1.1.2.1000006</oid>
+    <receive-mode>Poll</receive-mode>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.Switch.1.Ports.StatePort_7</node-path>
+    <oid>.1.3.6.1.4.1.6603.1.11.1.3.1.1.2.1000007</oid>
+    <receive-mode>Poll</receive-mode>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.Switch.1.Ports.StatePort_8</node-path>
+    <oid>.1.3.6.1.4.1.6603.1.11.1.3.1.1.2.1000008</oid>
+    <receive-mode>Poll</receive-mode>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.Switch.1.Ports.StatePort_9</node-path>
+    <oid>.1.3.6.1.4.1.6603.1.11.1.3.1.1.2.1000009</oid>
+    <receive-mode>Poll</receive-mode>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ASUTP.Switch.1.Ports.StatePort_10</node-path>
+    <oid>.1.3.6.1.4.1.6603.1.11.1.3.1.1.2.1000010</oid>
+    <receive-mode>Poll</receive-mode>
+  </item>
+</root>

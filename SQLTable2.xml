@@ -1,0 +1,236 @@
+<root>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.1.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>1</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.2.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>2</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.3.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>3</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.4.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>4</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.5.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>5</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.6.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>6</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.7.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>7</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.8.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>8</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.9.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>9</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.10.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>10</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.11.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>11</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.12.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>12</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.13.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>13</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.14.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>14</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.15.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>15</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.16.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>16</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.17.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>17</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.18.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>18</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.19.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>19</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.20.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>20</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.21.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>21</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.22.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>22</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.23.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>23</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>PLC.AI.24.UstAsJSONString</node-path>
+    <query-id>2</query-id>
+    <type>QRead</type>
+    <value>Ust</value>
+    <key-value-field>24</key-value-field>
+  </item>
+  <item Binding="Introduced">
+    <node-path>GenerateMessageSQL.DateTimeLong</node-path>
+    <query-id>1</query-id>
+    <type>QParam</type>
+    <param-id>2</param-id>
+  </item>
+  <item Binding="Introduced">
+    <node-path>GenerateMessageSQL.MsgText</node-path>
+    <query-id>1</query-id>
+    <type>QParam</type>
+    <param-id>1</param-id>
+  </item>
+  <item Binding="Introduced">
+    <node-path>GenerateMessageSQL.ObjType</node-path>
+    <query-id>1</query-id>
+    <type>QParam</type>
+    <param-id>3</param-id>
+  </item>
+  <item Binding="Introduced">
+    <node-path>GenerateMessageSQL.ObjNum</node-path>
+    <query-id>1</query-id>
+    <type>QParam</type>
+    <param-id>4</param-id>
+  </item>
+  <item Binding="Introduced">
+    <node-path>GenerateMessageSQL.MsgNum</node-path>
+    <query-id>1</query-id>
+    <type>QParam</type>
+    <param-id>5</param-id>
+  </item>
+  <item Binding="Introduced">
+    <node-path>GenerateMessageSQL.MsgTime</node-path>
+    <query-id>1</query-id>
+    <type>QParam</type>
+    <param-id>9</param-id>
+  </item>
+  <item Binding="Introduced">
+    <node-path>GenerateMessageSQL.MsgArg1</node-path>
+    <query-id>1</query-id>
+    <type>QParam</type>
+    <param-id>10</param-id>
+  </item>
+  <item Binding="Introduced">
+    <node-path>GenerateMessageSQL.MsgArg2</node-path>
+    <query-id>1</query-id>
+    <type>QParam</type>
+    <param-id>11</param-id>
+  </item>
+  <item Binding="Introduced">
+    <node-path>GenerateMessageSQL.MsgProp_1</node-path>
+    <query-id>1</query-id>
+    <type>QParam</type>
+    <param-id>7</param-id>
+  </item>
+  <item Binding="Introduced">
+    <node-path>GenerateMessageSQL.MsgProp_2</node-path>
+    <query-id>1</query-id>
+    <type>QParam</type>
+    <param-id>8</param-id>
+  </item>
+  <item Binding="Introduced">
+    <node-path>GenerateMessageSQL.MsgProp</node-path>
+    <query-id>1</query-id>
+    <type>QParam</type>
+    <param-id>6</param-id>
+  </item>
+</root>

@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<omx migration="17">
+  <namespace name="Objects.IVK" uuid="846683f7-6448-4afe-8df1-f592c951a674">
+    <type name="cls_ModulAI_Signal_AI" uuid="b1620692-4492-4faf-850a-e22e854af5d6" access-level="private">
+      <type name="ccv_IVK_Modul_AI_Signal_AI_VU" uuid="96bf3c5a-d87b-45fb-b387-b926931838d8" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.IVK.cls_ModulAI_Signal_AI">
+        <socket name="ClassSocket1" uuid="b8fecc11-c59d-47c0-8b64-2da109779996" direction="out" type="Objects.IVK.cls_ModulAI_Signal_AI.st_Attributes" access-level="private" access-scope="local" />
+      </type>
+      <socket-type name="st_Attributes" uuid="0c0ca438-b9d1-4f4a-8029-380966371297" access-level="private">
+        <socket-parameter name="Name" uuid="96e3e1a4-b3e1-47be-8e8f-2aee01581b8e" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Name" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="@(object:System.Attributes.Description)" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Connector" uuid="c6ee1640-7bd9-4d90-88ed-136e66788c5f" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Connector" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="@(object:Attributes.Connector)" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Unit" uuid="6573a4c8-6571-4cb3-86b4-f79d39d1b6e5" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Unit" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="@(object:Attributes.Unit)" />
+        </socket-parameter>
+        <socket-parameter name="Title" uuid="e19ae99a-a867-4d8d-b557-dc0aaee904e4" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Title" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+      </socket-type>
+    </type>
+    <type name="cls_Modul_AI" uuid="ea0d2a12-8a2a-4ef1-9c84-9e6f8854d6f1" access-level="private">
+      <socket-type name="st_Outputs" uuid="6e256b83-1c6c-4303-ae40-8aeafdd6e89e" access-level="private">
+        <socket-parameter name="ValueCh1" uuid="e8cc8a9a-b50c-4d96-b2a0-d2dfd785d101" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="AI1.Value" />
+        </socket-parameter>
+        <socket-parameter name="ValueCh2" uuid="3fd02f9d-9fe2-4439-ac20-7128f4afd9d9" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="AI2.Value" />
+        </socket-parameter>
+        <socket-parameter name="ValueCh3" uuid="696310ce-51ea-4d7c-a2d5-9e476838a725" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="AI3.Value" />
+        </socket-parameter>
+        <socket-parameter name="ValueCh4" uuid="e65a9181-c10f-469f-bf9e-b4a3b6189511" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="AI4.Value" />
+        </socket-parameter>
+        <socket-parameter name="HwError" uuid="5ca20c97-1e59-48ad-a2d2-de9e127c68bc" type="bool" />
+      </socket-type>
+      <type name="cv_Modul_AI_SU" uuid="c551bbbc-a1d1-44c4-ac47-a2a83296b65a" aspect="Aspects.asp_SU" access-level="private" original="Objects.IVK.cls_Modul_AI">
+        <socket name="cs_Outputs" uuid="024d47a1-2ec0-4a0a-bcbd-eefb69c0030c" direction="out" type="Objects.IVK.cls_Modul_AI.st_Outputs" access-level="private" access-scope="local" />
+      </type>
+      <type name="cv_Modul_AI_VU" uuid="fbfc8e8e-6405-4449-a673-9bf62e09fba5" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.IVK.cls_Modul_AI">
+        <bind source="_cv_Modul_AI_SU.cs_Outputs" target="cs_Outputs" action="set_all" />
+        <ref name="_cv_Modul_AI_SU" uuid="e7c5dcb3-f501-44c9-a6e3-14d343e99d50" const-access="False" access-level="private" access-scope="local" type="Objects.IVK.cls_Modul_AI.cv_Modul_AI_SU" aspected="true" />
+        <socket name="cs_Outputs" uuid="3c4f9f95-34a6-477c-9911-e305b372ca24" direction="out" type="Objects.IVK.cls_Modul_AI.st_Outputs" access-level="public" access-scope="local" />
+      </type>
+    </type>
+    <type name="cls_Modul_DA" uuid="fdd57f48-5cfd-4e36-8e0c-03c67793d31d" access-level="private">
+      <socket-type name="st_Outputs" uuid="b1ce355b-dac7-4d70-b01a-f919ed302fe1" access-level="private">
+        <socket-parameter name="Frequency" uuid="be8a22bb-6789-4f97-90a4-d4bbf4f1e5f6" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="FI1.Frequency" />
+        </socket-parameter>
+        <socket-parameter name="Counter" uuid="3f7b228b-a45f-447b-b178-5c168228db25" type="uint64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="FI1.Counter" />
+        </socket-parameter>
+        <socket-parameter name="HwError" uuid="c2a807be-4afd-428a-b859-b7976408e0f2" type="bool" />
+        <socket-parameter name="DICh1" uuid="d14086e7-612d-449b-a656-76f4820ccda2" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="DI1.Value" />
+        </socket-parameter>
+        <socket-parameter name="DICh2" uuid="e4f7b975-997a-4421-8c0e-7a65c4b320fb" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="DI2.Value" />
+        </socket-parameter>
+        <socket-parameter name="DOCh1" uuid="19d85a89-d166-4ced-8079-45beb422176d" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="DO1.Value" />
+        </socket-parameter>
+        <socket-parameter name="DOCh2" uuid="b34bfe53-0592-4a14-b68d-82e129d4b5e9" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="DO2.Value" />
+        </socket-parameter>
+      </socket-type>
+      <type name="cv_Modul_DA_SU" uuid="feada9e4-feaa-433e-a76c-4f98a156b0f5" aspect="Aspects.asp_SU" access-level="private" original="Objects.IVK.cls_Modul_DA">
+        <socket name="cs_Outputs" uuid="ed27571c-fdab-42d8-9342-9dbc99bd5569" direction="out" type="Objects.IVK.cls_Modul_DA.st_Outputs" access-level="private" access-scope="local" />
+      </type>
+      <type name="cv_Modul_DA_VU" uuid="ed79ba50-b322-4857-97c8-49214a7e427d" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.IVK.cls_Modul_DA">
+        <bind source="_cv_Modul_AI_SU.cs_Outputs" target="cs_Outputs" action="set_all" />
+        <socket name="cs_Outputs" uuid="be17c9b6-e857-47cc-ba67-a40bd8404482" direction="out" type="Objects.IVK.cls_Modul_DA.st_Outputs" access-level="public" access-scope="local" />
+        <ref name="_cv_Modul_AI_SU" uuid="3f4c9d5d-899d-4a11-a99a-e4cedd25be7c" const-access="False" access-level="private" access-scope="local" type="Objects.IVK.cls_Modul_DA.cv_Modul_DA_SU" aspected="true" />
+      </type>
+    </type>
+    <type name="cls_Modul_AO" uuid="9cb6f5b7-9f22-41b9-883d-456a1b27d623" access-level="private">
+      <socket-type name="st_Outputs" uuid="a8b044e3-7aa4-403b-aa05-cabb0caa106e" access-level="private">
+        <socket-parameter name="ValueCh1" uuid="65997cb3-a0aa-4bbe-a33e-4ffce8bd8065" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="AO1.Value" />
+        </socket-parameter>
+        <socket-parameter name="ValueCh2" uuid="83c504e6-b5b5-45b6-b20f-a1337399870c" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="AO2.Value" />
+        </socket-parameter>
+        <socket-parameter name="HwError" uuid="6b13f4b0-39b0-451b-840d-4094be57554f" type="bool" />
+      </socket-type>
+      <type name="cv_Modul_AO_SU" uuid="246e5750-cb2a-44fd-97dc-41dbeb2c8863" aspect="Aspects.asp_SU" access-level="private" original="Objects.IVK.cls_Modul_AO">
+        <socket name="cs_Outputs" uuid="6823c82c-95f4-4666-9df5-725f09d6cf82" direction="out" type="Objects.IVK.cls_Modul_AO.st_Outputs" access-level="private" access-scope="local" />
+      </type>
+      <type name="cv_Modul_AO_VU" uuid="119e1028-d67c-4923-83c9-edda8e8b680e" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.IVK.cls_Modul_AO">
+        <bind source="_cv_Modul_AO_SU.cs_Outputs" target="cs_Outputs" action="set_all" />
+        <socket name="cs_Outputs" uuid="8c86cbd1-fbe5-4268-8354-7a2921a87b28" direction="out" type="Objects.IVK.cls_Modul_AO.st_Outputs" access-level="public" access-scope="local" />
+        <ref name="_cv_Modul_AO_SU" uuid="d82c8605-eefc-47b8-881e-7510b9ff4a8f" const-access="False" access-level="private" access-scope="local" type="Objects.IVK.cls_Modul_AO.cv_Modul_AO_SU" aspected="true" />
+      </type>
+    </type>
+    <type name="cls_ModulDA_Signal_FI" uuid="c7f0cad5-2c6f-4cbf-b526-fe85fa273c93" access-level="private">
+      <socket-type name="st_Attributes" uuid="66d4e002-a120-42b1-a4b5-c03852a7d7a0" access-level="private">
+        <socket-parameter name="Name" uuid="04da4cd3-3066-494b-bc84-d9d0cfef1392" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Name" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="@(object:System.Attributes.Description)" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Connector" uuid="af5085b6-4548-4e1e-84cb-eb0c1d25f2d2" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Connector" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="@(object:System.Attributes.Comment)" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Unit" uuid="3094cdbb-7904-4d2f-89fc-54a52480f539" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Unit" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Title" uuid="ed3cde47-f690-46c5-8107-b084684a8e05" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Title" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+      </socket-type>
+      <type name="ccv_IVK_FI_VU" uuid="ce96eb06-0ec0-40af-bd20-ea8cbfd225b3" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.IVK.cls_ModulDA_Signal_FI">
+        <socket name="ClassSocket1" uuid="473de67b-7d16-4082-ba3f-13e6b8cf8614" direction="out" type="Objects.IVK.cls_ModulDA_Signal_FI.st_Attributes" access-level="private" access-scope="local" />
+      </type>
+    </type>
+    <type name="cls_ModulDA_Signal_DI" uuid="92bd3fd1-adaf-4c0f-9e49-a50aefa11ea9" access-level="private">
+      <socket-type name="st_Attributes" uuid="a105d7ca-f30a-4346-87b3-7301dbc629a5" access-level="private">
+        <socket-parameter name="Name" uuid="32f761f1-04e6-4ed2-ac10-f35b1e458d5d" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Name" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="@(object:System.Attributes.Description)" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Connector" uuid="ad205225-1e44-4f6f-b1e1-daa7c5f61a61" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Connector" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="@(object:System.Attributes.Comment)" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Unit" uuid="072f371e-f1ec-48eb-931c-2644c4ee028f" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Unit" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Title" uuid="dd90513b-af53-4c11-91f6-a1585c4e2491" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Title" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+      </socket-type>
+      <type name="ccv_IVK_ModulDA_DI_VU" uuid="ab22173e-da40-46e5-8dc1-57b5945a59ff" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.IVK.cls_ModulDA_Signal_DI">
+        <socket name="ClassSocket1" uuid="c34630b8-b842-4d0a-94d3-6d3b6c4da8ae" direction="out" type="Objects.IVK.cls_ModulDA_Signal_DI.st_Attributes" access-level="private" access-scope="local" />
+      </type>
+    </type>
+    <type name="cls_ModulAO_Signal_AO" uuid="3c7edaa1-3b87-40de-816c-8939412028c3" access-level="private">
+      <type name="ccv_IVK_Modul_AO_Signal_AO_VU" uuid="a0c21470-f322-4f97-8a85-7128fcd871f5" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.IVK.cls_ModulAO_Signal_AO">
+        <socket name="ClassSocket1" uuid="9e4c3a3c-fa5a-4891-8038-fde240e8d2e3" direction="out" type="Objects.IVK.cls_ModulAO_Signal_AO.st_Attributes" access-level="private" access-scope="local" />
+      </type>
+      <socket-type name="st_Attributes" uuid="8ad4034a-ee91-4ccc-b388-e5344db68508" access-level="private">
+        <socket-parameter name="Name" uuid="de4c9b20-bd2e-49cf-9189-f17dc9173ecf" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Name" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="@(object:System.Attributes.Description)" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Connector" uuid="b95398e8-6e73-472c-a4be-669ab70379c8" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Connector" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="@(object:Attributes.Connector)" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Unit" uuid="6fb68053-786c-46d4-b52d-50cad001f9de" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Unit" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="@(object:Attributes.Unit)" />
+        </socket-parameter>
+        <socket-parameter name="Title" uuid="d684f792-6b58-4959-bf59-de588f96f307" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Title" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+      </socket-type>
+    </type>
+    <type name="cls_IVK_AI" uuid="e94e75f1-5340-4ddd-8201-e7321bd56641" access-level="private">
+      <socket-type name="st_Outputs" uuid="e1db5b57-66ac-4042-a98c-402565767508" access-level="private">
+        <socket-parameter name="ElMax" uuid="6be015a2-bd93-4fe0-8b03-5974beb611a4" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="ElValueControl.ElMax" />
+        </socket-parameter>
+        <socket-parameter name="ElMin" uuid="683b79c5-63c6-4c4c-abb3-4db693538ff1" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="ElValueControl.ElMin" />
+        </socket-parameter>
+        <socket-parameter name="HistElMax" uuid="cc0b1d81-ae38-4178-90f0-621c81e4199f" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="ElValueControl.HistElMax" />
+        </socket-parameter>
+        <socket-parameter name="HistElMin" uuid="3fcf98c8-67c4-4342-91aa-d337867f589b" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="ElValueControl.HistElMin" />
+        </socket-parameter>
+        <socket-parameter name="ElValue" uuid="43525a1b-8c2c-440d-9687-55aa589ef70b" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Data.ElValue" />
+        </socket-parameter>
+        <socket-parameter name="TechValue" uuid="329739f7-a742-4d19-a749-76b1a42dcb64" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;False&quot;" />
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Data.TechValue" />
+        </socket-parameter>
+        <socket-parameter name="Zone" uuid="f53f3ccb-5315-4617-9d8f-355ca62ba896" type="int16">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Data.Zone" />
+        </socket-parameter>
+        <socket-parameter name="NDV" uuid="eb65dfa6-f952-488b-b119-683a5cab55e9" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Data.NDV" />
+        </socket-parameter>
+        <socket-parameter name="TechMax" uuid="872e6c72-751e-4cb4-a0ff-11bdd0057c6b" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValueRange.TechMax" />
+        </socket-parameter>
+        <socket-parameter name="TechMin" uuid="148623a1-90ca-41fb-97f9-a476c8c85af7" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValueRange.TechMin" />
+        </socket-parameter>
+        <socket-parameter name="UstMax3" uuid="1c6f443c-db06-444c-a38b-df56a0d9fe19" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Max3.Value" />
+        </socket-parameter>
+        <socket-parameter name="UstMax3_blk" uuid="e13c6450-5d3f-4d6f-908c-ed960948fdd0" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Max3.Enable" />
+        </socket-parameter>
+        <socket-parameter name="UstMax2" uuid="7f10bf06-8789-47f2-a4de-26958d573bb2" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Max2.Value" />
+        </socket-parameter>
+        <socket-parameter name="UstMax2_blk" uuid="7ef2d4b1-8643-4886-99a4-76d9ae229de4" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Max2.Enable" />
+        </socket-parameter>
+        <socket-parameter name="UstMax1" uuid="b90c31ae-4ce6-477d-bc7c-d1979c016f36" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Max1.Value" />
+        </socket-parameter>
+        <socket-parameter name="UstMax1_blk" uuid="1c7e2277-adf5-4055-acb3-e47f67f1056b" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Max1.Enable" />
+        </socket-parameter>
+        <socket-parameter name="UstMin1" uuid="334175b6-c70d-480f-a92a-ffeac3a63e39" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Min1.Value" />
+        </socket-parameter>
+        <socket-parameter name="UstMin1_blk" uuid="760eb3c5-8412-472d-8ee4-9ca9485a0a42" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Min1.Enable" />
+        </socket-parameter>
+        <socket-parameter name="UstMin2" uuid="c97fe1cd-4f8f-4717-be6e-e59a15475fa0" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Min2.Value" />
+        </socket-parameter>
+        <socket-parameter name="UstMin2_blk" uuid="ad55b4f8-55cb-459c-9869-14a3fcc197d2" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Min2.Enable" />
+        </socket-parameter>
+        <socket-parameter name="UstMin3" uuid="886b9cc8-b2d6-4183-8280-2c81aea66168" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Min3.Value" />
+        </socket-parameter>
+        <socket-parameter name="UstMin3_blk" uuid="59432601-abab-428d-b0ee-2c6b3287dc33" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Min3.Enable" />
+        </socket-parameter>
+        <socket-parameter name="udiOperatingTimeCount" uuid="e8fd92c2-b21a-4a20-b28a-aef46ca42270" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="WorkTime" />
+        </socket-parameter>
+        <socket-parameter name="HistUst" uuid="2a6007c3-f179-4005-9562-1f94445cf4ea" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Gist" />
+        </socket-parameter>
+      </socket-type>
+      <type name="cv_AI_SU" uuid="03ef76cc-74bc-401e-9908-f545f70ae10f" access-level="private" aspect="Aspects.asp_SU" original="Objects.IVK.cls_IVK_AI">
+        <socket name="cs_Outputs" uuid="8948deda-2377-47bf-a2f9-1e0fe353167e" direction="out" type="Objects.IVK.cls_IVK_AI.st_Outputs" access-level="private" access-scope="local" />
+        <socket name="cs_Inputs" uuid="8d044f94-c822-4db5-81f1-9fa2ab4e003f" direction="in" type="Objects.IVK.cls_IVK_AI.st_Inputs" access-level="private" access-scope="local" />
+      </type>
+      <type name="cv_AI_VU" uuid="955a64dd-dd47-4a86-9d6a-4242bd92f004" access-level="private" aspect="Aspects.asp_AlphaServer" original="Objects.IVK.cls_IVK_AI">
+        <bind source="_cv_AI_SU.cs_Outputs" target="cs_Outputs" action="set_all" />
+        <bind source="cs_Inputs" target="_cv_AI_SU.cs_Inputs" action="set_all" />
+        <ref name="_cv_AI_SU" uuid="8952c578-ce8f-4d12-8bb1-b051208d50f2" const-access="False" access-level="private" access-scope="local" type="Objects.IVK.cls_IVK_AI.cv_AI_SU" aspected="true" />
+        <socket name="cs_Outputs" uuid="3a61a708-ef04-476d-af8e-658ddec39cad" direction="out" type="Objects.IVK.cls_IVK_AI.st_Outputs" access-level="public" access-scope="local" />
+        <socket name="cs_Inputs" uuid="f2f5b9f0-3697-4fad-85b6-40027674caa1" direction="in" type="Objects.IVK.cls_IVK_AI.st_Inputs" access-level="public" access-scope="local" />
+        <socket name="cs_Attributes" uuid="4d5b8cda-03f6-4d56-a00a-564ad4845771" direction="out" type="Objects.IVK.cls_IVK_AI.st_Attributes" access-level="private" access-scope="local" />
+        <parameter name="Ust_Disable" uuid="53c48944-6aff-41dc-8f12-247906bf8284" type="uint16">
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="192" />
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust_Disable" />
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="0" />
+        </parameter>
+        <handler name="UMn3_blk_onChange" uuid="bdf8ce3f-ab4b-4a7d-9e52-e27d9c51ed31">
+          <trigger on="cs_Outputs.UstMin3_blk" />
+          <property name="source-code">if (cs_Outputs.UstMin3_blk == false)
+	{
+		Ust_Disable |= 0b10;
+	} else
+	{
+		Ust_Disable &amp;= ~0b10;
+	}</property>
+        </handler>
+        <handler name="UMn2_blk_onChange" uuid="c333075b-572a-4bd1-9b1f-5775735289c7">
+          <property name="source-code">if (cs_Outputs.UstMin2_blk == false)
+	{
+		Ust_Disable |= 0b100;
+	} else
+	{
+		Ust_Disable &amp;= ~0b100;
+	}</property>
+          <trigger on="cs_Outputs.UstMin2_blk" />
+        </handler>
+        <handler name="UMn1_blk_onChange" uuid="50b942f1-d7b8-4a5b-a979-b61d0b4d13b7">
+          <property name="source-code">if (cs_Outputs.UstMin1_blk == false)
+	{
+		Ust_Disable |= 0b1000;
+	} else
+	{
+		Ust_Disable &amp;= ~0b1000;
+	}</property>
+          <trigger on="cs_Outputs.UstMin1_blk" />
+        </handler>
+        <handler name="UMx1_blk_onChange" uuid="45e1cbb8-d548-4757-82f0-7e13123d98c1">
+          <property name="source-code">if (cs_Outputs.UstMax1_blk == false)
+	{
+		Ust_Disable |= 0b10000;
+	} else
+	{
+		Ust_Disable &amp;= ~0b10000;
+	}</property>
+          <trigger on="cs_Outputs.UstMax1_blk" />
+        </handler>
+        <handler name="UMx2_blk_onChange" uuid="d075c9ab-f907-4fb2-900f-30ac4e226823">
+          <property name="source-code">if (cs_Outputs.UstMax2_blk == false)
+	{
+		Ust_Disable |= 0b100000;
+	} else
+	{
+		Ust_Disable &amp;= ~0b100000;
+	}</property>
+          <trigger on="cs_Outputs.UstMax2_blk" />
+        </handler>
+        <handler name="UMx3_blk_onChange" uuid="d37099fd-e2f5-417f-a988-b67ae93e6b79">
+          <property name="source-code">if (cs_Outputs.UstMax3_blk == false)
+	{
+		Ust_Disable |= 0b1000000;
+	} else
+	{
+		Ust_Disable &amp;= ~0b1000000;
+	}</property>
+          <trigger on="cs_Outputs.UstMax3_blk" />
+        </handler>
+        <parameter name="Ust_Disable_write" uuid="bf4189bf-0e04-4392-a6b9-d4479cd9a03d" type="uint16" direction="in">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust_Disable_write" />
+        </parameter>
+        <handler name="Ust_Disable_write_onChange" uuid="99df5f3d-5e7a-4a13-8639-a3ac820b5e77">
+          <trigger on="Ust_Disable_write" />
+          <property name="source-code">cs_Inputs.UstMin3_blk_Write = !(Math.TestBit(Ust_Disable_write, 1));
+cs_Inputs.UstMin2_blk_Write = !(Math.TestBit(Ust_Disable_write, 2));
+cs_Inputs.UstMin1_blk_Write = !(Math.TestBit(Ust_Disable_write, 3));
+cs_Inputs.UstMax1_blk_Write = !(Math.TestBit(Ust_Disable_write, 4));
+cs_Inputs.UstMax2_blk_Write = !(Math.TestBit(Ust_Disable_write, 5));
+cs_Inputs.UstMax3_blk_Write = !(Math.TestBit(Ust_Disable_write, 6));</property>
+        </handler>
+      </type>
+      <socket-type name="st_Inputs" uuid="9200f3e8-3eef-467c-9378-63847c4a1657" access-level="private">
+        <socket-parameter name="UstMax3_Write" uuid="a37c87c1-48f4-4afa-82b5-c12dda4d9a87" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Max3.Value.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="UstMax3_blk_Write" uuid="36393b91-82ff-4291-b688-677f8ab50000" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Max3.Enable.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="UstMax2_Write" uuid="a0d3890b-e8b6-471e-bebe-e5afd6b5a37c" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Max2.Value.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="UstMax2_blk_Write" uuid="ee45c9c7-3828-4107-a807-1ed6c5e6dc7b" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Max2.Enable.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="UstMax1_Write" uuid="1cef4dfc-7de3-4d16-be91-139b5a9e78f0" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Max1.Value.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="UstMax1_blk_Write" uuid="f73faee0-f830-442e-8e2b-987e14f93e53" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Max1.Enable.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="UstMin1_Write" uuid="34276155-bfb6-4bba-9f9d-42c580f5de6a" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Min1.Value.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="UstMin1_blk_Write" uuid="251b0bfd-727c-4465-84ef-3fe4e04a32bd" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Min1.Enable.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="UstMin2_Write" uuid="29e3d0f8-f45c-48dd-9176-0abd77812eeb" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Min2.Value.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="UstMin2_blk_Write" uuid="da520495-7ada-424c-8656-03b209429010" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Min2.Enable.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="UstMin3_Write" uuid="95a03253-23a2-4775-9fc3-13b38ce15623" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Min3.Value.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="UstMin3_blk_Write" uuid="2fa93caa-44b6-47d2-a1cc-5a1cd2306217" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Min3.Enable.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="udiOperatingTimeCount_Write" uuid="ae131aff-ff78-4a2f-9aa9-d78f1742dcb9" type="float32">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="WorkTime.writeValue" />
+        </socket-parameter>
+        <socket-parameter name="HistUst_Write" uuid="37ca0974-3c62-42a3-be0e-560ad846f2f0" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="TechValue.Ust.Gist.writeValue" />
+        </socket-parameter>
+      </socket-type>
+      <socket-type name="st_Attributes" uuid="d27a60f2-b2e0-4abd-bb98-66898d7029cb" access-level="private">
+        <socket-parameter name="Name" uuid="a1ebbf71-306f-4e02-afc0-00ed570abb7d" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Name" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="@(object:System.Attributes.Description)" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Unit" uuid="7b011963-f94c-4c4b-bb36-99f4da18dd8f" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Unit" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="@(object:Attributes.Unit)" />
+        </socket-parameter>
+        <socket-parameter name="Title" uuid="61b454e3-1a48-4cf9-b3b1-0eaaa9e0af55" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Title" />
+          <attribute type="AlphaServer.Attributes.InitialValue" value="@(object:System.Attributes.Title)" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+        </socket-parameter>
+        <socket-parameter name="Unit2" uuid="dcc52a9e-0fe4-49e0-af34-3280a3d160eb" type="string">
+          <attribute type="AlphaServer.Attributes.NodeRelativePath" value="Attributes.Unit2" />
+          <attribute type="AlphaServer.Attributes.InitialQuality" value="192" />
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="@(object:Attributes.Unit2)" />
+        </socket-parameter>
+      </socket-type>
+    </type>
+    <type name="cls_LineState" uuid="728d61f4-8028-4298-b573-8db2907d685a">
+      <socket-type name="st_Outputs" uuid="e3538b69-6f3b-4853-ab33-c50f8c9e8ba3">
+        <socket-parameter name="InAccounting" uuid="a61e01c8-58c3-4c9f-8607-603f63c12b32" type="bool"></socket-parameter>
+        <socket-parameter name="IsFlow" uuid="f8a211ae-8f4e-413e-9188-d98a9ebe2989" type="bool"></socket-parameter>
+        <socket-parameter name="OutOfAttestRange" uuid="c120e5db-a7a0-4149-b19d-c34e2c7e3731" type="bool"></socket-parameter>
+        <socket-parameter name="Mode" uuid="faea63ec-44a2-48b3-add9-18829dc76ef0" type="int16" />
+      </socket-type>
+      <socket-type name="st_Inputs" uuid="ce5b71f4-cdc0-4e35-a54d-1935dedebe9a">
+        <socket-parameter name="Mode" uuid="f9ecf915-5089-4ca3-b5ac-03f8867e8e81" type="uint16">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="Mode.writeValue" />
+        </socket-parameter>
+      </socket-type>
+      <type name="cv_LineState_SU" uuid="db0ac793-3da6-4a73-b290-4fb996bdcf3b" aspect="Aspects.asp_SU" original="Objects.IVK.cls_LineState">
+        <socket name="cs_Outputs" uuid="a121c539-bfa1-45be-b815-0906bf917d04" type="Objects.IVK.cls_LineState.st_Outputs" />
+        <socket name="cs_Inputs" uuid="5643ecea-2e47-4508-910c-6c9086e18975" direction="in" type="Objects.IVK.cls_LineState.st_Inputs" />
+      </type>
+      <type name="cv_LineState_VU" uuid="c0e00003-7f57-4555-84c3-bcf75108c885" aspect="Aspects.asp_AlphaServer" original="Objects.IVK.cls_LineState">
+        <ref name="_cv_LineState_SU" uuid="33a8a1a7-4f59-4bfc-93e3-471031a56db5" const-access="False" type="Objects.IVK.cls_LineState.cv_LineState_SU" aspected="true" />
+        <socket name="cs_Outputs" uuid="160b75aa-1003-427a-b23f-fdf354d3d884" direction="out" access-level="public" type="Objects.IVK.cls_LineState.st_Outputs" />
+        <bind source="_cv_LineState_SU.cs_Outputs" target="cs_Outputs" />
+        <socket name="cs_Inputs" uuid="31536a9d-9143-4a4e-af72-da775db58b3d" direction="in" access-level="public" type="Objects.IVK.cls_LineState.st_Inputs" />
+        <bind source="cs_Inputs" target="_cv_LineState_SU.cs_Inputs" />
+      </type>
+    </type>
+    <type name="cls_Line" uuid="b3766b25-cfd6-4dfc-b551-a6e828987a46">
+      <type name="cv_Line_VU" uuid="e68d6003-9322-4dbd-9571-89b7d245d5c0" aspect="Aspects.asp_AlphaServer" original="Objects.IVK.cls_Line">
+        <socket name="ClassSocket" uuid="8674c43e-9bc7-4ab3-8b14-bcac0d42e659" direction="out" type="Objects.CommonAttributes.st_Attr_Name" access-level="private" access-scope="local" />
+      </type>
+    </type>
+    <type name="cls_PUDetectors" uuid="96972ae3-548b-4007-baf5-ba8686425e13">
+      <socket-type name="st_Outputs" uuid="d345cca9-70c1-49d3-bf1c-0c55aab0efbf">
+        <socket-parameter name="D1" uuid="b7cc230d-a73e-4d76-acb2-06f83f6ba75c" type="bool" />
+        <socket-parameter name="D2" uuid="73c11860-66b3-4bbf-b3c8-a6e5bfd09ae2" type="bool" />
+        <socket-parameter name="D3" uuid="5c5296c3-9775-481f-948e-166cf9c01860" type="bool" />
+        <socket-parameter name="D4" uuid="1bd1ba9a-219c-4c89-960b-9f694ec5bde9" type="bool" />
+      </socket-type>
+      <type name="cv_SU" uuid="d43a4ac0-0d45-4157-8484-3e49d4da1f68" aspect="Aspects.asp_SU" original="Objects.IVK.cls_PUDetectors">
+        <socket name="cs_Outputs" uuid="5a00c5f7-ae09-4643-bc8e-c6b9446f1957" type="Objects.IVK.cls_PUDetectors.st_Outputs" />
+      </type>
+      <type name="cs_VU" uuid="f997d31c-c4ba-4fce-a032-6dbe2985b08c" aspect="Aspects.asp_AlphaServer" original="Objects.IVK.cls_PUDetectors">
+        <ref name="_cv_SU" uuid="fb929a52-0eb1-4bca-83e9-10fc072dc376" const-access="False" type="Objects.IVK.cls_PUDetectors.cv_SU" aspected="true" />
+        <socket name="cs_Outputs" uuid="4643a7c1-b950-420d-bd58-aad237314ced" direction="out" access-level="public" type="Objects.IVK.cls_PUDetectors.st_Outputs" />
+        <bind source="_cv_SU.cs_Outputs" target="cs_Outputs" />
+      </type>
+    </type>
+    <type name="cls_SIKN_Summary" uuid="8c04e014-2a8b-4489-9f6c-d0858544588d">
+      <socket-type name="st_Outputs" uuid="f8e5a3bb-bdd1-4ffd-a0b8-0f9a727b06f4">
+        <socket-parameter name="Dens_Value" uuid="db24c80b-9d56-47d8-b982-ad420084f5bf" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="Dens.Value" />
+        </socket-parameter>
+        <socket-parameter name="Dens_Legal" uuid="23e9d049-a775-4cf6-9c38-559e514cd41c" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="Dens.Legal" />
+        </socket-parameter>
+        <socket-parameter name="MassFlow_Value" uuid="32725b7a-4ba1-4409-96a2-cbec5689e8d1" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="MassFlow.Value" />
+        </socket-parameter>
+        <socket-parameter name="MassFlow_Legal" uuid="2dfa53d4-ebfb-4c15-bcdc-f73910b28904" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="MassFlow.Legal" />
+        </socket-parameter>
+        <socket-parameter name="VolFlow_Value" uuid="c049c798-226f-4775-901b-25ee3e3e8550" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="VolFlow.Value" />
+        </socket-parameter>
+        <socket-parameter name="VolFlow_Legal" uuid="5d5394d1-38be-4644-8ba5-ced692239790" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="VolFlow.Legal" />
+        </socket-parameter>
+        <socket-parameter name="Mass_2h_Value" uuid="609c3f80-0e4d-4c80-b2c9-cf9f2adbe822" type="string">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="Mass2h.Value" />
+        </socket-parameter>
+        <socket-parameter name="Vol_2h_Value" uuid="adeb5715-d8ec-47c2-be3d-f398d136e444" type="string">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="Vol2h.Value" />
+        </socket-parameter>
+        <socket-parameter name="Mass_Day_Value" uuid="d2c411e5-01a1-4c95-a0d1-8b2b46f01833" type="string">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="MassDay.Value" />
+        </socket-parameter>
+        <socket-parameter name="Vol_Day_Value" uuid="81b16c26-7724-4329-b1c5-39d1120a240c" type="string">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="VolDay.Value" />
+        </socket-parameter>
+        <socket-parameter name="Mass_2h_Legal" uuid="30961aaf-ec56-4f5d-b1fd-6e8652f9a682" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="Mass2h.Legal" />
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="true" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+        <socket-parameter name="Vol_2h_Legal" uuid="06766812-5d50-4c4e-9f2b-34090ace4752" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="Vol2h.Legal" />
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="true" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+        <socket-parameter name="Mass_Day_Legal" uuid="2c088bdd-0bbd-4690-a8cc-4d50740a2de9" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="MassDay.Legal" />
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="true" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+        <socket-parameter name="Vol_Day_Legal" uuid="a82615f4-c276-44bd-af00-7a2e32558261" type="bool">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="VolDay.Legal" />
+          <attribute type="unit.AlphaServer.Attributes.InitialValue" value="true" />
+          <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+        </socket-parameter>
+      </socket-type>
+      <type name="cv_SU" uuid="f592a3c0-1472-4b71-9df6-fdee2dd03783" aspect="Aspects.asp_SU" original="Objects.IVK.cls_SIKN_Summary">
+        <socket name="ClassSocket" uuid="2e1c900f-bd73-441b-84f4-7e22c6d56902" type="Objects.IVK.cls_SIKN_Summary.st_Outputs" />
+      </type>
+      <type name="cv_VU" uuid="6aa0a644-a603-4050-afb9-ca4269ade8f2" aspect="Aspects.asp_AlphaServer" access-level="private" original="Objects.IVK.cls_SIKN_Summary">
+        <ref name="_cv_SU" uuid="d95d5dd0-8bef-42e5-9764-827cb89f16a8" const-access="False" type="Objects.IVK.cls_SIKN_Summary.cv_SU" aspected="true" />
+        <socket name="ClassSocket" uuid="d86c0f2f-a414-412b-8600-47ae6ecc2e18" direction="out" access-level="public" type="Objects.IVK.cls_SIKN_Summary.st_Outputs" />
+        <bind source="_cv_SU.ClassSocket" target="ClassSocket" />
+      </type>
+    </type>
+    <type name="cls_GH" uuid="48ac7558-20e4-4378-a3fd-27ea9ea97818">
+      <socket-type name="st_Outputs" uuid="cfc0b9cb-4ff6-447b-8117-dffa4f5f6d98">
+        <socket-parameter name="Factor_1" uuid="710b2cde-ce07-4a2f-8df2-0883e7fbb7ee" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="1.Factor" />
+        </socket-parameter>
+        <socket-parameter name="Frequency_1" uuid="93a8fa6f-9019-4a46-9b12-9a1e2d163daa" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="1.Frequency" />
+        </socket-parameter>
+        <socket-parameter name="Flow_1" uuid="0b668e59-3a0d-45e6-8b5e-4018d292cca5" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="1.Flow" />
+        </socket-parameter>
+        <socket-parameter name="Factor_2" uuid="71d29640-a60c-48e6-ae9d-c11fcc506988" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="2.Factor" />
+        </socket-parameter>
+        <socket-parameter name="Frequency_2" uuid="e9fec6f0-f18f-4f8d-80d2-7ff70e4ab750" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="2.Frequency" />
+        </socket-parameter>
+        <socket-parameter name="Flow_2" uuid="0bc9b4e6-dc11-41e5-a801-4c201b595024" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="2.Flow" />
+        </socket-parameter>
+        <socket-parameter name="Factor_3" uuid="7800f0f8-0163-4cce-b36a-7c7752990f59" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="3.Factor" />
+        </socket-parameter>
+        <socket-parameter name="Frequency_3" uuid="fcda306d-cc66-4841-8215-efebf41b7946" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="3.Frequency" />
+        </socket-parameter>
+        <socket-parameter name="Flow_3" uuid="53d53e50-2fa6-404e-a8c0-f37503eded70" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="3.Flow" />
+        </socket-parameter>
+        <socket-parameter name="Factor_4" uuid="f1aaf1dc-3e00-4e3b-a1c3-cbc3399cf7e5" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="4.Factor" />
+        </socket-parameter>
+        <socket-parameter name="Frequency_4" uuid="67cfe57d-b54b-4ef0-b946-3057f61b4f85" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="4.Frequency" />
+        </socket-parameter>
+        <socket-parameter name="Flow_4" uuid="1df839c0-b22e-4563-9313-0f83cddd8718" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="4.Flow" />
+        </socket-parameter>
+        <socket-parameter name="Factor_5" uuid="59f2de23-e67f-48cd-8fb9-2ed7268f0fcc" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="5.Factor" />
+        </socket-parameter>
+        <socket-parameter name="Frequency_5" uuid="5694e1d7-7d3c-43d8-a24e-906217ceaa3d" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="5.Frequency" />
+        </socket-parameter>
+        <socket-parameter name="Flow_5" uuid="a6ca1635-26cc-4fc0-bdd4-32fd31e9bd92" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="5.Flow" />
+        </socket-parameter>
+        <socket-parameter name="Factor_6" uuid="83b1e34f-2c1a-4f8d-92ff-146851abed37" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="6.Factor" />
+        </socket-parameter>
+        <socket-parameter name="Frequency_6" uuid="245b60bb-1e71-44f1-8d33-7d9549fc854e" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="6.Frequency" />
+        </socket-parameter>
+        <socket-parameter name="Flow_6" uuid="260cdd81-b8eb-422c-8dd5-70e43700a78c" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="6.Flow" />
+        </socket-parameter>
+        <socket-parameter name="Factor_7" uuid="9d80ec18-4ecd-436a-8e13-5867212e650d" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="7.Factor" />
+        </socket-parameter>
+        <socket-parameter name="Frequency_7" uuid="d7acfe5d-7c10-40b0-9c4a-12cd1192f68f" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="7.Frequency" />
+        </socket-parameter>
+        <socket-parameter name="Flow_7" uuid="a241d67f-4e04-4fd6-8adb-6911f68a0da4" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="7.Flow" />
+        </socket-parameter>
+        <socket-parameter name="Factor_8" uuid="91ffe6cc-86e5-4083-b8ba-c0ab218fc84d" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="8.Factor" />
+        </socket-parameter>
+        <socket-parameter name="Frequency_8" uuid="e24604d1-b655-4a0a-bb1e-ab3310ac037a" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="8.Frequency" />
+        </socket-parameter>
+        <socket-parameter name="Flow_8" uuid="c4a47650-c9cd-45d8-b1a6-653de2b202be" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="8.Flow" />
+        </socket-parameter>
+        <socket-parameter name="Factor_9" uuid="d73ae8b1-b8b1-4107-833b-cb07b9931468" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="9.Factor" />
+        </socket-parameter>
+        <socket-parameter name="Frequency_9" uuid="dc1309d8-7b42-4a39-931c-de0557e2ff57" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="9.Frequency" />
+        </socket-parameter>
+        <socket-parameter name="Flow_9" uuid="db1ae563-e1dc-4dac-af56-9424367cc274" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="9.Flow" />
+        </socket-parameter>
+        <socket-parameter name="Factor_10" uuid="96fdd1c4-1fad-4553-ad9d-7a5a10e88c1c" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="10.Factor" />
+        </socket-parameter>
+        <socket-parameter name="Frequency_10" uuid="4d28608c-f64f-4d11-be6b-6e6b63e07ec3" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="10.Frequency" />
+        </socket-parameter>
+        <socket-parameter name="Flow_10" uuid="f73d730f-1354-472b-965a-057bf656485a" type="float64">
+          <attribute type="unit.AlphaServer.Attributes.NodeRelativePath" value="10.Flow" />
+        </socket-parameter>
+        <socket-parameter name="EndZoneType" uuid="4224150d-904e-4ade-9379-226d21d3ada2" type="int16" />
+        <socket-parameter name="GHType" uuid="27b505b6-bade-4b27-880f-602d01495806" type="int16" />
+        <socket-parameter name="Count" uuid="0e8f2227-dc99-4893-bb33-5b6217fc3294" type="uint16" />
+      </socket-type>
+      <type name="cv_SU" uuid="b6e054ea-0d1f-4e4c-a9a4-55ff41c8cdc9" aspect="Aspects.asp_SU" original="Objects.IVK.cls_GH">
+        <socket name="cs_Outputs" uuid="7909dfc3-8509-4a74-a392-af09258c8cd3" type="Objects.IVK.cls_GH.st_Outputs" />
+      </type>
+      <type name="cv_AlphaServer" uuid="93d82a8f-9b4e-4152-967f-f926750a0160" aspect="Aspects.asp_AlphaServer" original="Objects.IVK.cls_GH">
+        <ref name="_cv_SU" uuid="ae19206b-8fc0-418e-9c44-4ffe179c4b88" const-access="False" type="Objects.IVK.cls_GH.cv_SU" aspected="true" />
+        <socket name="cs_Outputs" uuid="07fe0fb8-0d4a-41ec-aa6c-4579265ea747" direction="out" access-level="public" type="Objects.IVK.cls_GH.st_Outputs" />
+        <bind source="_cv_SU.cs_Outputs" target="cs_Outputs" />
+      </type>
+    </type>
+    <type name="cls_BIK_Summary" uuid="de01f779-a038-4abc-9cae-8dd7db7c8eac">
+      <socket-type name="st_Outputs" uuid="def6ccc5-daa4-4016-a1df-0b13e8501f96">
+        <socket-parameter name="Dens" uuid="d493f75b-8507-4d03-98f2-63d7cd785aa1" type="string"></socket-parameter>
+        <socket-parameter name="Dens15" uuid="10500a4a-a070-4621-8b53-f37bda4036b2" type="string"></socket-parameter>
+        <socket-parameter name="Dens20" uuid="2fa183a2-0f45-43af-9105-03acb9f69608" type="string"></socket-parameter>
+        <socket-parameter name="DensTemp" uuid="7f79182c-f7cd-4068-ac11-7e14a4b5ba23" type="string"></socket-parameter>
+        <socket-parameter name="ViscDynamic" uuid="eddacb99-0738-4d4a-bd6d-41b46be01046" type="string"></socket-parameter>
+        <socket-parameter name="ViscKinematic" uuid="7d3a955e-9d1c-4742-967f-c0c2d22cdc99" type="string"></socket-parameter>
+        <socket-parameter name="Flow" uuid="646dab04-fbd8-4fbd-b232-c4256f5c0dd1" type="string"></socket-parameter>
+        <socket-parameter name="WaterMass" uuid="e640f316-a106-41a1-b3eb-17311347f6ef" type="string"></socket-parameter>
+        <socket-parameter name="WaterVolume" uuid="008653ab-0a27-4d03-8833-c8ddfb1c38c5" type="string"></socket-parameter>
+        <socket-parameter name="Press" uuid="9790cf4f-0051-4e88-a308-d8c5a46b35c6" type="string"></socket-parameter>
+        <socket-parameter name="Sulphur" uuid="1774fdb3-85b6-47a7-9d5e-95647e77517d" type="string"></socket-parameter>
+        <socket-parameter name="ViscTemp" uuid="d62f31c4-9500-4d2b-93bd-d453bdf83491" type="string"></socket-parameter>
+      </socket-type>
+      <type name="cv_SU" uuid="4d796f3d-fd62-4d0d-9ca0-780a21431596" aspect="Aspects.asp_SU" original="Objects.IVK.cls_BIK_Summary">
+        <socket name="cs_Outputs" uuid="dd54db5a-2410-48c5-9121-dc13a08d3c08" type="Objects.IVK.cls_BIK_Summary.st_Outputs" />
+      </type>
+      <type name="cv_Server" uuid="89896628-239c-4b83-a6c7-722b59a02e0d" aspect="Aspects.asp_AlphaServer" original="Objects.IVK.cls_BIK_Summary">
+        <ref name="_cv_SU" uuid="82aabd1f-1440-4ea2-a7f5-9a67d14f4b22" const-access="False" type="Objects.IVK.cls_BIK_Summary.cv_SU" aspected="true" />
+        <socket name="cs_Outputs" uuid="b0141284-04ed-45a1-bb04-ac6b034728de" direction="out" access-level="public" type="Objects.IVK.cls_BIK_Summary.st_Outputs" />
+        <bind source="_cv_SU.cs_Outputs" target="cs_Outputs" />
+      </type>
+    </type>
+  </namespace>
+</omx>
