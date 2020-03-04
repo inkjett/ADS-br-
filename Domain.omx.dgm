@@ -21,7 +21,7 @@
     <ClassView Id="Objects.cls_Valve.ccv_Valve_VU" Left="530.81666666666672" Top="26" Width="226.36666666666667" Height="402.63000000000005" />
     <SocketType Id="Objects.cls_Valve.st_Inputs" Left="848" Top="37.330000000000013" Width="165.01666666666668" Height="382.00000000000006" />
   </Class>
-  <domain Id="ea3dc15d-0c32-42a9-856d-8ffd87766f6c" OffsetX="0" OffsetY="52.6879999999999" Scale="1">
+  <domain Id="ea3dc15d-0c32-42a9-856d-8ffd87766f6c" OffsetX="97.2732934570313" OffsetY="130.312" Scale="1">
     <application-object Id="Domain.app_00_Structure" Left="55.501666666666665" Top="45.991969108581543" Width="176.99666666666667" Height="109.63" />
     <application-object Id="Domain.app_21_AlphaServer" Left="241.50166666666667" Top="45.991969108581543" Width="184.99666666666667" Height="94.63" />
     <application-object Id="Domain.app_11_SU" Left="436.50166666666667" Top="47.991969108581543" Width="146.99666666666667" Height="86.63" />
@@ -4550,7 +4550,7 @@
   <Object Id="3016e820-0f45-4637-bbd3-00e0b385e426" OffsetX="0" OffsetY="0" Scale="1" />
   <Object Id="8eae51e2-ff9e-4f64-bef2-909562ba9e36" OffsetX="0" OffsetY="0" Scale="1" />
   <Object Id="cca1ea6f-aaf8-4488-8392-ebf3ea3b9bb3" OffsetX="109.596666666667" OffsetY="0" Scale="1" />
-  <domain-node Id="cb66b449-c74a-43da-89dc-b1d58d0f5ea3" OffsetX="0" OffsetY="426.809511139135" Scale="0.985712567148528">
+  <domain-node Id="cb66b449-c74a-43da-89dc-b1d58d0f5ea3" OffsetX="0" OffsetY="379.767400137" Scale="0.985712567148528">
     <ethernet-adapter Id="Domain.ImitatorPLC.EthernetAdapter" Left="702.0352895815347" Top="331.7957918499269" Width="137.99333333333334" Height="45.63" />
     <external-runtime Id="Domain.ImitatorPLC.cmp_MySQL" Left="41" Top="153" Width="199.5" Height="136" />
     <external-runtime Id="Domain.ImitatorPLC.cmp_MySQL1" Left="20" Top="358" Width="316.99" Height="96" />
@@ -4597,21 +4597,21 @@
     <ReferenceInitializer Id="Domain.app_11_SU.ASUTP.PLC.AI.15.r:init-ref[4]" Left="479.17536103192816" Top="895.11991309766825" Width="161.18333333333334" Height="22" />
   </Object>
   <Object Id="bc8c94d7-160a-4b8c-b9ee-d14762f63cb3" OffsetX="0" OffsetY="0" Scale="1" />
-  <io-server Id="a59cff96-7a02-46ab-8132-129f85b572c3" OffsetX="0" OffsetY="0" Scale="1">
-    <host Id="Domain.ImitatorPLC.AlphaServer.dp:host[0]" Left="651.04666666666662" Top="26" Width="203.08" Height="24" />
-    <ref-to Id="Domain.ImitatorPLC.AlphaServer.dp:ref-to[1]" Left="345.62666666666667" Top="26" Width="231.96333333333334" Height="85" />
-    <ref-to Id="Domain.ImitatorPLC.AlphaServer.dp:ref-to[2]" Left="345.62666666666667" Top="132" Width="336.99" Height="85" />
-    <host Id="Domain.ImitatorPLC.AlphaServer.dp:host[3]" Left="649.11333333333334" Top="71" Width="205.01333333333335" Height="24" />
-    <host Id="Domain.ImitatorPLC.AlphaServer.dp:host[4]" Left="657.62666666666667" Top="105" Width="219.5" Height="24" />
+  <io-server Id="a59cff96-7a02-46ab-8132-129f85b572c3" OffsetX="200.19" OffsetY="0" Scale="1">
+    <host Id="Domain.ImitatorPLC.AlphaServer.dp:host[0]" Left="590.04666666666662" Top="26" Width="219.08000000000004" Height="33" />
+    <ref-to Id="Domain.ImitatorPLC.AlphaServer.dp:ref-to[1]" Left="345.62666666666667" Top="28" Width="231.96333333333334" Height="85" />
+    <ref-to Id="Domain.ImitatorPLC.AlphaServer.dp:ref-to[2]" Left="345.62666666666667" Top="134" Width="336.99" Height="85" />
+    <host Id="Domain.ImitatorPLC.AlphaServer.dp:host[3]" Left="649.11333333333334" Top="73" Width="205.01333333333335" Height="24" />
+    <host Id="Domain.ImitatorPLC.AlphaServer.dp:host[4]" Left="657.62666666666667" Top="107" Width="219.5" Height="24" />
+    <host Id="Domain.ImitatorPLC.AlphaServer.dp:host[9]" Left="640.87916666666672" Top="173" Width="224.04333333333335" Height="24" />
     <modbus-tcp-slave Id="Domain.ImitatorPLC.AlphaServer.ModbusTcpSlave" Left="919.12666666666655" Top="31" Width="152.10333333333335" Height="58.59" />
     <sqlconnector-module Id="Domain.ImitatorPLC.AlphaServer.SqlConnector" Left="24" Top="26" Width="279.62666666666667" Height="99.63" />
     <tcp-server Id="Domain.ImitatorPLC.AlphaServer.TcpServer" Left="930.3266666666666" Top="100.59000000000002" Width="113.90333333333334" Height="36.63" />
     <opcda-server Id="Domain.ImitatorPLC.AlphaServer.OpcDaServer" Left="927.04666666666662" Top="159.22" Width="131.18333333333334" Height="36.63" />
-    <host Id="Domain.ImitatorPLC.AlphaServer.dp:host[9]" Left="640.87916666666672" Top="171" Width="224.04333333333335" Height="24" />
   </io-server>
   <external-runtime Id="6ad95cb1-9031-424a-b58c-9e748bb08b59" OffsetX="0" OffsetY="0" Scale="1">
     <host Id="Domain.ImitatorPLC.cmp_PLC.dp:host[0]" Left="66" Top="26" Width="224.04333333333335" Height="24" />
-    <modbus-tcp-slave Id="Domain.ImitatorPLC.cmp_PLC.ExternalModbusTcpSlave" Left="519.04" Top="26" Width="194" Height="58.59" />
+    <modbus-tcp-slave Id="Domain.ImitatorPLC.cmp_PLC.ExternalModbusTcpSlave" Left="673.04" Top="26" Width="194" Height="58.59" />
   </external-runtime>
   <Object Id="66f72579-d831-4e8e-a0f8-9fa594972ca9" OffsetX="0" OffsetY="0" Scale="1">
     <Object Id="Domain.app_33_SQL_Imitator.PLC.AuxFC.1" Left="66" Top="26" Width="281.70000000000005" Height="46.63" />
@@ -4632,6 +4632,6 @@
   </Object>
   <external-runtime Id="c3c31c93-96e0-4e06-9a83-5c1864ba8c40" OffsetX="0" OffsetY="0" Scale="0.985712567148528">
     <host Id="Domain.ImitatorPLC.brUA.dp:host[1]" Left="66" Top="46" Width="203.08" Height="24" />
-    <opcua-server Id="Domain.ImitatorPLC.brUA.OpcUaServer" Left="560.62999999999988" Top="26" Width="150.41000000000003" Height="58.59" />
+    <opcua-server Id="Domain.ImitatorPLC.brUA.OpcUaServer" Left="716.62999999999988" Top="26" Width="150.41000000000003" Height="58.59" />
   </external-runtime>
 </Diagrams>

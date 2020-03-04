@@ -150,12 +150,12 @@
   <ClassView Id="64230328-3d00-498e-83fb-b87f83a2f107" OffsetX="99.7333333333336" OffsetY="0" Scale="1">
     <ClassSocket Id="Objects.Diagnostic.cls_IntegrityControl_PLC.ccv_PLC_VU1.cs_iControl_Output" Left="815.4966666666669" Top="133" Width="288.23666666666668" Height="40.59" />
   </ClassView>
-  <RootNamespace Id="2232d751-c238-4a21-9eaf-2ce09b406d1b" OffsetX="0" OffsetY="0" Scale="1">
-    <Namespace Id="Objects" Left="40" Top="40" Width="158.38333333333333" Height="166" />
-    <Domain Id="Domain" Left="239.38333333333333" Top="40" Width="169.27333333333334" Height="219.27666666666667" />
-    <UnitLink Id="System" Left="449.65666666666664" Top="40" Width="154.08" Height="37.276666666666671" />
-    <UnitLink Id="AlphaServer" Left="445.65666666666664" Top="115" Width="250.97" Height="69.276666666666671" />
-    <Namespace Id="Aspects" Left="449.65666666666664" Top="200" Width="148.34666666666669" Height="100" />
-    <Namespace Id="Attributes" Left="40" Top="260" Width="138.28" Height="144" />
-  </RootNamespace>
+  <omx Id="2232d751-c238-4a21-9eaf-2ce09b406d1b" OffsetX="0" OffsetY="0" Scale="1">
+    <namespace Id="Objects" Left="40" Top="40" Width="158.38333333333333" Height="166" />
+    <domain Id="Domain" Left="239.38333333333333" Top="40" Width="169.27333333333334" Height="219.27666666666667" />
+    <link-unit Id="System" Left="449.65666666666664" Top="40" Width="154.08" Height="37.276666666666671" />
+    <link-unit Id="AlphaServer" Left="445.65666666666664" Top="115" Width="250.97" Height="69.276666666666671" />
+    <namespace Id="Aspects" Left="449.65666666666664" Top="200" Width="148.34666666666669" Height="100" />
+    <namespace Id="Attributes" Left="40" Top="260" Width="138.28" Height="144" />
+  </omx>
 </Diagrams>

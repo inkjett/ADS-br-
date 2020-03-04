@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Id="2232d751-c238-4a21-9eaf-2ce09b406d1b" Version="46" OutputPath="bin\" Comments="" UpgradeVersion="5">
+<Project Id="2232d751-c238-4a21-9eaf-2ce09b406d1b" Version="59" OutputPath="bin\" Comments="" UpgradeVersion="5">
   <Files>
     <SourceFile Name="Diagnostic.omx" />
     <SourceFile Name="Domain.omx" />

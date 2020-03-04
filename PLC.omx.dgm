@@ -103,9 +103,6 @@
   </SocketType>
   <type Id="67be00d3-dcea-40cc-8778-355630762e77" OffsetX="270.66" OffsetY="0" Scale="1">
     <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.Imit" Left="924.19666666666694" Top="573" Width="70.50333333333333" Height="22" />
-    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.State" Left="917.19666666666694" Top="482" Width="76.50333333333333" Height="22" />
-    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.Crash" Left="910.10666666666691" Top="451" Width="79.593333333333334" Height="22" />
-    <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.Error" Left="919.08000000000027" Top="425" Width="75.62" Height="22" />
     <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.MV" Left="939.47000000000025" Top="304" Width="68.23" Height="22" />
     <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.FlowControl" Left="898.80333333333363" Top="219" Width="113.89666666666668" Height="22" />
     <parameter Id="Objects.PLC.cls_Valve.ccv_Valve_VU.Flow" Left="937.23000000000025" Top="192" Width="74.47" Height="22" />
@@ -263,6 +260,9 @@
     <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.U" Left="407.86906917814781" Top="496.68696849406854" Width="137.49" Height="24" />
     <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.MVO" Left="452.86906917814781" Top="361.68696849406837" Width="137.49" Height="24" />
     <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.MVZ" Left="458.86906917814781" Top="392.68696849406837" Width="137.49" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Error" Left="24" Top="553" Width="73.62" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.Crash" Left="24" Top="582" Width="77.593333333333334" Height="24" />
+    <socket-parameter Id="Objects.PLC.cls_Valve.st_Outputs.State" Left="24" Top="611" Width="74.89" Height="24" />
   </socket-type>
   <Type Id="58001d2d-97e9-4e0e-a46f-e719910c9475" OffsetX="0" OffsetY="181.763" Scale="1">
     <SocketType Id="Objects.PLC.cls_Aux.st_Outputs" Left="66" Top="26" Width="112.23" Height="388" />
@@ -812,7 +812,6 @@
     <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wCtrl_Got_TU" Left="374.98834918755563" Top="1040.8162243721745" Width="137.49" Height="24" />
     <socket-parameter Id="Objects.PLC.cls_Valve.Temp.wCtrl_slYesEC" Left="380.38571075202287" Top="1064.8162243721745" Width="137.49" Height="24" />
     <socket-parameter Id="Objects.PLC.cls_Valve.Temp.bUseRS" Left="379.51864494832944" Top="1092.5403723953038" Width="137.49" Height="24" />
-    <socket-parameter Id="Objects.PLC.cls_Valve.Temp.vErr" Left="381.44568044410335" Top="1120.2859286114008" Width="137.49" Height="24" />
     <socket-parameter Id="Objects.PLC.cls_Valve.Temp.iwModNPS" Left="389.397037441286" Top="1155.7770410435944" Width="137.49" Height="24" />
     <socket-parameter Id="Objects.PLC.cls_Valve.Temp.ZD_EmulState_In" Left="386.62260548690131" Top="1188.8153583853709" Width="137.49" Height="24" />
     <socket-parameter Id="Objects.PLC.cls_Valve.Temp.ZD_ERR_In" Left="393.04530765174809" Top="1218.8079089107994" Width="137.49" Height="24" />
